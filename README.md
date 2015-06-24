@@ -42,8 +42,9 @@ We welcome crash reporting service providers to send us their test data via pull
 
 Please also provide a link to a public repository on GitHub containing a configured version of CrashProbe including the SDK used for the test. This will make any result more transparent for every user and also speeds up the validation process on our side. There is no need to include the API-Keys of the SDK into the repository.
 
-An example public repository can be found here: https://github.com/bitstadium/CrashProbe-HockeyApp
-An example pull request can be found here: https://github.com/bitstadium/CrashProbe-Data/pull/1
+Example public repository: [https://github.com/bitstadium/CrashProbe-HockeyApp](https://github.com/bitstadium/CrashProbe-HockeyApp)
+
+Example pull request: [https://github.com/bitstadium/CrashProbe-Data/pull/1](https://github.com/bitstadium/CrashProbe-Data/pull/1)
 
 Please use the following template for the pull request description:
 
