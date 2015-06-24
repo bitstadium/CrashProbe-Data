@@ -1,0 +1,28 @@
+Segmentation fault: 11: 
+
+bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
+bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
+bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
+bugsnag/Bugsnag.m:67:0 handle_signal
+libsystem_platform.dylib:0 sigtramp
+<span class="cp-wrong">CrashLib:0 _31-[CRLCrashReleasedObject crash]_block_invoke | Missing filename, and line number</span>
+<span class="cp-wrong">Missing frame</span>
+CrashProbe/CRLMainWindowController.m:72:0 -[CRLMainWindowController causeCrash:]
+libsystem_trace.dylib:0 os_activity_initiate
+AppKit:0 -[NSApplication sendAction:to:from:]
+AppKit:0 -[NSControl sendAction:to:]
+AppKit:0 _26-[NSCell _sendActionFrom:]_block_invoke
+libsystem_trace.dylib:0 os_activity_initiate
+AppKit:0 -[NSCell _sendActionFrom:]
+AppKit:0 -[NSButtonCell _sendActionFrom:]
+libsystem_trace.dylib:0 os_activity_initiate
+AppKit:0 -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+AppKit:0 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+AppKit:0 -[NSControl mouseDown:]
+AppKit:0 -[NSWindow _reallySendEvent:]
+AppKit:0 -[NSWindow sendEvent:]
+AppKit:0 -[NSApplication sendEvent:]
+AppKit:0 -[NSApplication run]
+AppKit:0 NSApplicationMain
+CrashProbe/main.m:13:0 main
+libdyld.dylib:0 start

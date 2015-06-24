@@ -1,0 +1,33 @@
+Crashed: com.apple.main-thread
+SIGABRT ABORT at 0xabababfb
+
+Thread : Crashed: com.apple.main-thread
+0  libdispatch.dylib   0x3aa23828 voucher_mach_msg_set$VARIANT$mp + 155
+1  libdispatch.dylib   0x3aa237c1 voucher_mach_msg_set$VARIANT$mp + 52
+2  libsystem_asl.dylib 0x3aa4fb15 _asl_server_message + 92
+3  libsystem_asl.dylib 0x3aa4eb55 _asl_send_message + 1264
+4  libsystem_asl.dylib 0x3aa4e661 asl_send + 8
+5  CoreFoundation      0x2cd6ebdd __CFLogCString + 588
+6  CoreFoundation      0x2cd6e96d _CFLogvEx2 + 208
+7  Foundation          0x2d9d693d NSLogv + 116
+8  Foundation          0x2d9d68bf NSLog + 26
+9  CrashLibiOS         0x0020c7af -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+10 CrashProbeiOS       0x000b8537 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+11 UIKit               0x3025a427 -[UIApplication sendAction:to:from:forEvent:] + 70
+12 UIKit               0x3025a3c9 -[UIControl sendAction:to:forEvent:] + 44
+13 UIKit               0x30244fcd -[UIControl _sendActionsForEvents:withEvent:] + 584
+14 UIKit               0x30259df9 -[UIControl touchesEnded:withEvent:] + 584
+15 UIKit               0x3021eb47 _UIGestureRecognizerUpdate + 10158
+16 UIKit               0x30253afd -[UIWindow _sendGesturesForEvent:] + 784
+17 UIKit               0x302533cd -[UIWindow sendEvent:] + 520
+18 UIKit               0x30229b5d -[UIApplication sendEvent:] + 196
+19 UIKit               0x3049d4e3 _UIApplicationHandleEventFromQueueEvent + 13874
+20 UIKit               0x3022859f _UIApplicationHandleEventQueue + 1294
+21 CoreFoundation      0x2cd4b5e7 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+22 CoreFoundation      0x2cd4a9fb __CFRunLoopDoSources0 + 222
+23 CoreFoundation      0x2cd49079 __CFRunLoopRun + 768
+24 CoreFoundation      0x2cc96981 CFRunLoopRunSpecific + 476
+25 CoreFoundation      0x2cc96793 CFRunLoopRunInMode + 106
+26 GraphicsServices    0x34048051 GSEventRunModal + 136
+27 UIKit               0x30288981 UIApplicationMain + 1440
+28 CrashProbeiOS       0x000b787f main (main.m:16)

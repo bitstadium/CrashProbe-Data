@@ -1,0 +1,45 @@
+{
+  "item": "corrupt",
+  "section": "various",
+  "navtitle": "Corrupt ObjC",
+  "title": "Corrupt the Objective-C runtime's structures",
+  "description": "Write garbage into data areas used by the Objective-C runtime to track classes and objects.<br/><br/>Bugs of this nature are why crash reporters cannot use Objective-C in their crash handling code, as attempting to do so is likely to lead to a crash in the crash reporting code.",
+  "expected": [
+    "-[CRLCrashCorruptObjC crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashCorruptObjC.m#L70\">CRLCrashCorruptObjC.m:70</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Crashlytics": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

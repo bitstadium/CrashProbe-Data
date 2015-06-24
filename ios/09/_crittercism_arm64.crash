@@ -1,0 +1,22 @@
+Name: SIGILL
+
+Crashed Thread:
+<span class="cp-wrong">0  CrashLibiOS      0x0000000100119f40 0x0000000100114000 + 24384 | Missing class, method, filename, and line number</span>
+<span class="cp-wrong">Missing frame</span>
+1  UIKit            0x000000018c6550f8 -[UIApplication sendAction:to:from:forEvent:] + 92
+2  UIKit            0x000000018c63e22c -[UIControl _sendActionsForEvents:withEvent:] + 608
+3  UIKit            0x000000018c654a94 -[UIControl touchesEnded:withEvent:] + 588
+4  UIKit            0x000000018c614450 _UIGestureRecognizerUpdate + 8532
+5  UIKit            0x000000018c64e5bc -[UIWindow _sendGesturesForEvent:] + 1040
+6  UIKit            0x000000018c64dc5c -[UIWindow sendEvent:] + 656
+7  UIKit            0x000000018c62138c -[UIApplication sendEvent:] + 260
+8  UIKit            0x000000018c8c01b4 _UIApplicationHandleEventFromQueueEvent + 14988
+9  UIKit            0x000000018c61f8f4 _UIApplicationHandleEventQueue + 1612
+10 CoreFoundation   0x0000000187e2a0e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+11 CoreFoundation   0x0000000187e2938c __CFRunLoopDoSources0 + 260
+12 CoreFoundation   0x0000000187e2743c __CFRunLoopRun + 708
+13 CoreFoundation   0x0000000187d551f4 CFRunLoopRunSpecific + 392
+14 GraphicsServices 0x0000000190eeb5a4 GSEventRunModal + 164
+15 UIKit            0x000000018c686784 UIApplicationMain + 1484
+16 CrashProbeiOS    0x0000000100081480 main (main.m:16)
+17 libdyld.dylib    0x0000000198bdaa08 start + 0

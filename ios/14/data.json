@@ -1,0 +1,45 @@
+{
+  "item": "trap",
+  "section": "sigtrap",
+  "navtitle": "Call __builtin_trap",
+  "title": "Call __builtin_trap()",
+  "description": "Call __builtin_trap() to generate a trap exception.",
+  "expected": [
+    "-[CRLCrashTrap crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashTrap.m#L37\">CRLCrashTrap.m:37</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Apple": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crashlytics": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

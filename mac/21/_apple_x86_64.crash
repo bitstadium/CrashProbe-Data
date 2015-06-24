@@ -1,0 +1,10 @@
+Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes:       EXC_I386_GPFLT
+
+Application Specific Information:
+Performing @selector(causeCrash:) from sender NSButton 0x60000014ab30
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0 libsystem_platform.dylib 0x00007fff848b1d6d _platform_bzero$VARIANT$Merom + 93
+1 ???                      0xa5a5a5a5a5a5a5a5 0 + 11936128518282651045
+<span class="cp-wrong">Missing frames that show where the crash occured</span>

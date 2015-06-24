@@ -1,0 +1,25 @@
+{
+  "item": "malloc",
+  "section": "various",
+  "navtitle": "Corrupt Malloc",
+  "title": "Corrupt malloc()'s internal tracking information",
+  "description": "Write garbage into data areas used by malloc to track memory allocations. This simulates the kind of heap overflow and/or heap corruption likely to occur in an application; if the crash reporter itself uses malloc, the corrupted heap will likely trigger a crash in the crash reporter itself.",
+  "expected": [
+    "-[CRLCrashCorruptMalloc crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashCorruptMalloc.m#L46\">CRLCrashCorruptMalloc.m:46</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "complete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

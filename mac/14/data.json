@@ -1,0 +1,25 @@
+{
+  "item": "trap",
+  "section": "sigtrap",
+  "navtitle": "Call __builtin_trap",
+  "title": "Call __builtin_trap()",
+  "description": "Call __builtin_trap() to generate a trap exception.",
+  "expected": [
+    "-[CRLCrashTrap crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashTrap.m#L37\">CRLCrashTrap.m:37</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

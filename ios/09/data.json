@@ -1,0 +1,46 @@
+{
+  "item": "undefinedinstruction",
+  "section": "sigill",
+  "navtitle": "Undefined Instruction",
+  "title": "Execute an undefined instruction",
+  "description": "Attempt to execute an instruction not to be defined on the current architecture.",
+  "expected": [
+    "ARMv7: -[CRLCrashUndefInst crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashUndefInst.m#L42\">CRLCrashUndefInst.m:42</a>)",
+    "ARM64: -[CRLCrashUndefInst crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashUndefInst.m#L50\">CRLCrashUndefInst.m:50</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Apple": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crashlytics": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

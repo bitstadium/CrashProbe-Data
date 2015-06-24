@@ -1,0 +1,46 @@
+{
+  "item": "dwarf",
+  "section": "various",
+  "navtitle": "DWARF Unwinding",
+  "title": "DWARF Unwinding",
+  "description": "Trigger a crash in a frame that requires DWARF or Compact Unwind support to correctly unwind.<br/><br/>Unwinders that do not support DWARF will terminate on the second frame. The test will fail for all unwinders on ARMv6 and ARMv7 (DWARF/eh_frame is unsupported).",
+  "expected": [
+    "CRLFramelessDWARF_test_crash (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLFramelessDWARF.m#L35\">CRLFramelessDWARF.m:35</a>)",
+    "-[CRLFramelessDWARF crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLFramelessDWARF.m#L49\">CRLFramelessDWARF.m:49</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "incomplete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crashlytics": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

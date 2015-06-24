@@ -1,0 +1,26 @@
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRERR at 0x225411
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0  CrashLibiOS      0x00225468 -[CRLCrashROPage crash] (CRLCrashROPage.m:42)
+1  CrashProbeiOS    0x0008ebd7 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit            0x27699427 -[UIApplication sendAction:to:from:forEvent:] + 68
+3  UIKit            0x276993c9 -[UIControl sendAction:to:forEvent:] + 42
+4  UIKit            0x27683fcd -[UIControl _sendActionsForEvents:withEvent:] + 582
+5  UIKit            0x27698df9 -[UIControl touchesEnded:withEvent:] + 582
+6  UIKit            0x2765db47 _UIGestureRecognizerUpdate + 10156
+7  UIKit            0x27692afd -[UIWindow _sendGesturesForEvent:] + 782
+8  UIKit            0x276923cd -[UIWindow sendEvent:] + 518
+9  UIKit            0x27668b5d -[UIApplication sendEvent:] + 194
+10 UIKit            0x278dc4e3 _UIApplicationHandleEventFromQueueEvent + 13872
+11 UIKit            0x2766759f _UIApplicationHandleEventQueue + 1292
+12 CoreFoundation   0x2418a5e7 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
+13 CoreFoundation   0x241899fb __CFRunLoopDoSources0 + 220
+14 CoreFoundation   0x24188079 __CFRunLoopRun + 766
+15 CoreFoundation   0x240d5981 CFRunLoopRunSpecific + 474
+16 CoreFoundation   0x240d5793 CFRunLoopRunInMode + 104
+17 GraphicsServices 0x2b487051 GSEventRunModal + 134
+18 UIKit            0x276c7981 UIApplicationMain + 1438
+19 CrashProbeiOS    0x0008de87 main (main.m:16)
+20 libdyld.dylib    0x31e82aaf start + 0

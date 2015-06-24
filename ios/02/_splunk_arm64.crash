@@ -1,0 +1,19 @@
+SIGABRT
+
+<span class="cp-wrong">Missing exception details</span>
+
+Thread:
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0  libsystem_kernel.dylib -[PLCrashExceptionManager executableNameForReport:] (in CrashProbeiOS) + 212
+1  libsystem_c.dylib      __65-[BugSenseRequestWorker sendPingAndProcessPreviousLoggedRequests]_block_invoke_2 (in CrashProbeiOS) + 52
+2  libc++abi.dylib        _mh_execute_header (in CrashProbeiOS) + 5144
+3  libc++abi.dylib        -[SPLJSONModel __importDictionary:withKeyMapper:validation:error:] (in CrashProbeiOS) + 612
+4  libobjc.A.dylib        -[SLKAFHTTPResponseSerializer validateResponse:data:error:] (in CrashProbeiOS) + 1104
+5  libc++abi.dylib        -[SLKAFHTTPSessionManager encodeWithCoder:] (in CrashProbeiOS) + 188
+6  libc++abi.dylib        __copy_helper_block_75 (in CrashProbeiOS) + 36
+7  libobjc.A.dylib        -[SLKAFHTTPResponseSerializer validateResponse:data:error:] (in CrashProbeiOS) + 776
+8  CoreFoundation         AFErrorOrUnderlyingErrorHasCodeInDomain (in CrashProbeiOS) + 96
+9  GraphicsServices       +[TrStart getInstanceWithTransactionName:appEnvironment:andPerformance:] (in CrashProbeiOS) + 168
+10 UIKit                  plcrash__crash_report__pack_to_buffer (in CrashProbeiOS) + 68
+11 CrashProbeiOS          main (in CrashProbeiOS) (main.m:16) + 22196
+12 libdyld.dylib          _mh_execute_header (in CrashProbeiOS) + 10760

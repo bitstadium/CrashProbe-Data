@@ -1,0 +1,44 @@
+{
+  "item": "smashbottom",
+  "section": "various",
+  "navtitle": "Smash Stack Bottom",
+  "title": "Smash the bottom of the stack",
+  "description": "Overwrite data below the current stack pointer. This will destroy the current stack frame.<br/><br/>Reporting of this crash is expected to fail. Succeeding is basically luck.",
+  "expected": [
+    "-[CRLCrashSmashStackBottom crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSmashStackBottom.m#L54\">CRLCrashSmashStackBottom.m:54</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "wrong"
+    },
+    "Apple": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crashlytics": {
+      "armv7": "complete",
+      "arm64": "wrong"
+    },
+    "Raygun": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Bugsnag": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

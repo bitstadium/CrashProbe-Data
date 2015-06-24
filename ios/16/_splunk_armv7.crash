@@ -1,0 +1,36 @@
+SIGABRT
+
+Thread:
+0  libsystem_kernel.dylib -[MintNetworkMonitorClient fileRepository] (in CrashProbeiOS) + 12
+1  libsystem_c.dylib      +[SLKSSNetworkInfo connectedToWiFi] (in CrashProbeiOS) + 13
+2  libsystem_malloc.dylib -[TransactionManager stopAllWithErrorHash:] (in CrashProbeiOS) + 907
+3  libsystem_malloc.dylib -[TransactionManager failAnyPendingStartedTransactionsWithErrorHash:] (in CrashProbeiOS) + 97
+4  libsystem_malloc.dylib _mh_execute_header (in CrashProbeiOS) + 8531
+5  libsystem_malloc.dylib _mh_execute_header (in CrashProbeiOS) + 3963
+6  libsystem_malloc.dylib _mh_execute_header (in CrashProbeiOS) + 3691
+7  libsystem_malloc.dylib _mh_execute_header (in CrashProbeiOS) + 17607
+8  CoreFoundation         0x22de191b + 989467
+9  Foundation             __58-[MintRequestWorker logEventAsyncWithTag:completionBlock:]_block_invoke (in CrashProbeiOS) + 149
+10 Foundation             __58-[MintRequestWorker logEventAsyncWithTag:completionBlock:]_block_invoke (in CrashProbeiOS) + 23
+<span class="cp-wrong">11 CrashLibiOS            -[MintTransaction .cxx_destruct] (in CrashProbeiOS) + 39 | Wrong class, method. Missing filename, and line number</span>
+12 CrashProbeiOS          -[CRLDetailViewController doCrash] (in CrashProbeiOS) (CRLDetailViewController.m:53) + 21883
+13 UIKit                  +[SLKSSHardwareInfo systemUptime] (in CrashProbeiOS) + 15
+14 UIKit                  -[SplunkNSURLSessionDataDelegateInterceptor setRequest:] (in CrashProbeiOS) + 9
+15 UIKit                  -[DeviceInfo getDeviceModel] (in CrashProbeiOS) + 85
+16 UIKit                  -[SplunkNSURLSessionDataDelegateInterceptor URLSession:task:needNewBodyStream:] (in CrashProbeiOS) + 333
+17 UIKit                  -[CRLMasterViewController viewDidLoad] (in CrashProbeiOS) (CRLMasterViewController.m:57) + 19271
+18 UIKit                  -[SplunkNSURLConnectionDataDelegateInterceptor connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:] (in CrashProbeiOS) + 53
+19 UIKit                  -[SplunkNSURLConnectionDataDelegateInterceptor connection:didCancelAuthenticationChallenge:] (in CrashProbeiOS) + 221
+20 UIKit                  __copy_helper_block_280 (in CrashProbeiOS) + 17
+21 UIKit                  0x265104e3 + 2634979
+22 UIKit                  __52-[MintRequestWorker sendEventAsync:completionBlock:]_block_invoke_2 (in CrashProbeiOS) + 255
+23 CoreFoundation         0x22dbe5e7 + 845287
+24 CoreFoundation         0x22dbd9fb + 842235
+25 CoreFoundation         0x22dbc079 + 835705
+26 CoreFoundation         __106-[MintServiceRepository executeRequestAsyncWithUrl:requestData:requestType:contentType:andCompletedBlock:]_block_invoke87 (in CrashProbeiOS) + 465
+27 CoreFoundation         __copy_helper_block_ (in CrashProbeiOS) + 31
+28 GraphicsServices       -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413
+29 UIKit                  stub helpers (in CrashProbeiOS) + 8285
+30 CrashProbeiOS          main (in CrashProbeiOS) (main.m:16) + 18679
+31 libdyld.dylib          _mh_execute_header (in CrashProbeiOS) + 6831
+

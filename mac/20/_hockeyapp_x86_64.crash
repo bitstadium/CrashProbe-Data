@@ -1,0 +1,8 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_NOOP at 0x0
+Crashed Thread:  0
+
+Thread 0 Crashed:
+<span class="cp-wrong">0 CrashLib 0x0000000101b6e1d1 -[CRLCrashSmashStackBottom crash] (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
+<span class="cp-wrong">Missing frames</span>
+

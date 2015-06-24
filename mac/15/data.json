@@ -1,0 +1,25 @@
+{
+  "item": "abort",
+  "section": "sigtrap",
+  "navtitle": "Call abort",
+  "title": "Call abort()",
+  "description": "Call abort() to terminate the program.",
+  "expected": [
+    "-[CRLCrashAbort crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashAbort.m#L37\">CRLCrashAbort.m:37</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "wrong"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

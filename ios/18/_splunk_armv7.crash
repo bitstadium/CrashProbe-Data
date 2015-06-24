@@ -1,0 +1,5 @@
+SIGSEGV
+
+Thread:
+<span class="cp-wrong">0 CrashLibiOS -[CrashOnLastRun init] (in CrashProbeiOS) + 116 | Wrong class, method. Missing filename, and line number</span>
+<span class="cp-wrong">Missing frames</span>

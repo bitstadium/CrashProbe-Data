@@ -1,0 +1,25 @@
+{
+  "item": "smashtop",
+  "section": "various",
+  "navtitle": "Smash Stack Top",
+  "title": "Smash the top of the stack",
+  "description": "Overwrite data above the current stack pointer. This will destroy the current function.<br/><br/>Reporting of this crash is expected to fail. Succeeding is basically luck.",
+  "expected": [
+    "-[CRLCrashSmashStackTop crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSmashStackTop.m#L51\">CRLCrashSmashStackTop.m:51</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "wrong"
+    },
+    "Apple": {
+      "x86_64": "wrong"
+    },
+    "Crashlytics": {
+      "x86_64": "wrong"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "item": "nslog",
+  "section": "objective-c",
+  "navtitle": "Access Non-Object",
+  "title": "Access a non-object as an object",
+  "description": "Call NSLog(@\"%@\", 16);, causing a crash when the runtime attempts to treat 16 as a pointer to an object.",
+  "expected": [
+    "-[CRLCrashNSLog crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashNSLog.m#L41\">CRLCrashNSLog.m:41</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "complete"
+    },
+    "Bugsnag": {
+      "x86_64": "incomplete"
+    }
+  }
+}

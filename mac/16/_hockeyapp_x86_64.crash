@@ -1,0 +1,36 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_NOOP at 0x0
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0  libsystem_notify.dylib 0x00007fff886f50d0 _nc_table_find_64 + 42
+1  libsystem_notify.dylib 0x00007fff886f36ae notify_check + 92
+2  libsystem_c.dylib      0x00007fff8e87b957 notify_check_tz + 24
+3  libsystem_c.dylib      0x00007fff8e87b63c tzsetwall_basic + 45
+4  libsystem_c.dylib      0x00007fff8e87b8a0 _st_tzset_basic + 363
+5  libsystem_c.dylib      0x00007fff8e87d02f localtime_r + 41
+6  CoreFoundation         0x00007fff8648639a __CFLogCString + 170
+7  CoreFoundation         0x00007fff86528e1f _CFLogvEx2 + 271
+8  Foundation             0x00007fff8e906017 NSLogv + 99
+9  Foundation             0x00007fff8e905f90 NSLog + 148
+10 CrashLib               0x000000010f89501d -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+11 CrashProbe             0x000000010f887423 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+12 libsystem_trace.dylib  0x00007fff82981cd7 _os_activity_initiate + 75
+13 AppKit                 0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
+14 AppKit                 0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
+15 AppKit                 0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
+16 libsystem_trace.dylib  0x00007fff82981cd7 _os_activity_initiate + 75
+17 AppKit                 0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
+18 AppKit                 0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
+19 libsystem_trace.dylib  0x00007fff82981cd7 _os_activity_initiate + 75
+20 AppKit                 0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
+21 AppKit                 0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
+22 AppKit                 0x00007fff8fc56289 -[NSControl mouseDown:] + 714
+23 AppKit                 0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
+24 AppKit                 0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
+25 AppKit                 0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
+26 HockeySDK              0x000000010f8ac885 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
+27 AppKit                 0x00007fff8fa18fe8 -[NSApplication run] + 711
+28 AppKit                 0x00007fff8fa04424 NSApplicationMain + 1832
+29 CrashProbe             0x000000010f887789 main (main.m:13)
+30 libdyld.dylib          0x00007fff90e3f5c9 start + 1

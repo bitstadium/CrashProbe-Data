@@ -1,0 +1,26 @@
+<span class="cp-wrong">No matching symbols found for /usr/lib/libobjc.A.dylib | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/Foundation.framework/Foundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/Foundation.framework/Foundation | Missing class, and method</span> 
+<span class="cp-wrong">-[CRLCrashNSLog crash] (CRLCrashNSLog.m:42) | Wrong line number</span>
+-[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices | Missing class, and method</span> 
+<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
+main (main.m:16)
+<span class="cp-wrong">No matching symbols found for /usr/lib/system/libdyld.dylib | Missing class, and method</span> 
+    

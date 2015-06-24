@@ -1,0 +1,6 @@
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS UNKNOWN at 0x0000000000000000
+
+Thread : Crashed: com.apple.main-thread
+0 libsystem_platform.dylib 0x00007fff848b1d6d _platform_bzero$VARIANT$Merom + 93
+<span class="cp-wrong">Missing frames that show where the crash occured</span>

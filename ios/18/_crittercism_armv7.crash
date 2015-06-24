@@ -1,0 +1,5 @@
+Name: SIGSEGV
+
+Crashed Thread:
+<span class="cp-wrong">0 CrashLibiOS 0x00171858 0x0016b000 + 26712 | Missing class, method, filename, and line number</span>
+<span class="cp-wrong">Missing frames</span>

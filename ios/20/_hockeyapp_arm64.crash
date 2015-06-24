@@ -1,0 +1,7 @@
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRERR at 0xa5a5a5a5a5a5a5a5
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0 ??? 0xa5a5a5a5a5a5a5a5 0x0 + 0
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>

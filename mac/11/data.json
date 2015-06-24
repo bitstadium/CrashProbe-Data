@@ -1,0 +1,25 @@
+{
+  "item": "dereferencegarbage",
+  "section": "sigsegv",
+  "navtitle": "Bad Pointer",
+  "title": "Dereference a bad pointer",
+  "description": "Attempt to read from a garbage pointer that's guaranteed not to be mapped but also isn't NULL.",
+  "expected": [
+    "-[CRLCrashGarbage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashGarbage.m#L46\">CRLCrashGarbage.m:46</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "x86_64": "complete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

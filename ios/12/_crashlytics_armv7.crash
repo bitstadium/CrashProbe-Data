@@ -1,0 +1,24 @@
+Crashed: com.apple.main-thread
+EXC_BREAKPOINT UNKNOWN at 0x0000defe
+
+Thread : Crashed: com.apple.main-thread
+<span class="cp-wrong">0  CrashLibiOS      0x0017662c -[CRLCrashNXPage crash] + 18446744073709552000 | Missing filename, and line number</span>
+1  CrashProbeiOS    0x00022537 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit            0x3025a427 -[UIApplication sendAction:to:from:forEvent:] + 70
+3  UIKit            0x3025a3c9 -[UIControl sendAction:to:forEvent:] + 44
+4  UIKit            0x30244fcd -[UIControl _sendActionsForEvents:withEvent:] + 584
+5  UIKit            0x30259df9 -[UIControl touchesEnded:withEvent:] + 584
+6  UIKit            0x3021eb47 _UIGestureRecognizerUpdate + 10158
+7  UIKit            0x30253afd -[UIWindow _sendGesturesForEvent:] + 784
+8  UIKit            0x302533cd -[UIWindow sendEvent:] + 520
+9  UIKit            0x30229b5d -[UIApplication sendEvent:] + 196
+10 UIKit            0x3049d4e3 _UIApplicationHandleEventFromQueueEvent + 13874
+11 UIKit            0x3022859f _UIApplicationHandleEventQueue + 1294
+12 CoreFoundation   0x2cd4b5e7 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+13 CoreFoundation   0x2cd4a9fb __CFRunLoopDoSources0 + 222
+14 CoreFoundation   0x2cd49079 __CFRunLoopRun + 768
+15 CoreFoundation   0x2cc96981 CFRunLoopRunSpecific + 476
+16 CoreFoundation   0x2cc96793 CFRunLoopRunInMode + 106
+17 GraphicsServices 0x34048051 GSEventRunModal + 136
+18 UIKit            0x30288981 UIApplicationMain + 1440
+19 CrashProbeiOS    0x0002187f main (main.m:16)

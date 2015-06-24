@@ -1,0 +1,25 @@
+{
+  "item": "swift",
+  "section": "various",
+  "navtitle": "Swift",
+  "title": "Swift",
+  "description": "Trigger a crash from inside a Swift method.",
+  "expected": [
+    "@objc CrashLibiOS.CRLCrashSwift.crash (CrashLibiOS.CRLCrashSwift)() -> () (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSwift.swift#L36\">CRLCrashSwift.swift:36</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "wrong"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

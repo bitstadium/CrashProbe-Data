@@ -1,0 +1,29 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_NOOP at 0x0
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0  libobjc.A.dylib       0x00007fff84004012 cache_getImp + 18
+1  libobjc.A.dylib       0x00007fff84018a71 lookUpImpOrForward + 390
+2  libobjc.A.dylib       0x00007fff840041ac objc_msgSend + 236
+3  CrashLib              0x000000010eabc274 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+4  CrashProbe            0x000000010eab2423 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+5  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+6  AppKit                0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
+7  AppKit                0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
+8  AppKit                0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
+9  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+10 AppKit                0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
+11 AppKit                0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
+12 libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+13 AppKit                0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
+14 AppKit                0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
+15 AppKit                0x00007fff8fc56289 -[NSControl mouseDown:] + 714
+16 AppKit                0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
+17 AppKit                0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
+18 AppKit                0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
+19 HockeySDK             0x000000010ead4885 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
+20 AppKit                0x00007fff8fa18fe8 -[NSApplication run] + 711
+21 AppKit                0x00007fff8fa04424 NSApplicationMain + 1832
+22 CrashProbe            0x000000010eab2789 main (main.m:13)
+23 libdyld.dylib         0x00007fff90e3f5c9 start + 1

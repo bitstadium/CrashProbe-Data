@@ -1,0 +1,27 @@
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Triggered by Thread:  0
+
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0  libsystem_kernel.dylib  0x0000000196a2f270 __pthread_kill + 8
+1  libsystem_pthread.dylib 0x0000000196acd224 pthread_kill + 108
+2  libsystem_c.dylib       0x00000001969a6b14 abort + 108
+3  CrashLibiOS             0x0000000100106304 -[CRLCrashAbort crash] (CRLCrashAbort.m:37)
+4  CrashProbeiOS           0x00000001000e26a4 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                   0x000000018a3910f4 -[UIApplication sendAction:to:from:forEvent:] + 92
+6  UIKit                   0x000000018a37a228 -[UIControl _sendActionsForEvents:withEvent:] + 608
+7  UIKit                   0x000000018a390a90 -[UIControl touchesEnded:withEvent:] + 588
+8  UIKit                   0x000000018a39071c -[UIWindow _sendTouchesForEvent:] + 696
+9  UIKit                   0x000000018a389c70 -[UIWindow sendEvent:] + 680
+10 UIKit                   0x000000018a35d388 -[UIApplication sendEvent:] + 260
+11 UIKit                   0x000000018a5fc1b0 _UIApplicationHandleEventFromQueueEvent + 14988
+12 UIKit                   0x000000018a35b8f0 _UIApplicationHandleEventQueue + 1612
+13 CoreFoundation          0x0000000185b660e4 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+14 CoreFoundation          0x0000000185b65388 __CFRunLoopDoSources0 + 260
+15 CoreFoundation          0x0000000185b63438 __CFRunLoopRun + 708
+16 CoreFoundation          0x0000000185a911f0 CFRunLoopRunSpecific + 392
+17 GraphicsServices        0x000000018ec275a0 GSEventRunModal + 164
+18 UIKit                   0x000000018a3c2780 UIApplicationMain + 1484
+19 CrashProbeiOS           0x00000001000e16b0 main (main.m:16)
+20 libdyld.dylib           0x0000000196916a04 start + 0

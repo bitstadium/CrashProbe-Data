@@ -1,0 +1,22 @@
+Exception Type:  SIGABRT
+Exception Codes: #0 at 0x196a2f270
+Crashed Thread:  0
+
+<span class="cp-wrong">Missing exception details</span>
+
+Thread 0 Crashed:
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0  libsystem_kernel.dylib  0x0000000196a2f270 __pthread_kill + 8
+1  libsystem_pthread.dylib 0x0000000196acd228 pthread_kill + 108
+2  libsystem_c.dylib       0x00000001969a6b18 abort + 108
+3  libc++abi.dylib         0x0000000195a8d418 abort_message + 112
+4  libc++abi.dylib         0x0000000195aacb8c default_terminate_handler() + 300
+5  libobjc.A.dylib         0x00000001962a83dc _objc_terminate() + 152
+6  libc++abi.dylib         0x0000000195aa9bb4 std::__terminate(void (*)()) + 12
+7  libc++abi.dylib         0x0000000195aa973c __cxa_rethrow + 140
+8  libobjc.A.dylib         0x00000001962a8294 objc_exception_rethrow + 40
+9  CoreFoundation          0x0000000185a912a4 CFRunLoopRunSpecific + 568
+10 GraphicsServices        0x000000018ec275a4 GSEventRunModal + 164
+11 UIKit                   0x000000018a3c2784 UIApplicationMain + 1484
+12 CrashProbeiOS           0x00000001000a5ea0 main (main.m:16)
+13 libdyld.dylib           0x0000000196916a08 start + 0

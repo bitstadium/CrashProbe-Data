@@ -1,0 +1,25 @@
+{
+  "item": "undefinedinstruction",
+  "section": "sigill",
+  "navtitle": "Undefined Instruction",
+  "title": "Execute an undefined instruction",
+  "description": "Attempt to execute an instruction not to be defined on the current architecture.",
+  "expected": [
+    "-[CRLCrashUndefInst crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashUndefInst.m#L40\">CRLCrashUndefInst.m:40</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

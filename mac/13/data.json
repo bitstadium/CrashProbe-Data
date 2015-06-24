@@ -1,0 +1,26 @@
+{
+  "item": "stackoverflow",
+  "section": "sigsegv",
+  "navtitle": "Stack Overflow",
+  "title": "Stack overflow",
+  "description": "Execute an infinitely recursive method, which overflows the stack and causes a crash by attempting to write to the guard page at the end.",
+  "expected": [
+    "-[CRLCrashStackGuard crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashStackGuard.m#L36\">CRLCrashStackGuard.m:39</a>) or line 38",
+    "...",
+    "-[CRLCrashStackGuard crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashStackGuard.m#L36\">CRLCrashStackGuard.m:39</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "complete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "item": "dereferencegarbage",
+  "section": "sigsegv",
+  "navtitle": "Bad Pointer",
+  "title": "Dereference a bad pointer",
+  "description": "Attempt to read from a garbage pointer that's guaranteed not to be mapped but also isn't NULL.",
+  "expected": [
+    "ARMv7: -[CRLCrashGarbage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashGarbage.m#L48\">CRLCrashGarbage.m:48</a>)",
+    "ARM64: -[CRLCrashGarbage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashGarbage.m#L52\">CRLCrashGarbage.m:52</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crashlytics": {
+      "armv7": "complete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "incomplete"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

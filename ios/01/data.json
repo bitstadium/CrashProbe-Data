@@ -1,0 +1,45 @@
+{
+  "item": "pthread_list_lock",
+  "section": "async-safety",
+  "navtitle": "Hold pthread Lock",
+  "title": "Hold _pthread_list_lock",
+  "description": "Triggers a crash with libsystem_pthread's _pthread_list_lock held, causing non-async-safe crash reporters that use pthread APIs to deadlock.<br/><br/>The use of the non-async-safe pthread API in a crash reporter will result in these types of crashes not being reported, and will lock up the application until it is either force quit by the user, or eventually killed by the system watchdog.",
+  "expected": [
+    "-[CRLCrashAsyncSafeThread crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashAsyncSafeThread.m#L41\">CRLCrashAsyncSafeThread.m:41</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Crashlytics": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

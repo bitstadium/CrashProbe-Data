@@ -1,0 +1,33 @@
+Crashed: com.apple.main-thread
+SIGABRT ABORT at 0x00007fff906d6282
+
+<span class="cp-wrong">Missing exception information</span>
+
+Thread : Crashed: com.apple.main-thread
+0  libsystem_kernel.dylib 0x00007fff906d6282 __pthread_kill + 10
+1  libsystem_c.dylib      0x00007fff8ad8ab73 abort + 129
+2  libc++abi.dylib        0x00007fff904aea21 __cxa_bad_cast
+3  libc++abi.dylib        0x00007fff904d69d1 default_unexpected_handler()
+4  libobjc.A.dylib        0x00007fff89b356db _objc_terminate() + 124
+5  libc++abi.dylib        0x00007fff904d40a1 std::__terminate(void (*)()) + 8
+6  libc++abi.dylib        0x00007fff904d3b30 __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+7  CrashLib               0x0000000108a11c76 -[CRLCrashCXXException crash] (CRLCrashCXXException.mm:52)
+8  CrashProbe             0x00000001089bcbf3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+9  libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
+10 AppKit                 0x00007fff8a3de5e7 -[NSApplication sendAction:to:from:] + 410
+11 AppKit                 0x00007fff8a3de410 -[NSControl sendAction:to:] + 86
+12 AppKit                 0x00007fff8a5b2daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
+13 libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
+14 AppKit                 0x00007fff8a426f2c -[NSCell _sendActionFrom:] + 144
+15 AppKit                 0x00007fff8a599ab2 -[NSButtonCell _sendActionFrom:] + 39
+16 libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
+17 AppKit                 0x00007fff8a441a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
+18 AppKit                 0x00007fff8a440cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
+19 AppKit                 0x00007fff8a440289 -[NSControl mouseDown:] + 714
+20 AppKit                 0x00007fff8a939fef -[NSWindow _reallySendEvent:] + 12827
+21 AppKit                 0x00007fff8a3c465c -[NSWindow sendEvent:] + 368
+22 AppKit                 0x00007fff8a3761e6 -[NSApplication sendEvent:] + 2238
+23 AppKit                 0x00007fff8a202fe8 -[NSApplication run] + 711
+24 AppKit                 0x00007fff8a1ee424 NSApplicationMain + 1832
+25 CrashProbe             0x00000001089bcf59 main (main.m:13)
+26 libdyld.dylib          0x00007fff8c79e5c9 start + 1

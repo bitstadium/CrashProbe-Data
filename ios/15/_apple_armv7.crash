@@ -1,0 +1,30 @@
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Triggered by Thread:  0
+
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0  libsystem_kernel.dylib  0x39ea1dfc __pthread_kill + 8
+1  libsystem_pthread.dylib 0x39f21d0e pthread_kill + 58
+2  libsystem_c.dylib       0x39e41934 abort + 72
+3  CrashLibiOS             0x001ce734 -[CRLCrashAbort crash] (CRLCrashAbort.m:37)
+4  CrashProbeiOS           0x000be88a -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                   0x2f5f3422 -[UIApplication sendAction:to:from:forEvent:] + 66
+6  UIKit                   0x2f5f33c4 -[UIControl sendAction:to:forEvent:] + 40
+7  UIKit                   0x2f5ddfc8 -[UIControl _sendActionsForEvents:withEvent:] + 580
+8  UIKit                   0x2f5f2df4 -[UIControl touchesEnded:withEvent:] + 580
+9  UIKit                   0x2f5b7b42 _UIGestureRecognizerUpdate + 10154
+10 UIKit                   0x2f5ecaf8 -[UIWindow _sendGesturesForEvent:] + 780
+11 UIKit                   0x2f5ec3c8 -[UIWindow sendEvent:] + 516
+12 UIKit                   0x2f5c2b58 -[UIApplication sendEvent:] + 192
+13 UIKit                   0x2f8364de _UIApplicationHandleEventFromQueueEvent + 13870
+14 UIKit                   0x2f5c159a _UIApplicationHandleEventQueue + 1290
+15 CoreFoundation          0x2c0e45e4 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
+16 CoreFoundation          0x2c0e39f6 __CFRunLoopDoSources0 + 218
+17 CoreFoundation          0x2c0e2074 __CFRunLoopRun + 764
+18 CoreFoundation          0x2c02f97c CFRunLoopRunSpecific + 472
+19 CoreFoundation          0x2c02f78e CFRunLoopRunInMode + 102
+20 GraphicsServices        0x333e104c GSEventRunModal + 132
+21 UIKit                   0x2f62197c UIApplicationMain + 1436
+22 CrashProbeiOS           0x000bdc52 main (main.m:16)
+23 libdyld.dylib           0x39ddcaac start + 0

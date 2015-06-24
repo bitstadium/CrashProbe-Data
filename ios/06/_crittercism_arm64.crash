@@ -1,0 +1,24 @@
+Name: SIGSEGV
+
+Crashed Thread:
+0  libobjc.A.dylib  0x000000019857fbd0 objc_msgSend + 16
+<span class="cp-wrong">1  CrashLibiOS      0x000000010010dd58 0x0000000100108000 + 23896 | Missing class, method, filename, and line number</span>
+<span class="cp-wrong">2  CrashLibiOS      0x000000010010dd14 0x0000000100108000 + 23828 | Missing class, method, filename, and line number</span>
+3  CrashProbeiOS    0x000000010008e4a0 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4  UIKit            0x000000018c6550f8 -[UIApplication sendAction:to:from:forEvent:] + 92
+5  UIKit            0x000000018c63e22c -[UIControl _sendActionsForEvents:withEvent:] + 608
+6  UIKit            0x000000018c654a94 -[UIControl touchesEnded:withEvent:] + 588
+7  UIKit            0x000000018c614450 _UIGestureRecognizerUpdate + 8532
+8  UIKit            0x000000018c64e5bc -[UIWindow _sendGesturesForEvent:] + 1040
+9  UIKit            0x000000018c64dc5c -[UIWindow sendEvent:] + 656
+10 UIKit            0x000000018c62138c -[UIApplication sendEvent:] + 260
+11 UIKit            0x000000018c8c01b4 _UIApplicationHandleEventFromQueueEvent + 14988
+12 UIKit            0x000000018c61f8f4 _UIApplicationHandleEventQueue + 1612
+13 CoreFoundation   0x0000000187e2a0e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+14 CoreFoundation   0x0000000187e2938c __CFRunLoopDoSources0 + 260
+15 CoreFoundation   0x0000000187e2743c __CFRunLoopRun + 708
+16 CoreFoundation   0x0000000187d551f4 CFRunLoopRunSpecific + 392
+17 GraphicsServices 0x0000000190eeb5a4 GSEventRunModal + 164
+18 UIKit            0x000000018c686784 UIApplicationMain + 1484
+19 CrashProbeiOS    0x000000010008d480 main (main.m:16)
+20 libdyld.dylib    0x0000000198bdaa08 start + 0

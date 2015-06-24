@@ -1,0 +1,20 @@
+SIGABRT
+
+<span class="cp-wrong">Missing exception details</span>
+
+Thread:
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+<span class="cp-wrong">0  libsystem_kernel.dylib -[MintNetworkMonitorClient fileRepository] (in CrashProbeiOS) + 12 | Wrong class, method</span>
+<span class="cp-wrong">1  libsystem_c.dylib      +[SLKSSNetworkInfo connectedToWiFi] (in CrashProbeiOS) + 13 | Wrong class, method</span>
+<span class="cp-wrong">2  libc++abi.dylib        _mh_execute_header (in CrashProbeiOS) + 3005 | Wrong class, method</span>
+<span class="cp-wrong">3  libc++abi.dylib        -[SPLJSONModel initWithString:error:] (in CrashProbeiOS) + 83 | Wrong class, method</span>
+<span class="cp-wrong">4  libobjc.A.dylib        AFErrorWithUnderlyingError (in CrashProbeiOS) + 45 | Wrong class, method</span>
+<span class="cp-wrong">5  libc++abi.dylib        -[SLKAFHTTPSessionManager PATCH:parameters:success:failure:] (in CrashProbeiOS) + 27 | Wrong class, method</span>
+<span class="cp-wrong">6  libc++abi.dylib        -[SLKAFHTTPSessionManager POST:parameters:constructingBodyWithBlock:success:failure:] (in CrashProbeiOS) + 321 | Wrong class, method</span>
+<span class="cp-wrong">7  libobjc.A.dylib        -[SLKAFHTTPResponseSerializer validateResponse:data:error:] (in CrashProbeiOS) + 1047 | Wrong class, method</span>
+<span class="cp-wrong">8  CoreFoundation         -[MintServiceRepository setRemoteSettingsData:] (in CrashProbeiOS) + 21 | Wrong class, method</span>
+<span class="cp-wrong">9  CoreFoundation         __copy_helper_block_ (in CrashProbeiOS) + 31 | Wrong class, method</span>
+<span class="cp-wrong">10 GraphicsServices       -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413 | Wrong class, method</span>
+<span class="cp-wrong">11 UIKit                  stub helpers (in CrashProbeiOS) + 8285 | Wrong class, method</span>
+12 CrashProbeiOS          main (in CrashProbeiOS) (main.m:16) + 18679
+<span class="cp-wrong">13 libdyld.dylib          _mh_execute_header (in CrashProbeiOS) + 6831 | Wrong class, method</span>

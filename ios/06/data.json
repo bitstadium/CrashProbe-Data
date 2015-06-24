@@ -1,0 +1,47 @@
+{
+  "item": "releasedobject",
+  "section": "objective-c",
+  "navtitle": "Released Object",
+  "title": "Message a released object",
+  "description": "Send a message to an object whose memory has already been freed.",
+  "expected": [
+    "ARMv7: -[CRLCrashReleasedObject crash]_block_invoke (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L53\">CRLCrashReleasedObject.m:53</a>)",
+    "ARM64: -[CRLCrashReleasedObject crash]_block_invoke (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L51\">CRLCrashReleasedObject.m:51</a>)",
+    "-[CRLCrashReleasedObject crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L49\">CRLCrashReleasedObject.m:49</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Crashlytics": {
+      "armv7": "complete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Bugsnag": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "incomplete"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "incomplete"
+    }
+  }
+}

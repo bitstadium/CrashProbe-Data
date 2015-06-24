@@ -1,0 +1,25 @@
+{
+  "item": "ropage",
+  "section": "sigsegv",
+  "navtitle": "Read-Only Page",
+  "title": "Write to a read-only page",
+  "description": "Attempt to write to a page into which the app's code is mapped.",
+  "expected": [
+    "-[CRLCrashROPage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashROPage.m#L42\">CRLCrashROPage.m:42</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

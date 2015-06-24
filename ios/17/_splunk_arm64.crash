@@ -1,0 +1,24 @@
+SIGSEGV
+
+Thread:
+0  libobjc.A.dylib  -[SLKAFHTTPSessionManager GET:parameters:success:failure:] (in CrashProbeiOS) + 240
+1  libobjc.A.dylib  -[SLKAFHTTPSessionManager GET:parameters:success:failure:] (in CrashProbeiOS) + 152
+<span class="cp-wrong">2  CrashLibiOS      -[CRLMasterViewController setKnownCrashes:] (in CrashProbeiOS) (CRLMasterViewController.m:0) + 25800 | Wrong class, method, filename, and line number</span>
+3  CrashProbeiOS    -[CRLDetailViewController doCrash] (in CrashProbeiOS) (CRLDetailViewController.m:53) + 26368
+4  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didReceiveData:lengthReceived:] (in CrashProbeiOS) + 48
+5  UIKit            +[SLKSSUUID deviceSignature] (in CrashProbeiOS) + 1436
+6  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didReceiveAuthenticationChallenge:] (in CrashProbeiOS) + 324
+7  UIKit            _mh_execute_header (in CrashProbeiOS) + 17488
+8  UIKit            -[LimitedExtraDataList removeWithKey:] (in CrashProbeiOS) + 40
+9  UIKit            +[SLKSSProcessorInfo numberProcessors] (in CrashProbeiOS) + 104
+10 UIKit            -[MintRequestWorker sendEventAsync:completionBlock:] (in CrashProbeiOS) + 780
+11 UIKit            0x18c8c01b4 + 2818484
+12 UIKit            -[MintBase enableLogging:] (in CrashProbeiOS) + 28
+13 CoreFoundation   0x187e2a0e8 + 909544
+14 CoreFoundation   0x187e2938c + 906124
+15 CoreFoundation   0x187e2743c + 898108
+16 CoreFoundation   -[SLKAFJSONResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 1172
+17 GraphicsServices +[TrStart getInstanceWithTransactionName:appEnvironment:andPerformance:] (in CrashProbeiOS) + 168
+18 UIKit            plcrash__crash_report__pack_to_buffer (in CrashProbeiOS) + 68
+19 CrashProbeiOS    main (in CrashProbeiOS) (main.m:16) + 22196
+20 libdyld.dylib    _mh_execute_header (in CrashProbeiOS) + 10760

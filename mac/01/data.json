@@ -1,0 +1,25 @@
+{
+  "item": "pthread_list_lock",
+  "section": "async-safety",
+  "navtitle": "Hold pthread Lock",
+  "title": "Hold _pthread_list_lock",
+  "description": "Triggers a crash with libsystem_pthread's _pthread_list_lock held, causing non-async-safe crash reporters that use pthread APIs to deadlock.<br/><br/>The use of the non-async-safe pthread API in a crash reporter will result in these types of crashes not being reported, and will lock up the application until it is either force quit by the user, or eventually killed by the system watchdog.",
+  "expected": [
+    "-[CRLCrashAsyncSafeThread crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashAsyncSafeThread.m#L41\">CRLCrashAsyncSafeThread.m:41</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "wrong"
+    },
+    "Bugsnag": {
+      "x86_64": "incomplete"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0xa5a6cac5
+Triggered by Thread:  0
+
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0  libobjc.A.dylib  0x33de7f12 cache_getImp + 18
+1  libobjc.A.dylib  0x33de2102 lookUpImpOrForward + 442
+2  libobjc.A.dylib  0x33de1f3a _class_lookupMethodAndLoadCache3 + 30
+3  libobjc.A.dylib  0x33de81f6 _objc_msgSend_uncached + 22
+4  CrashLibiOS      0x001ee842 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+5  CrashProbeiOS    0x000de88a -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+6  UIKit            0x29b7a192 -[UIApplication sendAction:to:from:forEvent:] + 66
+7  UIKit            0x29b7a134 -[UIControl sendAction:to:forEvent:] + 40
+8  UIKit            0x29b64d18 -[UIControl _sendActionsForEvents:withEvent:] + 580
+9  UIKit            0x29b79b64 -[UIControl touchesEnded:withEvent:] + 580
+10 UIKit            0x29b7983e -[UIWindow _sendTouchesForEvent:] + 518
+11 UIKit            0x29b7314c -[UIWindow sendEvent:] + 536
+12 UIKit            0x29b498c0 -[UIApplication sendEvent:] + 192
+13 UIKit            0x29dbd36e _UIApplicationHandleEventFromQueueEvent + 13870
+14 UIKit            0x29b48302 _UIApplicationHandleEventQueue + 1290
+15 CoreFoundation   0x26667fd4 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
+16 CoreFoundation   0x266673e6 __CFRunLoopDoSources0 + 218
+17 CoreFoundation   0x26665a64 __CFRunLoopRun + 764
+18 CoreFoundation   0x265b2b2c CFRunLoopRunSpecific + 472
+19 CoreFoundation   0x265b293e CFRunLoopRunInMode + 102
+20 GraphicsServices 0x2d96b04c GSEventRunModal + 132
+21 UIKit            0x29ba86ec UIApplicationMain + 1436
+22 CrashProbeiOS    0x000ddc52 main (main.m:16)
+23 libdyld.dylib    0x34377aac start + 0

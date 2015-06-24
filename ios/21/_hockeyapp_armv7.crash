@@ -1,0 +1,7 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_MAPERR at 0xa5a5a5a4
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0 ???         0xa5a5a5a4 0x0 + 0
+1 CrashLibiOS 0x0026fa29 -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)

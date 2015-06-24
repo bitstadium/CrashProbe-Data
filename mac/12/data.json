@@ -1,0 +1,25 @@
+{
+  "item": "nxpage",
+  "section": "sigsegv",
+  "navtitle": "NX Page",
+  "title": "Jump into an NX page",
+  "description": "Call a function pointer to memory in a non-executable page.",
+  "expected": [
+    "-[CRLCrashNXPage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashNXPage.m#L37\">CRLCrashNXPage.m:37</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "incomplete"
+    },
+    "Apple": {
+      "x86_64": "incomplete"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

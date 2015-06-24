@@ -1,0 +1,29 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_MAPERR at 0x0
+Crashed Thread:  0
+
+Application Specific Information:
+Selector name found in current argument registers: crash
+
+Thread 0 Crashed:
+0  CrashLibiOS      0x00000001000ea4e8 CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:35)
+1  CrashLibiOS      0x00000001000ea5a0 CRLFramelessDWARF_test + 20
+2  CrashLibiOS      0x00000001000ea580 -[CRLFramelessDWARF crash] (CRLFramelessDWARF.m:49)
+3  CrashProbeiOS    0x0000000100016fd4 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4  UIKit            0x000000018a3910f8 -[UIApplication sendAction:to:from:forEvent:] + 92
+5  UIKit            0x000000018a37a22c -[UIControl _sendActionsForEvents:withEvent:] + 608
+6  UIKit            0x000000018a390a94 -[UIControl touchesEnded:withEvent:] + 588
+7  UIKit            0x000000018a350450 _UIGestureRecognizerUpdate + 8532
+8  UIKit            0x000000018a38a5bc -[UIWindow _sendGesturesForEvent:] + 1040
+9  UIKit            0x000000018a389c5c -[UIWindow sendEvent:] + 656
+10 UIKit            0x000000018a35d38c -[UIApplication sendEvent:] + 260
+11 UIKit            0x000000018a5fc1b4 _UIApplicationHandleEventFromQueueEvent + 14988
+12 UIKit            0x000000018a35b8f4 _UIApplicationHandleEventQueue + 1612
+13 CoreFoundation   0x0000000185b660e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+14 CoreFoundation   0x0000000185b6538c __CFRunLoopDoSources0 + 260
+15 CoreFoundation   0x0000000185b6343c __CFRunLoopRun + 708
+16 CoreFoundation   0x0000000185a911f4 CFRunLoopRunSpecific + 392
+17 GraphicsServices 0x000000018ec275a4 GSEventRunModal + 164
+18 UIKit            0x000000018a3c2784 UIApplicationMain + 1484
+19 CrashProbeiOS    0x0000000100015ea0 main (main.m:16)
+20 libdyld.dylib    0x0000000196916a08 start + 0

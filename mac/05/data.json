@@ -1,0 +1,25 @@
+{
+  "item": "objcmsgsend",
+  "section": "objective-c",
+  "navtitle": "Inside objc_msgSend",
+  "title": "Crash inside objc_msgSend()",
+  "description": "Send a message to an invalid object, resulting in a crash inside objc_msgSend().",
+  "expected": [
+    "-[CRLCrashObjCMsgSend crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashObjCMsgSend.m#L47\">CRLCrashObjCMsgSend.m:47</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "wrong"
+    },
+    "Crashlytics": {
+      "x86_64": "wrong"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

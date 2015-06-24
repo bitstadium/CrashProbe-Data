@@ -1,0 +1,30 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_MAPERR at 0xa5a5a5adafafe5e5
+Crashed Thread:  0
+
+Application Specific Information:
+Selector name found in current argument registers: description
+
+Thread 0 Crashed:
+0  libobjc.A.dylib  0x00000001962bbe10 cache_getImp + 16
+1  libobjc.A.dylib  0x00000001962b0a6c lookUpImpOrForward + 536
+2  libobjc.A.dylib  0x00000001962bbdb8 _objc_msgSend_uncached_impcache + 52
+3  CrashLibiOS      0x00000001001ba4c8 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+4  CrashProbeiOS    0x00000001000e6fd4 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit            0x000000018a3910f8 -[UIApplication sendAction:to:from:forEvent:] + 92
+6  UIKit            0x000000018a37a22c -[UIControl _sendActionsForEvents:withEvent:] + 608
+7  UIKit            0x000000018a390a94 -[UIControl touchesEnded:withEvent:] + 588
+8  UIKit            0x000000018a350450 _UIGestureRecognizerUpdate + 8532
+9  UIKit            0x000000018a38a5bc -[UIWindow _sendGesturesForEvent:] + 1040
+10 UIKit            0x000000018a389c5c -[UIWindow sendEvent:] + 656
+11 UIKit            0x000000018a35d38c -[UIApplication sendEvent:] + 260
+12 UIKit            0x000000018a5fc1b4 _UIApplicationHandleEventFromQueueEvent + 14988
+13 UIKit            0x000000018a35b8f4 _UIApplicationHandleEventQueue + 1612
+14 CoreFoundation   0x0000000185b660e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+15 CoreFoundation   0x0000000185b6538c __CFRunLoopDoSources0 + 260
+16 CoreFoundation   0x0000000185b6343c __CFRunLoopRun + 708
+17 CoreFoundation   0x0000000185a911f4 CFRunLoopRunSpecific + 392
+18 GraphicsServices 0x000000018ec275a4 GSEventRunModal + 164
+19 UIKit            0x000000018a3c2784 UIApplicationMain + 1484
+20 CrashProbeiOS    0x00000001000e5ea0 main (main.m:16)
+21 libdyld.dylib    0x0000000196916a08 start + 0

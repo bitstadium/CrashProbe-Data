@@ -1,0 +1,25 @@
+SIGSEGV
+
+Thread:
+0  libobjc.A.dylib  -[MintRequestWorker setTransactionManager:] (in CrashProbeiOS) + 10	
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+1  CrashProbeiOS    -[CRLDetailViewController doCrash] (in CrashProbeiOS) (CRLDetailViewController.m:53) + 21883	
+2  UIKit            +[SLKSSHardwareInfo systemUptime] (in CrashProbeiOS) + 15	
+3  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor setRequest:] (in CrashProbeiOS) + 9	
+4  UIKit            -[DeviceInfo getDeviceModel] (in CrashProbeiOS) + 85	
+5  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor URLSession:task:needNewBodyStream:] (in CrashProbeiOS) + 333	
+6  UIKit            -[CRLMasterViewController viewDidLoad] (in CrashProbeiOS) (CRLMasterViewController.m:57) + 19271	
+7  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:] (in CrashProbeiOS) + 53	
+8  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didCancelAuthenticationChallenge:] (in CrashProbeiOS) + 221	
+9  UIKit            __copy_helper_block_280 (in CrashProbeiOS) + 17	
+10 UIKit            0x265104e3 + 2634979	
+11 UIKit            __52-[MintRequestWorker sendEventAsync:completionBlock:]_block_invoke_2 (in CrashProbeiOS) + 255	
+12 CoreFoundation   0x22dbe5e7 + 845287	
+13 CoreFoundation   0x22dbd9fb + 842235	
+14 CoreFoundation   0x22dbc079 + 835705	
+15 CoreFoundation   __106-[MintServiceRepository executeRequestAsyncWithUrl:requestData:requestType:contentType:andCompletedBlock:]_block_invoke87 (in CrashProbeiOS) + 465	
+16 CoreFoundation   __copy_helper_block_ (in CrashProbeiOS) + 31	
+17 GraphicsServices -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413	
+18 UIKit            stub helpers (in CrashProbeiOS) + 8285	
+19 CrashProbeiOS    main (in CrashProbeiOS) (main.m:16) + 18679	
+20 libdyld.dylib    _mh_execute_header (in CrashProbeiOS) + 6831

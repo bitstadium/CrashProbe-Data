@@ -1,0 +1,26 @@
+{
+  "item": "objcexception",
+  "section": "exceptions",
+  "navtitle": "Objective-C Exception",
+  "title": "Throw Objective-C exception",
+  "description": "Throw an uncaught Objective-C exception.<br/><br/>It's possible to generate a better crash report here compared to the <a href=\"../02/\">C++ Exception case</a> because NSUncaughtExceptionHandler can be used, which isn't available for C++ extensions.",
+  "expected": [
+    "NSGenericException: An uncaught exception! SCREAM.",
+    "-[CRLCrashObjCException crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashObjCException.m#L41\">CRLCrashObjCException.m:41</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "wrong"
+    },
+    "Crashlytics": {
+      "x86_64": "wrong"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

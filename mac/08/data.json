@@ -1,0 +1,25 @@
+{
+  "item": "privilegedinstruction",
+  "section": "sigill",
+  "navtitle": "Privileged Instruction",
+  "title": "Execute a privileged instruction",
+  "description": "Attempt to execute an instruction that can only be executed in supervisor mode.",
+  "expected": [
+    "-[CRLCrashPrivInst crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashPrivInst.m#L40\">CRLCrashPrivInst.m:40</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "x86_64": "incomplete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

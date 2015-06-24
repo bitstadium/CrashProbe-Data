@@ -1,0 +1,45 @@
+{
+  "item": "swift",
+  "section": "various",
+  "navtitle": "Swift",
+  "title": "Swift",
+  "description": "Trigger a crash from inside a Swift method.",
+  "expected": [
+    "@objc CrashLibiOS.CRLCrashSwift.crash (CrashLibiOS.CRLCrashSwift)() -> () (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSwift.swift#L36\">CRLCrashSwift.swift:36</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
+    "Apple": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Crashlytics": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Raygun": {
+      "armv7": "incomplete",
+      "arm64": "incomplete"
+    },
+    "Bugsnag": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Crittercism": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "NewRelic": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    },
+    "Splunk": {
+      "armv7": "wrong",
+      "arm64": "wrong"
+    }
+  }
+}

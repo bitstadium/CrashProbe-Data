@@ -1,0 +1,25 @@
+Segmentation fault: 11: 
+
+bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
+bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
+bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
+bugsnag/Bugsnag.m:67:0 handle_signal
+libsystem_platform.dylib:0 _sigtramp
+<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashGarbage crash] | Missing filename, and line number</span>
+CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
+UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
+UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
+UIKit:0 -[UIControl touchesEnded:withEvent:]
+UIKit:0 -[UIWindow _sendTouchesForEvent:]
+UIKit:0 -[UIWindow sendEvent:]
+UIKit:0 -[UIApplication sendEvent:]
+UIKit:0 _UIApplicationHandleEventFromQueueEvent
+UIKit:0 _UIApplicationHandleEventQueue
+CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+CoreFoundation:0 __CFRunLoopDoSources0
+CoreFoundation:0 __CFRunLoopRun
+CoreFoundation:0 CFRunLoopRunSpecific
+GraphicsServices:0 GSEventRunModal
+UIKit:0 UIApplicationMain
+CrashProbe iOS/main.m:16:0 main
+libdyld.dylib:0 start

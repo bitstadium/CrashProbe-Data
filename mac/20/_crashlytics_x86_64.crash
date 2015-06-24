@@ -1,0 +1,6 @@
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS UNKNOWN at 0x0000000000000000
+
+Thread : Crashed: com.apple.main-thread
+<span class="cp-wrong">0 CrashLib 0x000000010a58f1d1 -[CRLCrashSmashStackBottom crash] (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
+<span class="cp-wrong">Missing frames</span>

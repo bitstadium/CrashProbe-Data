@@ -1,0 +1,22 @@
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_PROTECTION_FAILURE at 0x0000000100121d98
+
+Thread : Crashed: com.apple.main-thread
+<span class="cp-wrong">0  CrashLibiOS      0x0000000100121e28 -[CRLCrashROPage crash] (CRLCrashROPage.m:39) | Wrong line number</span>
+1  CrashProbeiOS    0x00000001000b9224 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit            0x00000001872750f8 -[UIApplication sendAction:to:from:forEvent:] + 96
+3  UIKit            0x000000018725e22c -[UIControl _sendActionsForEvents:withEvent:] + 612
+4  UIKit            0x0000000187274a94 -[UIControl touchesEnded:withEvent:] + 592
+5  UIKit            0x0000000187274720 -[UIWindow _sendTouchesForEvent:] + 700
+6  UIKit            0x000000018726dc74 -[UIWindow sendEvent:] + 684
+7  UIKit            0x000000018724138c -[UIApplication sendEvent:] + 264
+8  UIKit            0x00000001874e01b4 _UIApplicationHandleEventFromQueueEvent + 14992
+9  UIKit            0x000000018723f8f4 _UIApplicationHandleEventQueue + 1616
+10 CoreFoundation   0x0000000182a4a0e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+11 CoreFoundation   0x0000000182a4938c __CFRunLoopDoSources0 + 264
+12 CoreFoundation   0x0000000182a4743c __CFRunLoopRun + 712
+13 CoreFoundation   0x00000001829751f4 CFRunLoopRunSpecific + 396
+14 GraphicsServices 0x000000018bb0b5a4 GSEventRunModal + 168
+15 UIKit            0x00000001872a6784 UIApplicationMain + 1488
+16 CrashProbeiOS    0x00000001000b816c main (main.m:16)
+17 libdyld.dylib    0x00000001937faa08 start + 4

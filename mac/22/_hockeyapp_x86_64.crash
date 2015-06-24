@@ -1,0 +1,29 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_MAPERR at 0x8
+Crashed Thread:  0
+
+Application Specific Information:
+Selector name found in current argument registers: crash
+
+Thread 0 Crashed:
+0  CrashLib              0x0000000104b773d4 @objc CrashLib.CRLCrashSwift.crash (CrashLib.CRLCrashSwift)() -> () (CRLCrashSwift.swift:36)
+1  CrashProbe            0x0000000104b6b423 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+2  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+3  AppKit                0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
+4  AppKit                0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
+5  AppKit                0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
+6  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+7  AppKit                0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
+8  AppKit                0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
+9  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+10 AppKit                0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
+11 AppKit                0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
+12 AppKit                0x00007fff8fc56289 -[NSControl mouseDown:] + 714
+13 AppKit                0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
+14 AppKit                0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
+15 AppKit                0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
+16 HockeySDK             0x0000000104b94885 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
+17 AppKit                0x00007fff8fa18fe8 -[NSApplication run] + 711
+18 AppKit                0x00007fff8fa04424 NSApplicationMain + 1832
+19 CrashProbe            0x0000000104b6b789 main (main.m:13)
+20 libdyld.dylib         0x00007fff90e3f5c9 start + 1

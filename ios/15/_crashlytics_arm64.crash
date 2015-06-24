@@ -1,0 +1,26 @@
+Crashed: com.apple.main-thread
+SIGABRT ABORT at 0x0000000193913270
+
+Thread : Crashed: com.apple.main-thread
+0  libsystem_kernel.dylib  0x0000000193913270 __pthread_kill + 8
+1  libsystem_pthread.dylib 0x00000001939b1228 pthread_kill + 112
+2  libsystem_c.dylib       0x000000019388ab18 abort + 112
+<span class="cp-wrong">3  CrashLibiOS             0x00000001000ba308 -[CRLCrashCorruptMalloc category] (CRLCrashCorruptMalloc.m:33) | Wrong class, method, filename, and line number</span>
+4  CrashProbeiOS           0x000000010004d224 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                   0x00000001872750f8 -[UIApplication sendAction:to:from:forEvent:] + 96
+6  UIKit                   0x000000018725e22c -[UIControl _sendActionsForEvents:withEvent:] + 612
+7  UIKit                   0x0000000187274a94 -[UIControl touchesEnded:withEvent:] + 592
+8  UIKit                   0x0000000187234450 _UIGestureRecognizerUpdate + 8536
+9  UIKit                   0x000000018726e5bc -[UIWindow _sendGesturesForEvent:] + 1044
+10 UIKit                   0x000000018726dc5c -[UIWindow sendEvent:] + 660
+11 UIKit                   0x000000018724138c -[UIApplication sendEvent:] + 264
+12 UIKit                   0x00000001874e01b4 _UIApplicationHandleEventFromQueueEvent + 14992
+13 UIKit                   0x000000018723f8f4 _UIApplicationHandleEventQueue + 1616
+14 CoreFoundation          0x0000000182a4a0e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+15 CoreFoundation          0x0000000182a4938c __CFRunLoopDoSources0 + 264
+16 CoreFoundation          0x0000000182a4743c __CFRunLoopRun + 712
+17 CoreFoundation          0x00000001829751f4 CFRunLoopRunSpecific + 396
+18 GraphicsServices        0x000000018bb0b5a4 GSEventRunModal + 168
+19 UIKit                   0x00000001872a6784 UIApplicationMain + 1488
+20 CrashProbeiOS           0x000000010004c16c main (main.m:16)
+21 libdyld.dylib           0x00000001937faa08 start + 4

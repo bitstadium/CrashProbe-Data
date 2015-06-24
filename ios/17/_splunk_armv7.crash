@@ -1,0 +1,27 @@
+SIGSEGV
+
+Thread:
+0  libobjc.A.dylib  -[MintRequestWorker setStaticProperties:] (in CrashProbeiOS) + 38
+1  libobjc.A.dylib  -[MintRequestWorker initWithDeviceInfo:fileClient:serviceClient:contentTypeWorker:andJsonSerializer:] (in CrashProbeiOS) + 207
+2  libobjc.A.dylib  -[BugSense init] (in CrashProbeiOS) + 53
+<span class="cp-wrong">3  CrashLibiOS      -[CrashOnLastRun init] (in CrashProbeiOS) + 99 | Wrong class, method. Missing filename, and line number</span>
+4  CrashProbeiOS    -[CRLDetailViewController doCrash] (in CrashProbeiOS) (CRLDetailViewController.m:53) + 21883
+5  UIKit            +[SLKSSHardwareInfo systemUptime] (in CrashProbeiOS) + 15
+6  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor setRequest:] (in CrashProbeiOS) + 9
+7  UIKit            -[DeviceInfo getDeviceModel] (in CrashProbeiOS) + 85
+8  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor URLSession:task:needNewBodyStream:] (in CrashProbeiOS) + 333
+9  UIKit            -[CRLMasterViewController viewDidLoad] (in CrashProbeiOS) (CRLMasterViewController.m:57) + 19271
+10 UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:] (in CrashProbeiOS) + 53
+11 UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didCancelAuthenticationChallenge:] (in CrashProbeiOS) + 221
+12 UIKit            __copy_helper_block_280 (in CrashProbeiOS) + 17
+13 UIKit            0x265104e3 + 2634979
+14 UIKit            __52-[MintRequestWorker sendEventAsync:completionBlock:]_block_invoke_2 (in CrashProbeiOS) + 255
+15 CoreFoundation   0x22dbe5e7 + 845287
+16 CoreFoundation   0x22dbd9fb + 842235
+17 CoreFoundation   0x22dbc079 + 835705
+18 CoreFoundation   __106-[MintServiceRepository executeRequestAsyncWithUrl:requestData:requestType:contentType:andCompletedBlock:]_block_invoke87 (in CrashProbeiOS) + 465
+19 CoreFoundation   __copy_helper_block_ (in CrashProbeiOS) + 31
+20 GraphicsServices -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413
+21 UIKit            stub helpers (in CrashProbeiOS) + 8285
+22 CrashProbeiOS    main (in CrashProbeiOS) (main.m:16) + 18679
+23 libdyld.dylib    _mh_execute_header (in CrashProbeiOS) + 6831

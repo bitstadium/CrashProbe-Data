@@ -1,0 +1,30 @@
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x0000000000000010
+
+Thread : Crashed: com.apple.main-thread
+0  libobjc.A.dylib       0x00007fff840040d7 objc_msgSend + 23
+1  CoreFoundation        0x00007fff86421464 __CFStringAppendFormatCore + 8180
+2  CoreFoundation        0x00007fff86515c00 _CFStringCreateWithFormatAndArgumentsAux2 + 256
+3  CoreFoundation        0x00007fff86528d8f _CFLogvEx2 + 127
+4  Foundation            0x00007fff8e906017 NSLogv + 99
+5  Foundation            0x00007fff8e905f90 NSLog + 148
+6  CrashLib              0x00000001083362fe -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
+7  CrashProbe            0x00000001082dcbf3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+8  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+9  AppKit                0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
+10 AppKit                0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
+11 AppKit                0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
+12 libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+13 AppKit                0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
+14 AppKit                0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
+15 libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
+16 AppKit                0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
+17 AppKit                0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
+18 AppKit                0x00007fff8fc56289 -[NSControl mouseDown:] + 714
+19 AppKit                0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
+20 AppKit                0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
+21 AppKit                0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
+22 AppKit                0x00007fff8fa18fe8 -[NSApplication run] + 711
+23 AppKit                0x00007fff8fa04424 NSApplicationMain + 1832
+24 CrashProbe            0x00000001082dcf59 main (main.m:13)
+25 libdyld.dylib         0x00007fff90e3f5c9 start + 1

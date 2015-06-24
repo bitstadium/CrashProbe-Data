@@ -1,0 +1,26 @@
+{
+  "item": "corrupt",
+  "section": "various",
+  "navtitle": "Corrupt ObjC",
+  "title": "Corrupt the Objective-C runtime's structures",
+  "description": "Write garbage into data areas used by the Objective-C runtime to track classes and objects.<br/><br/>Bugs of this nature are why crash reporters cannot use Objective-C in their crash handling code, as attempting to do so is likely to lead to a crash in the crash reporting code.",
+  "expected": [
+    "-[CRLCrashCorruptObjC crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashCorruptObjC.m#L70\">CRLCrashCorruptObjC.m:70</a>)",
+    "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
+  ],
+  "probes": {
+    "HockeyApp": {
+      "x86_64": "complete"
+    },
+    "Apple": {
+      "x86_64": "complete"
+    },
+    "Crashlytics": {
+      "provider": "Crashlytics",
+      "x86_64": "complete"
+    },
+    "Bugsnag": {
+      "x86_64": "wrong"
+    }
+  }
+}

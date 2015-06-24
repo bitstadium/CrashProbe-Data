@@ -1,0 +1,5 @@
+SIGSEGV
+
+Thread:
+0	???	0xa5a5a5a5a5a5a5a5 + 0
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>

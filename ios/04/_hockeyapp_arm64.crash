@@ -1,0 +1,34 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_MAPERR at 0x10
+Crashed Thread:  0
+
+Application Specific Information:
+objc_msgSend() selector name: respondsToSelector:
+
+Thread 0 Crashed:
+0  libobjc.A.dylib  0x00000001962bbbc8 objc_msgSend + 8
+1  Foundation       0x0000000186a7bad8 _NSDescriptionWithStringProxyFunc + 68
+2  CoreFoundation   0x0000000185b77cf4 __CFStringAppendFormatCore + 6948
+3  CoreFoundation   0x0000000185b76194 _CFStringCreateWithFormatAndArgumentsAux2 + 244
+4  CoreFoundation   0x0000000185b935f8 _CFLogvEx2 + 148
+5  Foundation       0x000000018699b9a0 NSLogv + 104
+6  Foundation       0x000000018699b928 NSLog + 20
+7  CrashLibiOS      0x000000010018dac4 -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
+8  CrashProbeiOS    0x00000001000befd4 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+9  UIKit            0x000000018a3910f8 -[UIApplication sendAction:to:from:forEvent:] + 92
+10 UIKit            0x000000018a37a22c -[UIControl _sendActionsForEvents:withEvent:] + 608
+11 UIKit            0x000000018a390a94 -[UIControl touchesEnded:withEvent:] + 588
+12 UIKit            0x000000018a350450 _UIGestureRecognizerUpdate + 8532
+13 UIKit            0x000000018a38a5bc -[UIWindow _sendGesturesForEvent:] + 1040
+14 UIKit            0x000000018a389c5c -[UIWindow sendEvent:] + 656
+15 UIKit            0x000000018a35d38c -[UIApplication sendEvent:] + 260
+16 UIKit            0x000000018a5fc1b4 _UIApplicationHandleEventFromQueueEvent + 14988
+17 UIKit            0x000000018a35b8f4 _UIApplicationHandleEventQueue + 1612
+18 CoreFoundation   0x0000000185b660e8 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+19 CoreFoundation   0x0000000185b6538c __CFRunLoopDoSources0 + 260
+20 CoreFoundation   0x0000000185b6343c __CFRunLoopRun + 708
+21 CoreFoundation   0x0000000185a911f4 CFRunLoopRunSpecific + 392
+22 GraphicsServices 0x000000018ec275a4 GSEventRunModal + 164
+23 UIKit            0x000000018a3c2784 UIApplicationMain + 1484
+24 CrashProbeiOS    0x00000001000bdea0 main (main.m:16)
+25 libdyld.dylib    0x0000000196916a08 start + 0

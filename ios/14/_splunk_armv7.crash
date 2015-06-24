@@ -1,0 +1,24 @@
+SIGTRAP
+
+Thread:
+<span class="cp-wrong">0  CrashLibiOS      -[MintTransaction transactionStart] (in CrashProbeiOS) + 4 | Wrong class, method. Missing filename, and line number</span>
+<span class="cp-wrong">Missing frames</span>
+1  UIKit            +[SLKSSHardwareInfo systemUptime] (in CrashProbeiOS) + 15
+2  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor setRequest:] (in CrashProbeiOS) + 9
+3  UIKit            -[DeviceInfo getDeviceModel] (in CrashProbeiOS) + 85
+4  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor URLSession:task:needNewBodyStream:] (in CrashProbeiOS) + 333
+5  UIKit            -[CRLMasterViewController viewDidLoad] (in CrashProbeiOS) (CRLMasterViewController.m:57) + 19271
+6  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:] (in CrashProbeiOS) + 53
+7  UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didCancelAuthenticationChallenge:] (in CrashProbeiOS) + 221
+8  UIKit            __copy_helper_block_280 (in CrashProbeiOS) + 17
+9  UIKit            0x265104e3 + 2634979
+10 UIKit            __52-[MintRequestWorker sendEventAsync:completionBlock:]_block_invoke_2 (in CrashProbeiOS) + 255
+11 CoreFoundation   0x22dbe5e7 + 845287
+12 CoreFoundation   0x22dbd9fb + 842235
+13 CoreFoundation   0x22dbc079 + 835705
+14 CoreFoundation   __106-[MintServiceRepository executeRequestAsyncWithUrl:requestData:requestType:contentType:andCompletedBlock:]_block_invoke87 (in CrashProbeiOS) + 465
+15 CoreFoundation   __copy_helper_block_ (in CrashProbeiOS) + 31
+16 GraphicsServices -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413
+17 UIKit            stub helpers (in CrashProbeiOS) + 8285
+18 CrashProbeiOS    main (in CrashProbeiOS) (main.m:16) + 18679
+19 libdyld.dylib    _mh_execute_header (in CrashProbeiOS) + 6831

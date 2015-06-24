@@ -1,0 +1,30 @@
+SIGSEGV
+
+Thread:
+0  libobjc.A.dylib  -[MintRequestWorker setTransactionManager:] (in CrashProbeiOS) + 6
+1  CoreFoundation   0x22dcc579 + 902521
+2  CoreFoundation   0x22dcab15 + 895765
+3  CoreFoundation   0x22de18fb + 989435
+4  Foundation       __58-[MintRequestWorker logEventAsyncWithTag:completionBlock:]_block_invoke (in CrashProbeiOS) + 149
+5  Foundation       __58-[MintRequestWorker logEventAsyncWithTag:completionBlock:]_block_invoke (in CrashProbeiOS) + 23
+<span class="cp-wrong">6  CrashLibiOS      -[DataFixture setUserIdentifier:] (in CrashProbeiOS) + 13 | Wrong class, method. Missing filename, and line number</span>
+7  CrashProbeiOS    -[CRLDetailViewController doCrash] (in CrashProbeiOS) (CRLDetailViewController.m:53) + 21883
+8  UIKit            +[SLKSSHardwareInfo systemUptime] (in CrashProbeiOS) + 15
+9  UIKit            -[SplunkNSURLSessionDataDelegateInterceptor setRequest:] (in CrashProbeiOS) + 9
+10 UIKit            -[DeviceInfo getDeviceModel] (in CrashProbeiOS) + 85
+11 UIKit            -[SplunkNSURLSessionDataDelegateInterceptor URLSession:task:needNewBodyStream:] (in CrashProbeiOS) + 333
+12 UIKit            -[CRLMasterViewController viewDidLoad] (in CrashProbeiOS) (CRLMasterViewController.m:57) + 19271
+13 UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:] (in CrashProbeiOS) + 53
+14 UIKit            -[SplunkNSURLConnectionDataDelegateInterceptor connection:didCancelAuthenticationChallenge:] (in CrashProbeiOS) + 221
+15 UIKit            __copy_helper_block_280 (in CrashProbeiOS) + 17
+16 UIKit            0x265104e3 + 2634979
+17 UIKit            __52-[MintRequestWorker sendEventAsync:completionBlock:]_block_invoke_2 (in CrashProbeiOS) + 255
+18 CoreFoundation   0x22dbe5e7 + 845287
+19 CoreFoundation   0x22dbd9fb + 842235
+20 CoreFoundation   0x22dbc079 + 835705
+21 CoreFoundation   __106-[MintServiceRepository executeRequestAsyncWithUrl:requestData:requestType:contentType:andCompletedBlock:]_block_invoke87 (in CrashProbeiOS) + 465
+22 CoreFoundation   __copy_helper_block_ (in CrashProbeiOS) + 31
+23 GraphicsServices -[SLKAFCompoundResponseSerializer responseObjectForResponse:data:error:] (in CrashProbeiOS) + 413
+24 UIKit            stub helpers (in CrashProbeiOS) + 8285
+25 CrashProbeiOS    main (in CrashProbeiOS) (main.m:16) + 18679
+26 libdyld.dylib    _mh_execute_header (in CrashProbeiOS) + 6831

@@ -1,0 +1,20 @@
+Name: SIGABRT
+
+<span class="cp-wrong">Missing exception details</span>
+
+Thread Crashed:
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0  libsystem_kernel.dylib 0x30b7bdfc __pthread_kill + 8
+1  libsystem_c.dylib      0x30b1b939 abort + 74
+2  libc++abi.dylib        0x2fd29bbd abort_message + 86
+3  libc++abi.dylib        0x2fd4366f _ZL25default_terminate_handlerv + 264
+4  libobjc.A.dylib        0x3051af35 _ZL15_objc_terminatev + 226
+5  libc++abi.dylib        0x2fd40def _ZSt11__terminatePFvvE + 76
+6  libc++abi.dylib        0x2fd408b9 __cxa_rethrow + 98
+7  libobjc.A.dylib        0x3051adbf objc_exception_rethrow + 40
+8  CoreFoundation         0x22d09a1d CFRunLoopRunSpecific + 630
+9  CoreFoundation         0x22d09793 CFRunLoopRunInMode + 104
+10 GraphicsServices       0x2a0bb051 GSEventRunModal + 134
+11 UIKit                  0x262fb981 UIApplicationMain + 1438
+12 CrashProbeiOS          0x0009efa7 main (main.m:16)
+13 libdyld.dylib          0x30ab6aaf start + 0
