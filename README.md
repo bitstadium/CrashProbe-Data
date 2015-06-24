@@ -38,12 +38,17 @@ This repository contains all the raw data that is gathered for each service and 
 
 # Contributing
 
-We welcome crash reporting service providers to send us their test data via pull requests. Please use the following template for the pull request description:
+We welcome crash reporting service providers to send us their test data via pull requests. To create valid test data please use our CrashProbe client repo for either iOS or OSX test client which can be found here: [CrashProbe Client](https://github.com/bitstadium/CrashProbe)
+
+Please also provide a link to a public repository on GitHub containing a configured version of CrashProbe including the SDK used for the test. This will make any result more transparent for every user and also speeds up the validation process on our side. There is no need to include the API-Keys of the SDK into the repository.
+
+Please use the following template for the pull request description:
 
 ```
 Provider name:
 Username and password for the account containing the data:
 URL to the data on the providers website if available:
+Repository URL:
 
 Date of testing:
 SDK-Version:
