@@ -1,31 +1,30 @@
 Exception Type:  SIGSEGV
-Exception Codes: SEGV_MAPERR at 0x381ad9ccbec0
+Exception Codes: SEGV_MAPERR at 0x65c9bf77bec0
 Crashed Thread:  0
 
 Application Specific Information:
 Selector name found in current argument registers: self
 
 Thread 0 Crashed:
-0  libobjc.A.dylib       0x00007fff840040dd objc_msgSend + 29
-1  CrashLib              0x000000010a99fdbe __31-[CRLCrashReleasedObject crash]_block_invoke (CRLCrashReleasedObject.m:51)
-2  CrashLib              0x000000010a99fd83 -[CRLCrashReleasedObject crash] (CRLCrashReleasedObject.m:49)
-3  CrashProbe            0x000000010a995423 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-4  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-5  AppKit                0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
-6  AppKit                0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
-7  AppKit                0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
-8  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-9  AppKit                0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
-10 AppKit                0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
-11 libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-12 AppKit                0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
-13 AppKit                0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
-14 AppKit                0x00007fff8fc56289 -[NSControl mouseDown:] + 714
-15 AppKit                0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
-16 AppKit                0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
-17 AppKit                0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
-18 HockeySDK             0x000000010a9b8885 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
-19 AppKit                0x00007fff8fa18fe8 -[NSApplication run] + 711
-20 AppKit                0x00007fff8fa04424 NSApplicationMain + 1832
-21 CrashProbe            0x000000010a995789 main (main.m:13)
-22 libdyld.dylib         0x00007fff90e3f5c9 start + 1
+0  libobjc.A.dylib       0x00007fff900710dd objc_msgSend + 29
+1  CrashLib              0x0000000100cb418e __31-[CRLCrashReleasedObject crash]_block_invoke (CRLCrashReleasedObject.m:51)
+2  CrashLib              0x0000000100cb4153 -[CRLCrashReleasedObject crash] (CRLCrashReleasedObject.m:49)
+3  CrashProbe            0x0000000100ca6423 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+5  AppKit                0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
+6  AppKit                0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
+7  AppKit                0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+8  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+9  AppKit                0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
+10 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+11 AppKit                0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
+12 AppKit                0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
+13 AppKit                0x00007fff8bc58466 -[NSControl mouseDown:] + 714
+14 AppKit                0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
+15 AppKit                0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
+16 AppKit                0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
+17 HockeySDK             0x0000000100cd19c7 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
+18 AppKit                0x00007fff8ba77c68 -[NSApplication run] + 711
+19 AppKit                0x00007fff8b9f4354 NSApplicationMain + 1832
+20 CrashProbe            0x0000000100ca6789 main (main.m:13)
+21 libdyld.dylib         0x00007fff8aaa75c9 start + 1

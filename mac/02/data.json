@@ -5,13 +5,13 @@
   "title": "Throw C++ exception",
   "description": "Throw an uncaught C++ exception.<br/><br/>This is a difficult case for crash reporters to handle, as it involves the destruction of the data necessary to generate a correct backtrace.",
   "expected": [
-    "kaboom_exception",
-    "CRLCrashCXXException (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashCXXException.m#L32\">CRLCrashCXXException.m:32</a>)",
+    "kaboom_exception: If this had been a real exception, you would be cursing now.",
+    "CRLCrashCXXException (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashCXXException.mm#L52\">CRLCrashCXXException.m:52</a>)",
     "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
   ],
   "probes": {
     "HockeyApp": {
-      "x86_64": "incomplete"
+      "x86_64": "complete"
     },
     "Apple": {
       "x86_64": "complete"
