@@ -15,7 +15,7 @@
       "arm64": "complete"
     },
     "Apple": {
-      "armv7": "incomplete",
+      "armv7": "complete",
       "arm64": "incomplete"
     },
     "Crashlytics": {

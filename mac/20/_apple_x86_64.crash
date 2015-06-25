@@ -1,10 +1,9 @@
-Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+xception Type:        EXC_BAD_ACCESS (SIGSEGV)
 Exception Codes:       EXC_I386_GPFLT
 
 Application Specific Information:
-Performing @selector(causeCrash:) from sender NSButton 0x618000156840
+Performing @selector(causeCrash:) from sender NSButton 0x6180001548a0
 
 Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
-<span class="cp-wrong">0 net.hockeyapp.CrashLib 0x0000000107f08059 -[CRLCrashSmashStackBottom crash] + 43 (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
+<span class="cp-wrong">0 net.hockeyapp.CrashLib 0x00000001011e35a1 -[CRLCrashSmashStackBottom crash] + 43 (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
 1 ???                    0xa5a5a5a5a5a5a5a5 0 + 11936128518282651045
-<span class="cp-wrong">Missing frames</span>

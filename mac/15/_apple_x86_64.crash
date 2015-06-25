@@ -2,29 +2,28 @@ Exception Type:        EXC_CRASH (SIGABRT)
 Exception Codes:       0x0000000000000000, 0x0000000000000000
 
 Application Specific Information:
-Performing @selector(causeCrash:) from sender NSButton 0x60800014a2f0
+Performing @selector(causeCrash:) from sender NSButton 0x60800015c720
 abort() called
 
 Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
-0  libsystem_kernel.dylib   0x00007fff86934282 __pthread_kill + 10
-1  libsystem_c.dylib        0x00007fff8e884b73 abort + 129
-<span class="cp-wrong">2  net.hockeyapp.CrashLib   0x000000010573e909 -[CRLCrashAbort crash] + 9 (CRLCrashTrap.m:31) | Wrong file and line number</span>
-3  net.hockeyapp.CrashProbe 0x0000000105736473 -[CRLMainWindowController causeCrash:] + 75 (CRLMainWindowController.m:72)
-4  libsystem_trace.dylib    0x00007fff82981cd7 _os_activity_initiate + 75
-5  com.apple.AppKit         0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
-6  com.apple.AppKit         0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
-7  com.apple.AppKit         0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
-8  libsystem_trace.dylib    0x00007fff82981cd7 _os_activity_initiate + 75
-9  com.apple.AppKit         0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
-10 com.apple.AppKit         0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
-11 libsystem_trace.dylib    0x00007fff82981cd7 _os_activity_initiate + 75
-12 com.apple.AppKit         0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
-13 com.apple.AppKit         0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
-14 com.apple.AppKit         0x00007fff8fc56289 -[NSControl mouseDown:] + 714
-15 com.apple.AppKit         0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
-16 com.apple.AppKit         0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
-17 com.apple.AppKit         0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
-18 com.apple.AppKit         0x00007fff8fa18fe8 -[NSApplication run] + 711
-19 com.apple.AppKit         0x00007fff8fa04424 NSApplicationMain + 1832
-20 net.hockeyapp.CrashProbe 0x00000001057367d9 main + 9 (main.m:13)
-21 libdyld.dylib            0x00007fff90e3f5c9 start + 1
+0  libsystem_kernel.dylib   0x00007fff8a48a286 __pthread_kill + 10
+1  libsystem_c.dylib        0x00007fff8f803b53 abort + 129
+<span class="cp-wrong">2  net.hockeyapp.CrashLib   0x000000010c1c6e51 -[CRLCrashAbort crash] + 9 (CRLCrashTrap.m:31) | Wrong filename, and line number</span>
+3  net.hockeyapp.CrashProbe 0x000000010c1be473 -[CRLMainWindowController causeCrash:] + 75 (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+5  com.apple.AppKit         0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
+6  com.apple.AppKit         0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
+7  com.apple.AppKit         0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+8  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+9  com.apple.AppKit         0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
+10 libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+11 com.apple.AppKit         0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
+12 com.apple.AppKit         0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
+13 com.apple.AppKit         0x00007fff8bc58466 -[NSControl mouseDown:] + 714
+14 com.apple.AppKit         0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
+15 com.apple.AppKit         0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
+16 com.apple.AppKit         0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
+17 com.apple.AppKit         0x00007fff8ba77c68 -[NSApplication run] + 711
+18 com.apple.AppKit         0x00007fff8b9f4354 NSApplicationMain + 1832
+19 net.hockeyapp.CrashProbe 0x000000010c1be7d9 main + 9 (main.m:13)
+20 libdyld.dylib            0x00007fff8aaa75c9 start + 1

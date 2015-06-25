@@ -5,7 +5,7 @@ Application Specific Information:
 Performing @selector(causeCrash:) from sender NSButton 0x618000152220
 
 Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
-0   net.hockeyapp.CrashLib 0x000000010dfb6f2b -[CRLCrashStackGuard crash] + 11 (CRLCrashStackGuard.m:39)
-<span class="cp-wrong">1   net.hockeyapp.CrashLib 0x000000010dfb6f31 -[CRLCrashStackGuard crash] + 17 (CRLCrashStackGuard.m:43) | Wrong line number</span>
+<span class="cp-wrong">0   net.hockeyapp.CrashLib 0x00000001006f7473 -[CRLCrashStackGuard crash] + 11 | Missing filename, and line number</span>
+<span class="cp-wrong">1   net.hockeyapp.CrashLib 0x00000001006f7479 -[CRLCrashStackGuard crash] + 17 | Missing filename, and line number</span>
 ...
-<span class="cp-wrong">511 net.hockeyapp.CrashLib 0x000000010dfb6f31 -[CRLCrashStackGuard crash] + 17 (CRLCrashStackGuard.m:43) | Wrong line number</span>
+<span class="cp-wrong">511 net.hockeyapp.CrashLib 0x00000001006f7479 -[CRLCrashStackGuard crash] + 17 | Missing filename, and line number</span>
