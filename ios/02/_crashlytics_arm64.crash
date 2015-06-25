@@ -1,21 +1,24 @@
-Crashed: com.apple.main-thread
-SIGABRT ABORT at 0x0000000193913270
+Crashed: com.twitter.crashlytics.ios.exception
+SIGABRT ABORT at 0x00000001980a3270
 
-<span class="cp-wrong">Missing exception details</span>
+Fatal Exception: kaboom_exception*
+If this had been a real exception, you would be cursing now.
 
-Thread : Crashed: com.apple.main-thread
+Thread : Crashed: com.twitter.crashlytics.ios.exception
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>
-0  libsystem_kernel.dylib  0x0000000193913270 __pthread_kill + 8
-1  libsystem_pthread.dylib 0x00000001939b1228 pthread_kill + 112
-2  libsystem_c.dylib       0x000000019388ab18 abort + 112
-3  libc++abi.dylib         0x0000000192971418 __cxa_bad_cast
-4  libc++abi.dylib         0x0000000192990b8c default_unexpected_handler()
-5  libobjc.A.dylib         0x000000019318c3dc _objc_terminate() + 156
-6  libc++abi.dylib         0x000000019298dbb4 std::__terminate(void (*)()) + 16
-7  libc++abi.dylib         0x000000019298d73c __cxa_rethrow + 144
-8  libobjc.A.dylib         0x000000019318c294 objc_exception_rethrow + 44
-9  CoreFoundation          0x00000001829752a4 CFRunLoopRunSpecific + 572
-10 GraphicsServices        0x000000018bb0b5a4 GSEventRunModal + 168
-11 UIKit                   0x00000001872a6784 UIApplicationMain + 1488
-12 CrashProbeiOS           0x00000001000c416c main (main.m:16)
-13 libdyld.dylib           0x00000001937faa08 start + 4
+0  CrashProbeiOS     0x00000001000d9508 CLSProcessRecordAllThreads + 4296054024
+1  CrashProbeiOS     0x00000001000d99b8 CLSProcessRecordAllThreads + 4296055224
+2  CrashProbeiOS     0x00000001000c57bc CLSHandler + 4295972796
+3  CrashProbeiOS     0x00000001000d7e38 __CLSExceptionRecord_block_invoke + 4296048184
+4  libdispatch.dylib 0x0000000197f5d954 _dispatch_client_callout + 16
+5  libdispatch.dylib 0x0000000197f671e4 _dispatch_barrier_sync_f_invoke + 76
+6  CrashProbeiOS     0x00000001000d79d0 CLSExceptionRecord + 4296047056
+7  CrashProbeiOS     0x00000001000d7548 CLSTerminateHandler() + 4296045896
+8  libc++abi.dylib   0x00000001970f5bb4 std::__terminate(void (*)()) + 16
+9  libc++abi.dylib   0x00000001970f573c __cxa_rethrow + 144
+10 libobjc.A.dylib   0x000000019790c294 objc_exception_rethrow + 44
+11 CoreFoundation    0x0000000185fc9384 CFRunLoopRunSpecific + 572
+12 GraphicsServices  0x000000018f7df6fc GSEventRunModal + 168
+13 UIKit             0x000000018ab8efac UIApplicationMain + 1488
+14 CrashProbeiOS     0x00000001000a65e8 main (main.m:16)
+15 libdyld.dylib     0x0000000197f8aa08 start + 4

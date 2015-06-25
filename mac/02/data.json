@@ -17,7 +17,7 @@
       "x86_64": "incomplete"
     },
     "Crashlytics": {
-      "x86_64": "incomplete"
+      "x86_64": "complete"
     },
     "Bugsnag": {
       "x86_64": "incomplete"

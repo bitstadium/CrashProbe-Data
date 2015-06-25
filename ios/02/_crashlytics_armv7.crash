@@ -1,21 +1,25 @@
-Crashed: com.apple.main-thread
-SIGABRT ABORT at 0x3ab08dfc
+Crashed: com.twitter.crashlytics.ios.exception
+SIGABRT ABORT at 0x31b77df0
 
-<span class="cp-wrong">Missing exception details</span>
+Fatal Exception: kaboom_exception*
+If this had been a real exception, you would be cursing now.
 
-Thread : Crashed: com.apple.main-thread
+Thread : Crashed: com.twitter.crashlytics.ios.exception
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>
-0  libsystem_kernel.dylib  0x3ab08dfc __pthread_kill + 8
-1  libsystem_pthread.dylib 0x3ab88d13 pthread_kill + 62
-2  libsystem_c.dylib       0x3aaa8939 abort + 76
-3  libc++abi.dylib         0x39cb6bbd __cxa_bad_cast
-4  libc++abi.dylib         0x39cd066f default_terminate_handler() + 266
-5  libobjc.A.dylib         0x3a4a7f35 _objc_terminate() + 228
-6  libc++abi.dylib         0x39ccddef std::__terminate(void (*)()) + 78
-7  libc++abi.dylib         0x39ccd8b9 __cxa_increment_exception_refcount
-8  libobjc.A.dylib         0x3a4a7dbf objc_exception_rethrow + 42
-9  CoreFoundation          0x2cc96a1d CFRunLoopRunSpecific + 632
-10 CoreFoundation          0x2cc96793 CFRunLoopRunInMode + 106
-11 GraphicsServices        0x34048051 GSEventRunModal + 136
-12 UIKit                   0x30288981 UIApplicationMain + 1440
-13 CrashProbeiOS           0x000be87f main (main.m:16)
+0  CrashProbeiOS     0x000af443 CLSProcessRecordAllThreads + 992323
+1  CrashProbeiOS     0x000af651 CLSProcessRecordAllThreads + 992849
+2  CrashProbeiOS     0x0009e82f CLSHandler + 923695
+3  CrashProbeiOS     0x000ae355 __CLSExceptionRecord_block_invoke + 987989
+4  libdispatch.dylib 0x31a73c6f _dispatch_client_callout + 22
+5  libdispatch.dylib 0x31a7d559 _dispatch_barrier_sync_f_invoke + 48
+6  CrashProbeiOS     0x000ade5b CLSExceptionRecord + 986715
+7  CrashProbeiOS     0x000ad94d CLSTerminateHandler() + 985421
+8  libc++abi.dylib   0x30d2cdef std::__terminate(void (*)()) + 78
+9  libc++abi.dylib   0x30d2c8b9 __cxa_increment_exception_refcount + 98
+10 libobjc.A.dylib   0x31509dbf objc_exception_rethrow + 42
+11 CoreFoundation    0x2317da3d CFRunLoopRunSpecific + 632
+12 CoreFoundation    0x2317d7b3 CFRunLoopRunInMode + 106
+13 GraphicsServices  0x2a8fe1a9 GSEventRunModal + 136
+14 UIKit             0x26908695 UIApplicationMain + 1440
+15 CrashProbeiOS     0x00084b77 main (main.m:16)
+16 libdyld.dylib     0x31ab1aaf start + 2

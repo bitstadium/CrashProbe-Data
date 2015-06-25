@@ -1,1 +1,27 @@
-<span class="cp-wrong">No report, app locks up.</span>
+<span class="cp-wrong">App locks up.</span>
+
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x0000000000000001
+
+Thread : Crashed: com.apple.main-thread
+0  libsystem_platform.dylib 0x0000000198135394 _platform_memmove + 324
+1  libsystem_pthread.dylib  0x0000000198140d38 pthread_getname_np + 108
+2  libsystem_pthread.dylib  0x0000000198140d38 pthread_getname_np + 108
+3  CrashLibiOS              0x00000001000d9218 -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4  CrashProbeiOS            0x0000000100057698 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                    0x000000018ab5d404 -[UIApplication sendAction:to:from:forEvent:] + 96
+6  UIKit                    0x000000018ab464e0 -[UIControl _sendActionsForEvents:withEvent:] + 612
+7  UIKit                    0x000000018ab5cda0 -[UIControl touchesEnded:withEvent:] + 592
+8  UIKit                    0x000000018ab5ca2c -[UIWindow _sendTouchesForEvent:] + 700
+9  UIKit                    0x000000018ab55f68 -[UIWindow sendEvent:] + 684
+10 UIKit                    0x000000018ab2918c -[UIApplication sendEvent:] + 264
+11 UIKit                    0x000000018adca324 _UIApplicationHandleEventFromQueueEvent + 15424
+12 UIKit                    0x000000018ab276a0 _UIApplicationHandleEventQueue + 1716
+13 CoreFoundation           0x00000001860a0240 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+14 CoreFoundation           0x000000018609f4e4 __CFRunLoopDoSources0 + 264
+15 CoreFoundation           0x000000018609d594 __CFRunLoopRun + 712
+16 CoreFoundation           0x0000000185fc92d4 CFRunLoopRunSpecific + 396
+17 GraphicsServices         0x000000018f7df6fc GSEventRunModal + 168
+18 UIKit                    0x000000018ab8efac UIApplicationMain + 1488
+19 CrashProbeiOS            0x00000001000565e8 main (main.m:16)
+20 libdyld.dylib            0x0000000197f8aa08 start + 4

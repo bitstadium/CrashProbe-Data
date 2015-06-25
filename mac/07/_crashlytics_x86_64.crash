@@ -1,24 +1,23 @@
 Crashed: com.apple.main-thread
-EXC_BAD_ACCESS KERN_PROTECTION_FAILURE at 0x000000010fab67f7
+EXC_BAD_ACCESS KERN_PROTECTION_FAILURE at 0x000000010c57ebc7
 
 Thread : Crashed: com.apple.main-thread
-<span class="cp-wrong">0  CrashLib              0x000000010fab685e -[CRLCrashROPage crash] (CRLCrashROPage.m:39) | Wrong line number</span>
-1  CrashProbe            0x000000010fa5ebf3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-2  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-3  AppKit                0x00007fff8fbf45e7 -[NSApplication sendAction:to:from:] + 410
-4  AppKit                0x00007fff8fbf4410 -[NSControl sendAction:to:] + 86
-5  AppKit                0x00007fff8fdc8daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
-6  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-7  AppKit                0x00007fff8fc3cf2c -[NSCell _sendActionFrom:] + 144
-8  AppKit                0x00007fff8fdafab2 -[NSButtonCell _sendActionFrom:] + 39
-9  libsystem_trace.dylib 0x00007fff82981cd7 _os_activity_initiate + 75
-10 AppKit                0x00007fff8fc57a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
-11 AppKit                0x00007fff8fc56cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
-12 AppKit                0x00007fff8fc56289 -[NSControl mouseDown:] + 714
-13 AppKit                0x00007fff9014ffef -[NSWindow _reallySendEvent:] + 12827
-14 AppKit                0x00007fff8fbda65c -[NSWindow sendEvent:] + 368
-15 AppKit                0x00007fff8fb8c1e6 -[NSApplication sendEvent:] + 2238
-16 AppKit                0x00007fff8fa18fe8 -[NSApplication run] + 711
-17 AppKit                0x00007fff8fa04424 NSApplicationMain + 1832
-18 CrashProbe            0x000000010fa5ef59 main (main.m:13)
-19 libdyld.dylib         0x00007fff90e3f5c9 start + 1
+<span class="cp-wrong">0  CrashLib              0x000000010c57ec2e -[CRLCrashROPage crash] (CRLCrashROPage.m:39) | Wrong line number</span>
+1  CrashProbe            0x000000010c50b9a3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+2  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+3  AppKit                0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
+4  AppKit                0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
+5  AppKit                0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+6  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+7  AppKit                0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
+8  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+9  AppKit                0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
+10 AppKit                0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
+11 AppKit                0x00007fff8bc58466 -[NSControl mouseDown:] + 714
+12 AppKit                0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
+13 AppKit                0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
+14 AppKit                0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
+15 AppKit                0x00007fff8ba77c68 -[NSApplication run] + 711
+16 AppKit                0x00007fff8b9f4354 NSApplicationMain + 1832
+17 CrashProbe            0x000000010c50bd09 main (main.m:13)
+18 libdyld.dylib         0x00007fff8aaa75c9 start + 1
