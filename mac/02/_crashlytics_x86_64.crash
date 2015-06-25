@@ -1,33 +1,36 @@
-Crashed: com.apple.main-thread
-SIGABRT ABORT at 0x00007fff906d6282
+Crashed: com.twitter.crashlytics.mac.exception
+SIGABRT ABORT at 0x00007fff8a48a286
 
-<span class="cp-wrong">Missing exception information</span>
+Fatal Exception: kaboom_exception*
+If this had been a real exception, you would be cursing now.
 
-Thread : Crashed: com.apple.main-thread
-0  libsystem_kernel.dylib 0x00007fff906d6282 __pthread_kill + 10
-1  libsystem_c.dylib      0x00007fff8ad8ab73 abort + 129
-2  libc++abi.dylib        0x00007fff904aea21 __cxa_bad_cast
-3  libc++abi.dylib        0x00007fff904d69d1 default_unexpected_handler()
-4  libobjc.A.dylib        0x00007fff89b356db _objc_terminate() + 124
-5  libc++abi.dylib        0x00007fff904d40a1 std::__terminate(void (*)()) + 8
-6  libc++abi.dylib        0x00007fff904d3b30 __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
-7  CrashLib               0x0000000108a11c76 -[CRLCrashCXXException crash] (CRLCrashCXXException.mm:52)
-8  CrashProbe             0x00000001089bcbf3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-9  libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
-10 AppKit                 0x00007fff8a3de5e7 -[NSApplication sendAction:to:from:] + 410
-11 AppKit                 0x00007fff8a3de410 -[NSControl sendAction:to:] + 86
-12 AppKit                 0x00007fff8a5b2daf __26-[NSCell _sendActionFrom:]_block_invoke + 131
-13 libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
-14 AppKit                 0x00007fff8a426f2c -[NSCell _sendActionFrom:] + 144
-15 AppKit                 0x00007fff8a599ab2 -[NSButtonCell _sendActionFrom:] + 39
-16 libsystem_trace.dylib  0x00007fff8e380cd7 _os_activity_initiate + 75
-17 AppKit                 0x00007fff8a441a66 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2731
-18 AppKit                 0x00007fff8a440cc1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 491
-19 AppKit                 0x00007fff8a440289 -[NSControl mouseDown:] + 714
-20 AppKit                 0x00007fff8a939fef -[NSWindow _reallySendEvent:] + 12827
-21 AppKit                 0x00007fff8a3c465c -[NSWindow sendEvent:] + 368
-22 AppKit                 0x00007fff8a3761e6 -[NSApplication sendEvent:] + 2238
-23 AppKit                 0x00007fff8a202fe8 -[NSApplication run] + 711
-24 AppKit                 0x00007fff8a1ee424 NSApplicationMain + 1832
-25 CrashProbe             0x00000001089bcf59 main (main.m:13)
-26 libdyld.dylib          0x00007fff8c79e5c9 start + 1
+Thread : Crashed: com.twitter.crashlytics.mac.exception
+0  CrashProbe            0x000000010ac24f7d CLSProcessRecordAllThreads + 4363689853
+1  CrashProbe            0x000000010ac252d4 CLSProcessRecordAllThreads + 4363690708
+2  CrashProbe            0x000000010ac12923 CLSHandler + 4363614499
+3  CrashProbe            0x000000010ac23a75 __CLSExceptionRecord_block_invoke + 4363684469
+4  libdispatch.dylib     0x00007fff92430c13 _dispatch_client_callout + 8
+5  libdispatch.dylib     0x00007fff92431e5e _dispatch_barrier_sync_f_invoke + 57
+6  CrashProbe            0x000000010ac235b4 CLSExceptionRecord + 4363683252
+7  CrashProbe            0x000000010ac2302c CLSTerminateHandler() + 4363681836
+8  libc++abi.dylib       0x00007fff8e2470a1 std::__terminate(void (*)()) + 8
+9  libc++abi.dylib       0x00007fff8e246b30 __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*) + 119
+10 CrashLib              0x000000010ac7c046 -[CRLCrashCXXException crash] (CRLCrashCXXException.mm:52)
+11 CrashProbe            0x000000010ac069a3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+12 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+13 AppKit                0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
+14 AppKit                0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
+15 AppKit                0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+16 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+17 AppKit                0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
+18 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
+19 AppKit                0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
+20 AppKit                0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
+21 AppKit                0x00007fff8bc58466 -[NSControl mouseDown:] + 714
+22 AppKit                0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
+23 AppKit                0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
+24 AppKit                0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
+25 AppKit                0x00007fff8ba77c68 -[NSApplication run] + 711
+26 AppKit                0x00007fff8b9f4354 NSApplicationMain + 1832
+27 CrashProbe            0x000000010ac06d09 main (main.m:13)
+28 libdyld.dylib         0x00007fff8aaa75c9 start + 1

@@ -16,7 +16,7 @@
       "x86_64": "wrong"
     },
     "Crashlytics": {
-      "x86_64": "wrong"
+      "x86_64": "complete"
     },
     "Bugsnag": {
       "x86_64": "wrong"

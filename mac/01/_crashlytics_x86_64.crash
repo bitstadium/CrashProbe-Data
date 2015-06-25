@@ -1,1 +1,27 @@
-<span class="cp-wrong">No report, app locks up.</span>
+<span class="cp-wrong">App locks up.</span>
+
+Crashed: com.apple.main-thread
+EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x0000000000000001
+
+Thread : Crashed: com.apple.main-thread
+0  libsystem_platform.dylib 0x00007fff9152205a _platform_memmove$VARIANT$Unknown + 186
+1  libsystem_pthread.dylib  0x00007fff9246200d pthread_getname_np + 105
+2  CrashLib                 0x000000010a0a9caf -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+3  CrashProbe               0x000000010a0319a3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+5  AppKit                   0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
+6  AppKit                   0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
+7  AppKit                   0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+8  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+9  AppKit                   0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
+10 libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
+11 AppKit                   0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
+12 AppKit                   0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
+13 AppKit                   0x00007fff8bc58466 -[NSControl mouseDown:] + 714
+14 AppKit                   0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
+15 AppKit                   0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
+16 AppKit                   0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
+17 AppKit                   0x00007fff8ba77c68 -[NSApplication run] + 711
+18 AppKit                   0x00007fff8b9f4354 NSApplicationMain + 1832
+19 CrashProbe               0x000000010a031d09 main (main.m:13)
+20 libdyld.dylib            0x00007fff8aaa75c9 start + 1

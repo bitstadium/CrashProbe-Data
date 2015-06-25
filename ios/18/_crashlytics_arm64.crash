@@ -2,6 +2,39 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x0000000000000000
 
 Thread : Crashed: com.apple.main-thread
-0 CrashLibiOS 0x00000001000d24e8 CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:34)
-1 CrashLibiOS 0x00000001000d25a0 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:35)
+<span class="cp-wrong">0  CrashLibiOS      0x0000000100105f24 CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:34) | Wrong line number</span>
+1  CrashLibiOS      0x0000000100105fdc CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:35
+<span class="cp-wrong">2  CrashLibiOS      0x0000000100105fdb CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:35) | Invalid frame</span>
+<span class="cp-wrong">3  CrashLibiOS      0x0000000100105fda CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:35) | Invalid frame</span>
+<span class="cp-wrong">4  CrashLibiOS      0x0000000100105fd9 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:34) | Invalid frame</span>
+<span class="cp-wrong">5  CrashLibiOS      0x0000000100105fd8 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:34) | Invalid frame</span>
+<span class="cp-wrong">6  CrashLibiOS      0x0000000100105fd7 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:34) | Invalid frame</span>
+<span class="cp-wrong">7  CrashLibiOS      0x0000000100105fd6 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:34) | Invalid frame</span>
+<span class="cp-wrong">8  CrashLibiOS      0x0000000100105fd5 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:33) | Invalid frame</span>
+<span class="cp-wrong">9  CrashLibiOS      0x0000000100105fd4 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:33) | Invalid frame</span>
+<span class="cp-wrong">10 CrashLibiOS      0x0000000100105fd3 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:33) | Invalid frame</span>
+<span class="cp-wrong">11 CrashLibiOS      0x0000000100105fd2 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:33) | Invalid frame</span>
+<span class="cp-wrong">12 CrashLibiOS      0x0000000100105fd1 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:32) | Invalid frame</span>
+<span class="cp-wrong">13 CrashLibiOS      0x0000000100105fd0 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:32) | Invalid frame</span>
+<span class="cp-wrong">14 CrashLibiOS      0x0000000100105fcf CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:32) | Invalid frame</span>
+<span class="cp-wrong">15 CrashLibiOS      0x0000000100105fce CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:32) | Invalid frame</span>
+<span class="cp-wrong">16 CrashLibiOS      0x0000000100105fcd CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:31) | Invalid frame</span>
+<span class="cp-wrong">17 CrashLibiOS      0x0000000100105fcc CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:31) | Invalid frame</span>
+<span class="cp-wrong">18 CrashLibiOS      0x0000000100105fcb CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:31) | Invalid frame</span>
+<span class="cp-wrong">19 CrashLibiOS      0x0000000100105fca CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:31) | Invalid frame</span>
+<span class="cp-wrong">20 CrashLibiOS      0x0000000100105fc9 CRLFramelessDWARF_test (CRLFramelessDWARF_arm64.s:29) | Invalid frame</span>
 <span class="cp-wrong">Missing frames</span>
+21 UIKit            0x000000018ab1bfc0 _UIGestureRecognizerUpdate + 8536
+22 UIKit            0x000000018ab56898 -[UIWindow _sendGesturesForEvent:] + 1044
+23 UIKit            0x000000018ab55f50 -[UIWindow sendEvent:] + 660
+24 UIKit            0x000000018ab2918c -[UIApplication sendEvent:] + 264
+25 UIKit            0x000000018adca324 _UIApplicationHandleEventFromQueueEvent + 15424
+26 UIKit            0x000000018ab276a0 _UIApplicationHandleEventQueue + 1716
+27 CoreFoundation   0x00000001860a0240 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+28 CoreFoundation   0x000000018609f4e4 __CFRunLoopDoSources0 + 264
+29 CoreFoundation   0x000000018609d594 __CFRunLoopRun + 712
+30 CoreFoundation   0x0000000185fc92d4 CFRunLoopRunSpecific + 396
+31 GraphicsServices 0x000000018f7df6fc GSEventRunModal + 168
+32 UIKit            0x000000018ab8efac UIApplicationMain + 1488
+33 CrashProbeiOS    0x000000010007e5e8 main (main.m:16)
+34 libdyld.dylib    0x0000000197f8aa08 start + 4
