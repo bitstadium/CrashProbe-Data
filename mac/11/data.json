@@ -13,7 +13,7 @@
       "x86_64": "complete"
     },
     "Apple": {
-      "x86_64": "complete"
+      "x86_64": "incomplete"
     },
     "Crashlytics": {
       "x86_64": "complete"
