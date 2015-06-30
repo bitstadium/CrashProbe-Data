@@ -2,7 +2,7 @@ Crashed: com.apple.main-thread
 EXC_BREAKPOINT 0x0000000100161b78
 
 Thread : Crashed: com.apple.main-thread
-0  CrashLibiOS      0x0000000100161b78 -[CRLCrashNXPage crash] + 42 | Missing filename, and line number</span>
+<span class="cp-wrong">0  CrashLibiOS      0x0000000100161b78 -[CRLCrashNXPage crash] + 42 | Missing filename, and line number</span>
 1  CrashProbeiOS    0x00000001000db698 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
 2  UIKit            0x000000018ab5d404 -[UIApplication sendAction:to:from:forEvent:] + 96
 3  UIKit            0x000000018ab464e0 -[UIControl _sendActionsForEvents:withEvent:] + 612
