@@ -15,6 +15,10 @@
       "armv7": "complete",
       "arm64": "complete"
     },
+    "Application Insights": {
+      "armv7": "complete",
+      "arm64": "complete"
+    },
     "Apple": {
       "armv7": "incomplete",
       "arm64": "complete"
