@@ -12,7 +12,7 @@
     "HockeyApp": {
       "x86_64": "complete"
     },
-    "Application Insights": {
+    "AppInsights": {
       "x86_64": "complete"
     },
     "Apple": {
