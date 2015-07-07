@@ -1,0 +1,5 @@
+SIGBUS: Selector name found in current argument registers: crash
+   at -[CRLCrashStackGuard crash] (CrashLibiOS: CRLCrashStackGuard.m: 38)
+   at -[CRLCrashStackGuard crash] (CrashLibiOS: CRLCrashStackGuard.m: 39)
+   ...
+   at -[CRLCrashStackGuard crash] (CrashLibiOS: CRLCrashStackGuard.m: 39)

@@ -1,0 +1,5 @@
+SIGBUS: 
+   at -[CRLCrashStackGuard crash] (CrashLib: CRLCrashStackGuard.m: 39)
+   at -[CRLCrashStackGuard crash] (CrashLib: CRLCrashStackGuard.m: 39)
+   ...
+   at -[CRLCrashStackGuard crash] (CrashLib: CRLCrashStackGuard.m: 39)

@@ -1,0 +1,3 @@
+SIGSEGV: 
+   at 0xa5a5a5a4 (???)
+   at -[CRLCrashSmashStackBottom crash] (CrashLibiOS: CRLCrashSmashStackBottom.m: 54)
