@@ -1,5 +1,5 @@
 SIGABRT: kaboom_exception*: If this had been a real exception, you would be cursing now.
-	<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+   <span class="cp-wrong">Missing frame that shows where the crash occured</span>
    at std::__terminate(void (*)()) (libc++abi.dylib)
    at __cxa_rethrow (libc++abi.dylib)
    at objc_exception_rethrow (libobjc.A.dylib)
