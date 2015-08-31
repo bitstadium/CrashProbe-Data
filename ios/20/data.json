@@ -12,10 +12,6 @@
       "armv7": "complete",
       "arm64": "wrong"
     },
-    "AppInsights": {
-      "armv7": "complete",
-      "arm64": "wrong"
-    },
     "Apple": {
       "armv7": "wrong",
       "arm64": "wrong"

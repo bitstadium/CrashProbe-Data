@@ -12,9 +12,6 @@
     "HockeyApp": {
       "x86_64": "wrong"
     },
-    "AppInsights": {
-      "x86_64": "wrong"
-    },
     "Apple": {
       "x86_64": "wrong"
     },

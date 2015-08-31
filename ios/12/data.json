@@ -13,10 +13,6 @@
       "armv7": "incomplete",
       "arm64": "incomplete"
     },
-    "AppInsights": {
-      "armv7": "incomplete",
-      "arm64": "incomplete"
-    },
     "Apple": {
       "armv7": "incomplete",
       "arm64": "incomplete"
