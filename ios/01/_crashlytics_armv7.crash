@@ -4,26 +4,25 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x00000001
 
 Thread : Crashed: com.apple.main-thread
-0  libsystem_platform.dylib 0x31bf31d0 _platform_memmove$VARIANT$CortexA9 + 104
-1  libsystem_pthread.dylib  0x31bf8939 pthread_getname_np + 72
-2  libsystem_pthread.dylib  0x31bf8939 pthread_getname_np + 72
-3  CrashLibiOS              0x0025b969 -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
-4  CrashProbeiOS            0x000f682f -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-5  UIKit                    0x268d9a7b -[UIApplication sendAction:to:from:forEvent:] + 70
-6  UIKit                    0x268d9a21 -[UIControl sendAction:to:forEvent:] + 44
-7  UIKit                    0x268c45c5 -[UIControl _sendActionsForEvents:withEvent:] + 584
-8  UIKit                    0x268d9461 -[UIControl touchesEnded:withEvent:] + 584
-9  UIKit                    0x268d9133 -[UIWindow _sendTouchesForEvent:] + 522
-10 UIKit                    0x268d2a41 -[UIWindow sendEvent:] + 540
-11 UIKit                    0x268a8c05 -[UIApplication sendEvent:] + 196
-12 UIKit                    0x26b1f31f _UIApplicationHandleEventFromQueueEvent + 14538
-13 UIKit                    0x268a7607 _UIApplicationHandleEventQueue + 1350
-14 CoreFoundation           0x2323422f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
-15 CoreFoundation           0x23233643 __CFRunLoopDoSources0 + 222
-16 CoreFoundation           0x23231cc1 __CFRunLoopRun + 768
-17 CoreFoundation           0x2317d9a1 CFRunLoopRunSpecific + 476
-18 CoreFoundation           0x2317d7b3 CFRunLoopRunInMode + 106
-19 GraphicsServices         0x2a8fe1a9 GSEventRunModal + 136
-20 UIKit                    0x26908695 UIApplicationMain + 1440
-21 CrashProbeiOS            0x000f5b77 main (main.m:16)
-22 libdyld.dylib            0x31ab1aaf start + 2
+0  libsystem_platform.dylib 0x258bc1a4 _platform_memmove$VARIANT$CortexA9 + 104
+1  libsystem_pthread.dylib  0x258c23c9 pthread_getname_np + 72
+2  libsystem_pthread.dylib  0x258c23c9 pthread_getname_np + 72
+3  CrashLibiOS              0x00036682d -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4  CrashProbeiOS            0x00051a87 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                    0x29cfc6cd -[UIApplication sendAction:to:from:forEvent:] + 80
+6  UIKit                    0x29cfc659 -[UIControl sendAction:to:forEvent:] + 64
+7  UIKit                    0x29ce464f -[UIControl _sendActionsForEvents:withEvent:] + 446
+8  UIKit                    0x29cfbfb5 -[UIControl touchesEnded:withEvent:] + 604
+9  UIKit                    0x29cfbc2f -[UIWindow _sendTouchesForEvent:] + 646
+10 UIKit                    0x29cf45e7 -[UIWindow sendEvent:] + 642
+11 UIKit                    0x29cc52f9 -[UIApplication sendEvent:] + 204
+12 UIKit                    0x29cc398b _UIApplicationHandleEventQueue + 5058
+13 CoreFoundation           0x25b4b68f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+14 CoreFoundation           0x25b4b27d __CFRunLoopDoSources0 + 452
+15 CoreFoundation           0x25b495eb __CFRunLoopRun + 794
+16 CoreFoundation           0x25a9cbf9 CFRunLoopRunSpecific + 520
+17 CoreFoundation           0x25a9c9e5 CFRunLoopRunInMode + 108
+18 GraphicsServices         0x26ce8ac9 GSEventRunModal + 160
+19 UIKit                    0x29d2cba1 UIApplicationMain + 144
+20 CrashProbeiOS            0x00050dd7 main (main.m:16)
+21 libdispatch.dylib        0x2574b873 (Missing)

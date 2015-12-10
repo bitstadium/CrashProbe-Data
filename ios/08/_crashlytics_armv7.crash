@@ -1,25 +1,24 @@
 Crashed: com.apple.main-thread
-EXC_BAD_INSTRUCTION UNKNOWN at 0xf7f04770
+EXC_BAD_INSTRUCTION UNKNOWN at 0x00000000f7f04770
 
 Thread : Crashed: com.apple.main-thread
-<span class="cp-wrong">0  CrashLibiOS      0x00230eaa -[CRLCrashPrivInst crash] (CRLCrashPrivInst.m:35) | Wrong line number</span>
-1  CrashProbeiOS    0x000cb82f -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-2  UIKit            0x268d9a7b -[UIApplication sendAction:to:from:forEvent:] + 70
-3  UIKit            0x268d9a21 -[UIControl sendAction:to:forEvent:] + 44
-4  UIKit            0x268c45c5 -[UIControl _sendActionsForEvents:withEvent:] + 584
-5  UIKit            0x268d9461 -[UIControl touchesEnded:withEvent:] + 584
-6  UIKit            0x2689d8c7 _UIGestureRecognizerUpdate + 10158
-7  UIKit            0x268d313d -[UIWindow _sendGesturesForEvent:] + 784
-8  UIKit            0x268d2a2d -[UIWindow sendEvent:] + 520
-9  UIKit            0x268a8c05 -[UIApplication sendEvent:] + 196
-10 UIKit            0x26b1f31f _UIApplicationHandleEventFromQueueEvent + 14538
-11 UIKit            0x268a7607 _UIApplicationHandleEventQueue + 1350
-12 CoreFoundation   0x2323422f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
-13 CoreFoundation   0x23233643 __CFRunLoopDoSources0 + 222
-14 CoreFoundation   0x23231cc1 __CFRunLoopRun + 768
-15 CoreFoundation   0x2317d9a1 CFRunLoopRunSpecific + 476
-16 CoreFoundation   0x2317d7b3 CFRunLoopRunInMode + 106
-17 GraphicsServices 0x2a8fe1a9 GSEventRunModal + 136
-18 UIKit            0x26908695 UIApplicationMain + 1440
-19 CrashProbeiOS    0x000cab77 main (main.m:16)
-20 libdyld.dylib    0x31ab1aaf start + 2
+<span class="cp-wrong">0  CrashLibiOS       0x003f7d6e -[CRLCrashPrivInst crash] (CRLCrashPrivInst.m:35) | Wrong line number</span>
+1  CrashProbeiOS     0x000e2a87 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit             0x29cfc6cd -[UIApplication sendAction:to:from:forEvent:] + 80
+3  UIKit             0x29cfc659 -[UIControl sendAction:to:forEvent:] + 64
+4  UIKit             0x29ce464f -[UIControl _sendActionsForEvents:withEvent:] + 446
+5  UIKit             0x29cfbfb5 -[UIControl touchesEnded:withEvent:] + 604
+6  UIKit             0x29cb6275 _UIGestureRecognizerUpdate + 10852
+7  UIKit             0x29cf4e21 -[UIWindow _sendGesturesForEvent:] + 904
+8  UIKit             0x29cf45d3 -[UIWindow sendEvent:] + 622
+9  UIKit             0x29cc52f9 -[UIApplication sendEvent:] + 204
+10 UIKit             0x29cc398b _UIApplicationHandleEventQueue + 5058
+11 CoreFoundation    0x25b4b68f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+12 CoreFoundation    0x25b4b27d __CFRunLoopDoSources0 + 452
+13 CoreFoundation    0x25b495eb __CFRunLoopRun + 794
+14 CoreFoundation    0x25a9cbf9 CFRunLoopRunSpecific + 520
+15 CoreFoundation    0x25a9c9e5 CFRunLoopRunInMode + 108
+16 GraphicsServices  0x26ce8ac9 GSEventRunModal + 160
+17 UIKit             0x29d2cba1 UIApplicationMain + 144
+18 CrashProbeiOS     0x000e1dd7 main (main.m:16)
+19 libdispatch.dylib 0x2574b873 (Missing)

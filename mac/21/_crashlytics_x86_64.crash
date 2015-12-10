@@ -2,6 +2,6 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS 0x0000000000000000
 
 Thread : Crashed: com.apple.main-thread
-0 libsystem_platform.dylib 0x00007fff91522cb2 _platform_bzero$VARIANT$Merom + 93
+0  libsystem_platform.dylib 0x7fff9a742c92 _platform_bzero$VARIANT$Haswell + 114
 <span class="cp-wrong">Missing frames that show where the crash occured</span>
-1 CrashProbe               0x000000010175a9a3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+1  CrashProbe               0x00010198a6e1 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)

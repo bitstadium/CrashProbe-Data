@@ -2,28 +2,26 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0xa5a9cdad
 
 Thread : Crashed: com.apple.main-thread
-0  libobjc.A.dylib  0x31515f12 cache_getImp + 17
-1  libobjc.A.dylib  0x31510107 lookUpImpOrForward + 446
-2  libobjc.A.dylib  0x3150ff3f _class_lookupMethodAndLoadCache3 + 34
-3  libobjc.A.dylib  0x315161f9 _objc_msgSend_uncached + 24
-4  CrashLibiOS      0x001bf23b -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
-5  CrashProbeiOS    0x0005982f -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-6  UIKit            0x268d9a7b -[UIApplication sendAction:to:from:forEvent:] + 70
-7  UIKit            0x268d9a21 -[UIControl sendAction:to:forEvent:] + 44
-8  UIKit            0x268c45c5 -[UIControl _sendActionsForEvents:withEvent:] + 584
-9  UIKit            0x268d9461 -[UIControl touchesEnded:withEvent:] + 584
-10 UIKit            0x2689d8c7 _UIGestureRecognizerUpdate + 10158
-11 UIKit            0x268d313d -[UIWindow _sendGesturesForEvent:] + 784
-12 UIKit            0x268d2a2d -[UIWindow sendEvent:] + 520
-13 UIKit            0x268a8c05 -[UIApplication sendEvent:] + 196
-14 UIKit            0x26b1f31f _UIApplicationHandleEventFromQueueEvent + 14538
-15 UIKit            0x268a7607 _UIApplicationHandleEventQueue + 1350
-16 CoreFoundation   0x2323422f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
-17 CoreFoundation   0x23233643 __CFRunLoopDoSources0 + 222
-18 CoreFoundation   0x23231cc1 __CFRunLoopRun + 768
-19 CoreFoundation   0x2317d9a1 CFRunLoopRunSpecific + 476
-20 CoreFoundation   0x2317d7b3 CFRunLoopRunInMode + 106
-21 GraphicsServices 0x2a8fe1a9 GSEventRunModal + 136
-22 UIKit            0x26908695 UIApplicationMain + 1440
-23 CrashProbeiOS    0x00058b77 main (main.m:16)
-24 libdyld.dylib    0x31ab1aaf start + 2
+0  libobjc.A.dylib   0x2533ba72 cache_getImp + 17
+1  libobjc.A.dylib   0x25335a39 lookUpImpOrForward + 340
+2  libobjc.A.dylib   0x253358db _class_lookupMethodAndLoadCache3 + 34
+3  libobjc.A.dylib   0x2533bd5b _objc_msgSend_uncached + 26
+4  CrashLibiOS       0x0041e0ff -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+5  CrashProbeiOS     0x00108a87 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+6  UIKit             0x29cfc6cd -[UIApplication sendAction:to:from:forEvent:] + 80
+7  UIKit             0x29cfc659 -[UIControl sendAction:to:forEvent:] + 64
+8  UIKit             0x29ce464f -[UIControl _sendActionsForEvents:withEvent:] + 446
+9  UIKit             0x29cfbfb5 -[UIControl touchesEnded:withEvent:] + 604
+10 UIKit             0x29cfbc2f -[UIWindow _sendTouchesForEvent:] + 646
+11 UIKit             0x29cf45e7 -[UIWindow sendEvent:] + 642
+12 UIKit             0x29cc52f9 -[UIApplication sendEvent:] + 204
+13 UIKit             0x29cc398b _UIApplicationHandleEventQueue + 5058
+14 CoreFoundation    0x25b4b68f __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+15 CoreFoundation    0x25b4b27d __CFRunLoopDoSources0 + 452
+16 CoreFoundation    0x25b495eb __CFRunLoopRun + 794
+17 CoreFoundation    0x25a9cbf9 CFRunLoopRunSpecific + 520
+18 CoreFoundation    0x25a9c9e5 CFRunLoopRunInMode + 108
+19 GraphicsServices  0x26ce8ac9 GSEventRunModal + 160
+20 UIKit             0x29d2cba1 UIApplicationMain + 144
+21 CrashProbeiOS     0x00107dd7 main (main.m:16)
+22 libdispatch.dylib 0x2574b873 (Missing)
