@@ -1,7 +1,7 @@
-Exception Type:  SIGSEGV
-Exception Codes: SEGV_NOOP at 0x0
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRERR at 0x0
 Crashed Thread:  0
 
 Thread 0 Crashed:
-<span class="cp-wrong">0 CrashLib 0x0000000106f395a1 -[CRLCrashSmashStackBottom crash] (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
+<span class="cp-wrong">0 CrashLib 0x000000010369ec43 -[CRLCrashSmashStackBottom crash] (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
 <span class="cp-wrong">Missing frames</span>
