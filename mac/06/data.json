@@ -5,7 +5,7 @@
   "title": "Message a released object",
   "description": "Send a message to an object whose memory has already been freed.",
   "expected": [
-    "-[CRLCrashReleasedObject crash]_block_invoke (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L51\">CRLCrashReleasedObject.m:51</a>)",
+    "-[CRLCrashReleasedObject crash]_block_invoke (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L51-L53\">CRLCrashReleasedObject.m:51-53</a>)",
     "-[CRLCrashReleasedObject crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashReleasedObject.m#L49\">CRLCrashReleasedObject.m:49</a>)",
     "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
   ],

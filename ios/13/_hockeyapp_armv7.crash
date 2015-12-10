@@ -1,12 +1,12 @@
 Exception Type:  SIGBUS
-Exception Codes: BUS_ADRERR at 0x11fffc
+Exception Codes: BUS_ADRERR at 0x2d7ff8
 Crashed Thread:  0
 
 Application Specific Information:
 Selector name found in current argument registers: crash
 
 Thread 0 Crashed:
-0   CrashLibiOS 0x0022206c -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
-1   CrashLibiOS 0x00222081 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+0   CrashLibiOS 0x003dbf30 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
+1   CrashLibiOS 0x003dbf45 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
 ...               
-511 CrashLibiOS 0x00222081 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+511 CrashLibiOS 0x003dbf45 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
