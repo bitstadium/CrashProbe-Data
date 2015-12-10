@@ -2,26 +2,26 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS 0x0000000000000000
 
 Thread : Crashed: com.apple.main-thread
-0  libobjc.A.dylib       0x00007fff90071012 cache_getImp + 18
-1  libobjc.A.dylib       0x00007fff90087888 lookUpImpOrForward + 595
-2  libobjc.A.dylib       0x00007fff900711ac objc_msgSend + 236
-3  libobjc.A.dylib       0x00007fff90087888 lookUpImpOrForward + 595
-4  CrashLib              0x000000010a8be644 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
-5  CrashProbe            0x000000010a8449a3 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-6  libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
-7  AppKit                0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
-8  AppKit                0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
-9  AppKit                0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
-10 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
-11 AppKit                0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
-12 libsystem_trace.dylib 0x00007fff91233cd7 _os_activity_initiate + 75
-13 AppKit                0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
-14 AppKit                0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
-15 AppKit                0x00007fff8bc58466 -[NSControl mouseDown:] + 714
-16 AppKit                0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
-17 AppKit                0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
-18 AppKit                0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
-19 AppKit                0x00007fff8ba77c68 -[NSApplication run] + 711
-20 AppKit                0x00007fff8b9f4354 NSApplicationMain + 1832
-21 CrashProbe            0x000000010a844d09 main (main.m:13)
-22 libdyld.dylib         0x00007fff8aaa75c9 start + 1
+0  libobjc.A.dylib       0x7fff8fe12452 cache_getImp + 18
+1  libobjc.A.dylib       0x7fff8fe17d65 lookUpImpOrForward + 272
+2  libobjc.A.dylib       0x7fff8fe12591 objc_msgSend + 209
+3  CrashLib              0x00010540fce6 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+4  CrashProbe            0x00010538c6e1 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+5  libsystem_trace.dylib 0x7fff84dea07a _os_activity_initiate + 75
+6  AppKit                0x7fff8df9551d -[NSApplication sendAction:to:from:] + 460
+7  AppKit                0x7fff8dfaa486 -[NSControl sendAction:to:] + 86
+8  AppKit                0x7fff8dfaa3b0 __26-[NSCell _sendActionFrom:]_block_invoke + 131
+9  libsystem_trace.dylib 0x7fff84dea07a _os_activity_initiate + 75
+10 AppKit                0x7fff8dfaa30d -[NSCell _sendActionFrom:] + 144
+11 libsystem_trace.dylib 0x7fff84dea07a _os_activity_initiate + 75
+12 AppKit                0x7fff8dfa8932 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2693
+13 AppKit                0x7fff8dffdd58 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 744
+14 AppKit                0x7fff8dfa705c -[NSControl mouseDown:] + 669
+15 AppKit                0x7fff8e554d1d -[NSWindow _handleMouseDownEvent:isDelayedEvent:] + 6322
+16 AppKit                0x7fff8e555fad -[NSWindow _reallySendEvent:isDelayedEvent:] + 212
+17 AppKit                0x7fff8deae735 -[NSWindow sendEvent:] + 517
+18 AppKit                0x7fff8deaae49 -[NSApplication sendEvent:] + 2540
+19 AppKit                0x7fff8ddde03a -[NSApplication run] + 796
+20 AppKit                0x7fff8dd60520 NSApplicationMain + 1176
+21 CrashProbe            0x00010538ca46 main (main.m:13)
+22 libdyld.dylib         0x7fff850755ad start + 1

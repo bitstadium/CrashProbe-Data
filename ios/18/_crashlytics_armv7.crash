@@ -2,6 +2,5 @@ Crashed: com.apple.main-thread
 EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0x00000000
 
 Thread : Crashed: com.apple.main-thread
-0 CrashLibiOS 0x0026c24c CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:34)
-1 CrashLibiOS 0x0026c2bc CRLFramelessDWARF_test (CRLFramelessDWARF_arm32.S:40)
+0 CrashLibiOS 0x413110 CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:34)
 <span class="cp-wrong">Missing frames</span>
