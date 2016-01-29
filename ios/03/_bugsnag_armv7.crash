@@ -1,25 +1,26 @@
+Exception Type:  EXC_CRASH (SIGABRT)
 NSGenericException: An uncaught exception! SCREAM.
 
-CoreFoundation:0 __exceptionPreprocess
-libobjc.A.dylib:0 objc_exception_throw
-<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashObjCException crash] | Missing filename, and line number</span>
-CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
-UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
-UIKit:0 -[UIControl sendAction:to:forEvent:]
-UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
-UIKit:0 -[UIControl touchesEnded:withEvent:]
-UIKit:0 _UIGestureRecognizerUpdate
-UIKit:0 -[UIWindow _sendGesturesForEvent:]
-UIKit:0 -[UIWindow sendEvent:]
-UIKit:0 -[UIApplication sendEvent:]
-UIKit:0 _UIApplicationHandleEventFromQueueEvent
-UIKit:0 _UIApplicationHandleEventQueue
-CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-CoreFoundation:0 __CFRunLoopDoSources0
-CoreFoundation:0 __CFRunLoopRun
-CoreFoundation:0 CFRunLoopRunSpecific
-CoreFoundation:0 CFRunLoopRunInMode
-GraphicsServices:0 GSEventRunModal
-UIKit:0 UIApplicationMain
-CrashProbe iOS/main.m:16:0 main
-libdyld.dylib:0 start
+0  CoreFoundation   __exceptionPreprocess
+1  libobjc.A.dylib  objc_exception_throw
+2  CrashProbe       -[CRLCrashObjCException crash] (CRLCrashObjCException.m:41)
+3  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4  UIKit            -[UIApplication sendAction:to:from:forEvent:]
+5  UIKit            -[UIControl sendAction:to:forEvent:]
+6  UIKit            -[UIControl _sendActionsForEvents:withEvent:]
+7  UIKit            -[UIControl touchesEnded:withEvent:]
+8  UIKit            _UIGestureRecognizerUpdate
+9  UIKit            -[UIWindow _sendGesturesForEvent:]
+10 UIKit            -[UIWindow sendEvent:]
+11 UIKit            -[UIApplication sendEvent:]
+12 UIKit            _UIApplicationHandleEventQueue
+13 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+14 CoreFoundation   __CFRunLoopDoSources0
+15 CoreFoundation   __CFRunLoopRun
+16 CoreFoundation   CFRunLoopRunSpecific
+17 CoreFoundation   CFRunLoopRunInMode
+18 GraphicsServices GSEventRunModal
+19 UIKit            UIApplicationMain
+20 CrashProbe iOS   main (main.m:16)
+21 libdyld.dylib    start
+

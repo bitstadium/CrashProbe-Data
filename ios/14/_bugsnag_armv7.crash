@@ -1,27 +1,23 @@
-Trace/BPT trap: 5: 
+Exception Type:  EXC_BREAKPOINT ()
+Exception Subtype: KERN_INVALID_ADDRESS
 
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 _sigtramp
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
-CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
-UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
-UIKit:0 -[UIControl sendAction:to:forEvent:]
-UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
-UIKit:0 -[UIControl touchesEnded:withEvent:]
-UIKit:0 -[UIWindow _sendTouchesForEvent:]
-UIKit:0 -[UIWindow sendEvent:]
-UIKit:0 -[UIApplication sendEvent:]
-UIKit:0 _UIApplicationHandleEventFromQueueEvent
-UIKit:0 _UIApplicationHandleEventQueue
-CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-CoreFoundation:0 __CFRunLoopDoSources0
-CoreFoundation:0 __CFRunLoopRun
-CoreFoundation:0 CFRunLoopRunSpecific
-CoreFoundation:0 CFRunLoopRunInMode
-GraphicsServices:0 GSEventRunModal
-UIKit:0 UIApplicationMain
-CrashProbe iOS/main.m:16:0 main
-libdyld.dylib:0 start
+<span class="cp-wrong">0  CrashProbe       -[CRLCrashTrap crash] (CRLCrashTrap.m:35) | Wrong line number</span>
+1  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit            -[UIApplication sendAction:to:from:forEvent:]
+3  UIKit            -[UIControl sendAction:to:forEvent:]
+4  UIKit            -[UIControl _sendActionsForEvents:withEvent:]
+5  UIKit            -[UIControl touchesEnded:withEvent:]
+6  UIKit            _UIGestureRecognizerUpdate
+7  UIKit            -[UIWindow _sendGesturesForEvent:]
+8  UIKit            -[UIWindow sendEvent:]
+9  UIKit            -[UIApplication sendEvent:]
+10 UIKit            _UIApplicationHandleEventQueue
+11 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+12 CoreFoundation   __CFRunLoopDoSources0
+13 CoreFoundation   __CFRunLoopRun
+14 CoreFoundation   CFRunLoopRunSpecific
+15 CoreFoundation   CFRunLoopRunInMode
+16 GraphicsServices GSEventRunModal
+17 UIKit            UIApplicationMain
+18 CrashProbe iOS   main (main.m:16)
+

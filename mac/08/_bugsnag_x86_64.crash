@@ -1,27 +1,24 @@
-Segmentation fault: 11: 
-
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 sigtramp
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
-CrashProbe/CRLMainWindowController.m:72:0 -[CRLMainWindowController causeCrash:]
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSApplication sendAction:to:from:]
-AppKit:0 -[NSControl sendAction:to:]
-AppKit:0 _26-[NSCell _sendActionFrom:]_block_invoke
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSCell _sendActionFrom:]
-AppKit:0 -[NSButtonCell _sendActionFrom:]
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
-AppKit:0 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
-AppKit:0 -[NSControl mouseDown:]
-AppKit:0 -[NSWindow _reallySendEvent:]
-AppKit:0 -[NSWindow sendEvent:]
-AppKit:0 -[NSApplication sendEvent:]
-AppKit:0 -[NSApplication run]
-AppKit:0 NSApplicationMain
-CrashProbe/main.m:13:0 main
-libdyld.dylib:0 start
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Attempted to dereference garbage pointer 0x100faa000.
+                                                                                                   
+0  CrashProbe            -[CRLCrashPrivInst crash] (CRLCrashPrivInst.m:40)                     
+1  CrashProbe            -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72) 
+2  libsystem_trace.dylib os_activity_initiate                                                  
+3  AppKit                -[NSApplication sendAction:to:from:]                                  
+4  AppKit                -[NSControl sendAction:to:]                                           
+5  AppKit                _26-[NSCell _sendActionFrom:]_block_invoke                            
+6  libsystem_trace.dylib os_activity_initiate                                                  
+7  AppKit                -[NSCell _sendActionFrom:]                                            
+8  libsystem_trace.dylib os_activity_initiate                                                  
+9  AppKit                -[NSCell trackMouse:inRect:ofView:untilMouseUp:]                      
+10 AppKit                -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]                
+11 AppKit                -[NSControl mouseDown:]                                               
+12 AppKit                -[NSWindow _handleMouseDownEvent:isDelayedEvent:]                     
+13 AppKit                -[NSWindow _reallySendEvent:isDelayedEvent:]                          
+14 AppKit                -[NSWindow sendEvent:]                                                
+15 AppKit                -[NSApplication sendEvent:]                                           
+16 AppKit                -[NSApplication run]                                                  
+17 AppKit                NSApplicationMain                                                     
+18 CrashProbe            main (main.m:13)                                                      
+19 libdyld.dylib         start                                                                 
+                                                                                                   

@@ -1,1 +1,26 @@
-<span class="cp-wrong">No report</span>
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Stack overflow in _mh_execute_header
+
+0   CrashProbe            -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+...
+130 CrashProbe            -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+131 CrashProbe            -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+132 libsystem_trace.dylib os_activity_initiate
+133 AppKit                -[NSApplication sendAction:to:from:]
+134 AppKit                -[NSControl sendAction:to:]
+135 AppKit                _26-[NSCell _sendActionFrom:]_block_invoke
+136 libsystem_trace.dylib os_activity_initiate
+137 AppKit                -[NSCell _sendActionFrom:]
+138 libsystem_trace.dylib os_activity_initiate
+139 AppKit                -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+140 AppKit                -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+141 AppKit                -[NSControl mouseDown:]
+142 AppKit                -[NSWindow _handleMouseDownEvent:isDelayedEvent:]
+143 AppKit                -[NSWindow _reallySendEvent:isDelayedEvent:]
+144 AppKit                -[NSWindow sendEvent:]
+145 AppKit                -[NSApplication sendEvent:]
+146 AppKit                -[NSApplication run]
+147 AppKit                NSApplicationMain
+148 CrashProbe            main (main.m:13)
+149 libdyld.dylib         start
+

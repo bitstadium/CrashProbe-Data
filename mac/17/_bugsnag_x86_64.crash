@@ -1,1 +1,26 @@
-<span class="cp-wrong">No report, app locks up.</span>
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Attempted to dereference garbage pointer 0x7000002a0000.
+
+0  libobjc.A.dylib       cache_getImp
+1  libobjc.A.dylib       objc_msgSend
+2  CrashProbe            -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+3  CrashProbe            -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib os_activity_initiate
+5  AppKit                -[NSApplication sendAction:to:from:]
+6  AppKit                -[NSControl sendAction:to:]
+7  AppKit                _26-[NSCell _sendActionFrom:]_block_invoke
+8  libsystem_trace.dylib os_activity_initiate
+9  AppKit                -[NSCell _sendActionFrom:]
+10 libsystem_trace.dylib os_activity_initiate
+11 AppKit                -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+12 AppKit                -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+13 AppKit                -[NSControl mouseDown:]
+14 AppKit                -[NSWindow _handleMouseDownEvent:isDelayedEvent:]
+15 AppKit                -[NSWindow _reallySendEvent:isDelayedEvent:]
+16 AppKit                -[NSWindow sendEvent:]
+17 AppKit                -[NSApplication sendEvent:]
+18 AppKit                -[NSApplication run]
+19 AppKit                NSApplicationMain
+20 CrashProbe            main (main.m:13)
+21 libdyld.dylib         start
+

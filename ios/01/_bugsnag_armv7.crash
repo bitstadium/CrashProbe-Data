@@ -1,31 +1,27 @@
-<span class="cp-wrong">App locks up.</span>
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS
+Attempted to dereference garbage pointer 0x1.
 
-Segmentation fault: 11: 
+0  libsystem_platform.dylib _platform_memmove$VARIANT$CortexA9
+<span class="cp-wrong">1                           pthread_getname_np | Invalid frame</span>
+2  libsystem_pthread.dylib  pthread_getname_np
+3  CrashProbe               -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4  CrashProbe iOS           -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5  UIKit                    -[UIApplication sendAction:to:from:forEvent:]
+6  UIKit                    -[UIControl sendAction:to:forEvent:]
+7  UIKit                    -[UIControl _sendActionsForEvents:withEvent:]
+8  UIKit                    -[UIControl touchesEnded:withEvent:]
+9  UIKit                    _UIGestureRecognizerUpdate
+10 UIKit                    -[UIWindow _sendGesturesForEvent:]
+11 UIKit                    -[UIWindow sendEvent:]
+12 UIKit                    -[UIApplication sendEvent:]
+13 UIKit                    _UIApplicationHandleEventQueue
+14 CoreFoundation           __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+15 CoreFoundation           __CFRunLoopDoSources0
+16 CoreFoundation           __CFRunLoopRun
+17 CoreFoundation           CFRunLoopRunSpecific
+18 CoreFoundation           CFRunLoopRunInMode
+19 GraphicsServices         GSEventRunModal
+20 UIKit                    UIApplicationMain
+21 CrashProbe iOS           main (main.m:16)
 
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 _sigtramp
-libsystem_pthread.dylib:0 pthread_getname_np
-libsystem_pthread.dylib:0 pthread_getname_np
-<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashAsyncSafeThread crash] | Missing filename, and line number</span>
-CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
-UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
-UIKit:0 -[UIControl sendAction:to:forEvent:]
-UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
-UIKit:0 -[UIControl touchesEnded:withEvent:]
-UIKit:0 -[UIWindow _sendTouchesForEvent:]
-UIKit:0 -[UIWindow sendEvent:]
-UIKit:0 -[UIApplication sendEvent:]
-UIKit:0 _UIApplicationHandleEventFromQueueEvent
-UIKit:0 _UIApplicationHandleEventQueue
-CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-CoreFoundation:0 __CFRunLoopDoSources0
-CoreFoundation:0 __CFRunLoopRun
-CoreFoundation:0 CFRunLoopRunSpecific
-CoreFoundation:0 CFRunLoopRunInMode
-GraphicsServices:0 GSEventRunModal
-UIKit:0 UIApplicationMain
-CrashProbe iOS/main.m:16:0 main
-libdyld.dylib:0 start

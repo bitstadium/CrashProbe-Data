@@ -1,32 +1,31 @@
-Segmentation fault: 11: 
-
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 sigtramp
-CoreFoundation:0 _CFStringAppendFormatCore
-CoreFoundation:0 CFStringCreateWithFormatAndArgumentsAux2
-CoreFoundation:0 CFLogvEx2
-Foundation:0 NSLogv
-Foundation:0 NSLog
-<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashNSLog crash] | Missing filename, and line number</span>
-CrashProbe/CRLMainWindowController.m:72:0 -[CRLMainWindowController causeCrash:]
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSApplication sendAction:to:from:]
-AppKit:0 -[NSControl sendAction:to:]
-AppKit:0 _26-[NSCell _sendActionFrom:]_block_invoke
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSCell _sendActionFrom:]
-AppKit:0 -[NSButtonCell _sendActionFrom:]
-libsystem_trace.dylib:0 os_activity_initiate
-AppKit:0 -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
-AppKit:0 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
-AppKit:0 -[NSControl mouseDown:]
-AppKit:0 -[NSWindow _reallySendEvent:]
-AppKit:0 -[NSWindow sendEvent:]
-AppKit:0 -[NSApplication sendEvent:]
-AppKit:0 -[NSApplication run]
-AppKit:0 NSApplicationMain
-CrashProbe/main.m:13:0 main
-libdyld.dylib:0 start
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Exception Subtype: KERN_INVALID_TASK
+                                                                                                   
+0  libobjc.A.dylib       objc_msgSend                                                          
+1  CoreFoundation        _CFStringAppendFormatCore                                             
+2  CoreFoundation        CFStringCreateWithFormatAndArgumentsAux2                              
+3  CoreFoundation        CFLogvEx2                                                             
+4  CoreFoundation        CFLogvEx3                                                             
+5  Foundation            NSLogv                                                                
+6  Foundation            NSLog                                                                 
+7  CrashProbe            -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)                           
+8  CrashProbe            -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72) 
+9  libsystem_trace.dylib os_activity_initiate                                                  
+10 AppKit                -[NSApplication sendAction:to:from:]                                  
+11 AppKit                -[NSControl sendAction:to:]                                           
+12 AppKit                _26-[NSCell _sendActionFrom:]_block_invoke                            
+13 libsystem_trace.dylib os_activity_initiate                                                  
+14 AppKit                -[NSCell _sendActionFrom:]                                            
+15 libsystem_trace.dylib os_activity_initiate                                                  
+16 AppKit                -[NSCell trackMouse:inRect:ofView:untilMouseUp:]                      
+17 AppKit                -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]                
+18 AppKit                -[NSControl mouseDown:]                                               
+19 AppKit                -[NSWindow _handleMouseDownEvent:isDelayedEvent:]                     
+20 AppKit                -[NSWindow _reallySendEvent:isDelayedEvent:]                          
+21 AppKit                -[NSWindow sendEvent:]                                                
+22 AppKit                -[NSApplication sendEvent:]                                           
+23 AppKit                -[NSApplication run]                                                  
+24 AppKit                NSApplicationMain                                                     
+25 CrashProbe            main (main.m:13)                                                      
+26 libdyld.dylib         start                                                                 
+                                                                                                   

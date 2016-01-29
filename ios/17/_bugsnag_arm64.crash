@@ -1,1 +1,26 @@
-<span class="cp-wrong">No report, app locks up.</span>
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Attempted to dereference garbage pointer 0xa5a5a5adf5f7b7e5.
+                                                                                          
+0  libobjc.A.dylib  cache_getImp                                                      
+1  libobjc.A.dylib  lookUpImpOrForward                                                
+2  libobjc.A.dylib  _objc_msgSend_uncached_impcache                                   
+3  CrashProbe       -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)           
+4  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53) 
+5  UIKit            -[UIApplication sendAction:to:from:forEvent:]                     
+6  UIKit            -[UIControl sendAction:to:forEvent:]                              
+7  UIKit            -[UIControl _sendActionsForEvents:withEvent:]                     
+8  UIKit            -[UIControl touchesEnded:withEvent:]                              
+9  UIKit            _UIGestureRecognizerUpdate                                        
+10 UIKit            -[UIWindow _sendGesturesForEvent:]                                
+11 UIKit            -[UIWindow sendEvent:]                                            
+12 UIKit            -[UIApplication sendEvent:]                                       
+13 UIKit            _UIApplicationHandleEventQueue                                    
+14 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__        
+15 CoreFoundation   __CFRunLoopDoSources0                                             
+16 CoreFoundation   __CFRunLoopRun                                                    
+17 CoreFoundation   CFRunLoopRunSpecific                                              
+18 GraphicsServices GSEventRunModal                                                   
+19 UIKit            UIApplicationMain                                                 
+20 CrashProbe iOS   main (main.m:16)                                                  
+21 libdyld.dylib    start                                                             
+                                                                                          

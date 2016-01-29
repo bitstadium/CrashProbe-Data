@@ -1,27 +1,35 @@
-Abort trap: 6: 
-
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 _sigtramp
-libsystem_pthread.dylib:0 pthread_kill
-libsystem_c.dylib:0 abort
-<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashCorruptMalloc category] | Wrong method. Missing filename, and line number</span>
-CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
-UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
-UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
-UIKit:0 -[UIControl touchesEnded:withEvent:]
-UIKit:0 -[UIWindow _sendTouchesForEvent:]
-UIKit:0 -[UIWindow sendEvent:]
-UIKit:0 -[UIApplication sendEvent:]
-UIKit:0 _UIApplicationHandleEventFromQueueEvent
-UIKit:0 _UIApplicationHandleEventQueue
-CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-CoreFoundation:0 __CFRunLoopDoSources0
-CoreFoundation:0 __CFRunLoopRun
-CoreFoundation:0 CFRunLoopRunSpecific
-GraphicsServices:0 GSEventRunModal
-UIKit:0 UIApplicationMain
-CrashProbe iOS/main.m:16:0 main
-libdyld.dylib:0 start
+Exception Type:  EXC_CRASH (SIGABRT)
+                                                                                                 
+0  libsystem_kernel.dylib  __pthread_kill                                                    
+1  libsystem_pthread.dylib pthread_kill                                                      
+2  libsystem_c.dylib       abort                                                             
+3  libsystem_malloc.dylib  szone_error                                                       
+4  libsystem_malloc.dylib  free_list_checksum_botch                                          
+5  libsystem_malloc.dylib  tiny_malloc_from_free_list                                        
+6  libsystem_malloc.dylib  szone_malloc_should_clear                                         
+7  libsystem_malloc.dylib  malloc_zone_malloc                                                
+8  libsystem_malloc.dylib  malloc                                                            
+9  CoreFoundation          _CFLogvEx2                                                        
+10 CoreFoundation          _CFLogvEx3                                                        
+11 Foundation              _NSLogv                                                           
+12 Foundation              NSLog                                                             
+13 CrashProbe              -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)       
+14 CrashProbe iOS          -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53) 
+15 UIKit                   -[UIApplication sendAction:to:from:forEvent:]                     
+16 UIKit                   -[UIControl sendAction:to:forEvent:]                              
+17 UIKit                   -[UIControl _sendActionsForEvents:withEvent:]                     
+18 UIKit                   -[UIControl touchesEnded:withEvent:]                              
+19 UIKit                   _UIGestureRecognizerUpdate                                        
+20 UIKit                   -[UIWindow _sendGesturesForEvent:]                                
+21 UIKit                   -[UIWindow sendEvent:]                                            
+22 UIKit                   -[UIApplication sendEvent:]                                       
+23 UIKit                   _UIApplicationHandleEventQueue                                    
+24 CoreFoundation          __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__        
+25 CoreFoundation          __CFRunLoopDoSources0                                             
+26 CoreFoundation          __CFRunLoopRun                                                    
+27 CoreFoundation          CFRunLoopRunSpecific                                              
+28 GraphicsServices        GSEventRunModal                                                   
+29 UIKit                   UIApplicationMain                                                 
+30 CrashProbe iOS          main (main.m:16)                                                  
+31 libdyld.dylib           start                                                             
+                                                                                                 

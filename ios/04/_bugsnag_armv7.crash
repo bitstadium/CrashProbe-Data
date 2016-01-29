@@ -1,33 +1,32 @@
-Segmentation fault: 11: 
-
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 _sigtramp
-Foundation:0 _NSDescriptionWithStringProxyFunc
-CoreFoundation:0 __CFStringAppendFormatCore
-CoreFoundation:0 _CFStringCreateWithFormatAndArgumentsAux2
-CoreFoundation:0 _CFLogvEx2
-Foundation:0 NSLogv
-Foundation:0 NSLog
-<span class="cp-wrong">CrashLibiOS:0 -[CRLCrashNSLog crash] | Missing filename, and line number</span>
-CrashProbe iOS/CRLDetailViewController.m:53:0 -[CRLDetailViewController doCrash]
-UIKit:0 -[UIApplication sendAction:to:from:forEvent:]
-UIKit:0 -[UIControl sendAction:to:forEvent:]
-UIKit:0 -[UIControl _sendActionsForEvents:withEvent:]
-UIKit:0 -[UIControl touchesEnded:withEvent:]
-UIKit:0 -[UIWindow _sendTouchesForEvent:]
-UIKit:0 -[UIWindow sendEvent:]
-UIKit:0 -[UIApplication sendEvent:]
-UIKit:0 _UIApplicationHandleEventFromQueueEvent
-UIKit:0 _UIApplicationHandleEventQueue
-CoreFoundation:0 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-CoreFoundation:0 __CFRunLoopDoSources0
-CoreFoundation:0 __CFRunLoopRun
-CoreFoundation:0 CFRunLoopRunSpecific
-CoreFoundation:0 CFRunLoopRunInMode
-GraphicsServices:0 GSEventRunModal
-UIKit:0 UIApplicationMain
-CrashProbe iOS/main.m:16:0 main
-libdyld.dylib:0 start
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS
+Attempted to dereference garbage pointer 0x10.
+                                                                                          
+0  libobjc.A.dylib  objc_msgSend                                                      
+1  Foundation       _NSDescriptionWithStringProxyFunc                                 
+2  CoreFoundation   __CFStringAppendFormatCore                                        
+3  CoreFoundation   _CFStringCreateWithFormatAndArgumentsAux2                         
+4  CoreFoundation   _CFLogvEx2                                                        
+5  CoreFoundation   _CFLogvEx3                                                        
+6  Foundation       _NSLogv                                                           
+7  Foundation       NSLog                                                             
+8  CrashProbe       -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)                       
+9  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53) 
+10 UIKit            -[UIApplication sendAction:to:from:forEvent:]                     
+11 UIKit            -[UIControl sendAction:to:forEvent:]                              
+12 UIKit            -[UIControl _sendActionsForEvents:withEvent:]                     
+13 UIKit            -[UIControl touchesEnded:withEvent:]                              
+14 UIKit            _UIGestureRecognizerUpdate                                        
+15 UIKit            -[UIWindow _sendGesturesForEvent:]                                
+16 UIKit            -[UIWindow sendEvent:]                                            
+17 UIKit            -[UIApplication sendEvent:]                                       
+18 UIKit            _UIApplicationHandleEventQueue                                    
+19 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__        
+20 CoreFoundation   __CFRunLoopDoSources0                                             
+21 CoreFoundation   __CFRunLoopRun                                                    
+22 CoreFoundation   CFRunLoopRunSpecific                                              
+23 CoreFoundation   CFRunLoopRunInMode                                                
+24 GraphicsServices GSEventRunModal                                                   
+25 UIKit            UIApplicationMain                                                 
+26 CrashProbe iOS   main (main.m:16)                                                  
+                                                                                          
