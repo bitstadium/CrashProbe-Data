@@ -75,7 +75,7 @@ You must sign a [Contributor License Agreement](https://cla.microsoft.com/) befo
 The test case data providers per service:
 
 - Apple: [Bit Stadium GmbH](http://hockeyapp.net/)
-- Bugsnag: [Bit Stadium GmbH](http://hockeyapp.net/)
+- Bugsnag: [Bugsnag, Inc](https://bugsnag.com)
 - Crashlytics: [Bit Stadium GmbH](http://hockeyapp.net/)
 - Crittercism: [Bit Stadium GmbH](http://hockeyapp.net/)
 - HockeyApp: [Bit Stadium GmbH](http://hockeyapp.net/)
