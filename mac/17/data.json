@@ -16,7 +16,6 @@
       "x86_64": "complete"
     },
     "Crashlytics": {
-      "provider": "Crashlytics",
       "x86_64": "complete"
     },
     "Bugsnag": {
