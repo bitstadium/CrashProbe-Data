@@ -27,7 +27,7 @@
       "arm64": "incomplete"
     },
     "Bugsnag": {
-      "armv7": "wrong",
+      "armv7": "complete",
       "arm64": "incomplete"
     },
     "Crittercism": {

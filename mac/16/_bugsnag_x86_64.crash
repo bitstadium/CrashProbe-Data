@@ -1,1 +1,35 @@
-<span class="cp-wrong">No report.</span>
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Attempted to dereference garbage pointer 0x10efbc000.
+                                                                                                    
+0  libsystem_notify.dylib nc_table_find_64                                                      
+1  libsystem_notify.dylib registration_node_find                                                
+2  libsystem_notify.dylib notify_check                                                          
+3  libsystem_c.dylib      notify_check_tz                                                       
+4  libsystem_c.dylib      tzsetwall_basic                                                       
+5  libsystem_c.dylib      localtime_r                                                           
+6  CoreFoundation         _CFLogCString                                                         
+7  CoreFoundation         CFLogvEx2                                                             
+8  CoreFoundation         CFLogvEx3                                                             
+9  Foundation             NSLogv                                                                
+10 Foundation             NSLog                                                                 
+11 CrashProbe             -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)           
+12 CrashProbe             -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72) 
+13 libsystem_trace.dylib  os_activity_initiate                                                  
+14 AppKit                 -[NSApplication sendAction:to:from:]                                  
+15 AppKit                 -[NSControl sendAction:to:]                                           
+16 AppKit                 _26-[NSCell _sendActionFrom:]_block_invoke                            
+17 libsystem_trace.dylib  os_activity_initiate                                                  
+18 AppKit                 -[NSCell _sendActionFrom:]                                            
+19 libsystem_trace.dylib  os_activity_initiate                                                  
+20 AppKit                 -[NSCell trackMouse:inRect:ofView:untilMouseUp:]                      
+21 AppKit                 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]                
+22 AppKit                 -[NSControl mouseDown:]                                               
+23 AppKit                 -[NSWindow _handleMouseDownEvent:isDelayedEvent:]                     
+24 AppKit                 -[NSWindow _reallySendEvent:isDelayedEvent:]                          
+25 AppKit                 -[NSWindow sendEvent:]                                                
+26 AppKit                 -[NSApplication sendEvent:]                                           
+27 AppKit                 -[NSApplication run]                                                  
+28 AppKit                 NSApplicationMain                                                     
+29 CrashProbe             main (main.m:13)                                                      
+30 libdyld.dylib          start                                                                 
+                                                                                                    

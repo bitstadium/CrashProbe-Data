@@ -1,9 +1,1 @@
-Segmentation fault: 11: 
-
-bugsnag/BugsnagEvent.m:91:0 -[BugsnagEvent getStackTraceWithException:]
-bugsnag/BugsnagEvent.m:50:0 -[BugsnagEvent addSignal:]
-bugsnag/BugsnagNotifier.m:73:0 -[BugsnagNotifier notifySignal:]
-bugsnag/Bugsnag.m:67:0 handle_signal
-libsystem_platform.dylib:0 sigtramp
-libsystem_pthread.dylib:0 pthread_mutex_unlock
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+<span class="cp-wrong">No report</span>

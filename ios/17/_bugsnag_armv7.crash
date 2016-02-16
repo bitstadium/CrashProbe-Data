@@ -1,1 +1,28 @@
-<span class="cp-wrong">No report, app locks up.</span>
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS
+Attempted to dereference garbage pointer 0xa5a9b2ad.
+                                                                                          
+0  libobjc.A.dylib  cache_getImp                                                      
+1  libobjc.A.dylib  lookUpImpOrForward                                                
+2  libobjc.A.dylib  _class_lookupMethodAndLoadCache3                                  
+3  libobjc.A.dylib  _objc_msgSend_uncached                                            
+4  CrashProbe       -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)           
+5  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53) 
+6  UIKit            -[UIApplication sendAction:to:from:forEvent:]                     
+7  UIKit            -[UIControl sendAction:to:forEvent:]                              
+8  UIKit            -[UIControl _sendActionsForEvents:withEvent:]                     
+9  UIKit            -[UIControl touchesEnded:withEvent:]                              
+10 UIKit            _UIGestureRecognizerUpdate                                        
+11 UIKit            -[UIWindow _sendGesturesForEvent:]                                
+12 UIKit            -[UIWindow sendEvent:]                                            
+13 UIKit            -[UIApplication sendEvent:]                                       
+14 UIKit            _UIApplicationHandleEventQueue                                    
+15 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__        
+16 CoreFoundation   __CFRunLoopDoSources0                                             
+17 CoreFoundation   __CFRunLoopRun                                                    
+18 CoreFoundation   CFRunLoopRunSpecific                                              
+19 CoreFoundation   CFRunLoopRunInMode                                                
+20 GraphicsServices GSEventRunModal                                                   
+21 UIKit            UIApplicationMain                                                 
+22 CrashProbe iOS   main (main.m:16)                                                  
+                                                                                          

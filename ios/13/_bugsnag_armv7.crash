@@ -1,1 +1,26 @@
-<span class="cp-wrong">No report</span>
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS
+Stack overflow in -[CRLDetailViewController doCrash]
+
+0   CrashProbe       -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+...
+131 CrashProbe       -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+132 CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+133 UIKit            -[UIApplication sendAction:to:from:forEvent:]
+134 UIKit            -[UIControl sendAction:to:forEvent:]
+135 UIKit            -[UIControl _sendActionsForEvents:withEvent:]
+136 UIKit            -[UIControl touchesEnded:withEvent:]
+137 UIKit            _UIGestureRecognizerUpdate
+138 UIKit            -[UIWindow _sendGesturesForEvent:]
+139 UIKit            -[UIWindow sendEvent:]
+140 UIKit            -[UIApplication sendEvent:]
+141 UIKit            _UIApplicationHandleEventQueue
+142 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+143 CoreFoundation   __CFRunLoopDoSources0
+144 CoreFoundation   __CFRunLoopRun
+145 CoreFoundation   CFRunLoopRunSpecific
+146 CoreFoundation   CFRunLoopRunInMode
+147 GraphicsServices GSEventRunModal
+148 UIKit            UIApplicationMain
+149 CrashProbe iOS   main (main.m:16)
+
