@@ -2,23 +2,22 @@ Exception Type:  EXC_BAD_ACCESS (SIGBUS)
 Attempted to dereference null pointer.
 
 0  CrashProbe       -[CRLCrashOverwriteLinkRegister crash] (CRLCrashOverwriteLinkRegister.m:53)
-<span class="cp-wrong">1                   -[CRLCrashOverwriteLinkRegister crash] | Invalid frame</span>
-2  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-3  UIKit            -[UIApplication sendAction:to:from:forEvent:]
-4  UIKit            -[UIControl sendAction:to:forEvent:]
-5  UIKit            -[UIControl _sendActionsForEvents:withEvent:]
-6  UIKit            -[UIControl touchesEnded:withEvent:]
-7  UIKit            _UIGestureRecognizerUpdate
-8  UIKit            -[UIWindow _sendGesturesForEvent:]
-9  UIKit            -[UIWindow sendEvent:]
-10 UIKit            -[UIApplication sendEvent:]
-11 UIKit            _UIApplicationHandleEventQueue
-12 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-13 CoreFoundation   __CFRunLoopDoSources0
-14 CoreFoundation   __CFRunLoopRun
-15 CoreFoundation   CFRunLoopRunSpecific
-16 GraphicsServices GSEventRunModal
-17 UIKit            UIApplicationMain
-18 CrashProbe iOS   main (main.m:16)
-19 libdyld.dylib    start
+1  CrashProbe iOS   -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2  UIKit            -[UIApplication sendAction:to:from:forEvent:]
+3  UIKit            -[UIControl sendAction:to:forEvent:]
+4  UIKit            -[UIControl _sendActionsForEvents:withEvent:]
+5  UIKit            -[UIControl touchesEnded:withEvent:]
+6  UIKit            _UIGestureRecognizerUpdate
+7  UIKit            -[UIWindow _sendGesturesForEvent:]
+8  UIKit            -[UIWindow sendEvent:]
+9  UIKit            -[UIApplication sendEvent:]
+10 UIKit            _UIApplicationHandleEventQueue
+11 CoreFoundation   __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+12 CoreFoundation   __CFRunLoopDoSources0
+13 CoreFoundation   __CFRunLoopRun
+14 CoreFoundation   CFRunLoopRunSpecific
+15 GraphicsServices GSEventRunModal
+16 UIKit            UIApplicationMain
+17 CrashProbe iOS   main (main.m:16)
+18 libdyld.dylib    start
 

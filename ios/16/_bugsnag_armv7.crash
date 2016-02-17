@@ -1,1 +1,39 @@
-<span class="cp-wrong">App locks up.</span>
+Exception Type:  EXC_CRASH (SIGABRT)
+
+0  libsystem_kernel.dylib  __pthread_kill
+1  libsystem_pthread.dylib pthread_kill
+2  libsystem_c.dylib       abort
+3  libsystem_malloc.dylib  szone_error
+4  libsystem_malloc.dylib  free_list_checksum_botch
+5  libsystem_malloc.dylib  tiny_malloc_from_free_list
+6  libsystem_malloc.dylib  szone_malloc_should_clear
+7  libsystem_malloc.dylib  malloc_zone_malloc
+8  libsystem_malloc.dylib  malloc
+9  libsystem_c.dylib       _vasprintf
+10 libsystem_c.dylib       vasprintf_l
+11 libsystem_c.dylib       asprintf
+12 CoreFoundation          __CFLogCString
+13 CoreFoundation          _CFLogvEx2
+14 CoreFoundation          _CFLogvEx3
+15 Foundation              _NSLogv
+16 Foundation              NSLog
+17 CrashProbe              -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+18 CrashProbe iOS          -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+19 UIKit                   -[UIApplication sendAction:to:from:forEvent:]
+20 UIKit                   -[UIControl sendAction:to:forEvent:]
+21 UIKit                   -[UIControl _sendActionsForEvents:withEvent:]
+22 UIKit                   -[UIControl touchesEnded:withEvent:]
+23 UIKit                   _UIGestureRecognizerUpdate
+24 UIKit                   -[UIWindow _sendGesturesForEvent:]
+25 UIKit                   -[UIWindow sendEvent:]
+26 UIKit                   -[UIApplication sendEvent:]
+27 UIKit                   _UIApplicationHandleEventQueue
+28 CoreFoundation          __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+29 CoreFoundation          __CFRunLoopDoSources0
+30 CoreFoundation          __CFRunLoopRun
+31 CoreFoundation          CFRunLoopRunSpecific
+32 CoreFoundation          CFRunLoopRunInMode
+33 GraphicsServices        GSEventRunModal
+34 UIKit                   UIApplicationMain
+35 CrashProbe iOS          main (main.m:16)
+

@@ -3,25 +3,24 @@ Exception Subtype: KERN_INVALID_ADDRESS
 Attempted to dereference garbage pointer 0x1.
 
 0  libsystem_platform.dylib _platform_memmove
-<span class="cp-wrong">1                           pthread_getname_np | Invalid frame</span>
-2  libsystem_pthread.dylib  pthread_getname_np
-3  CrashProbe               -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
-4  CrashProbe iOS           -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-5  UIKit                    -[UIApplication sendAction:to:from:forEvent:]
-6  UIKit                    -[UIControl sendAction:to:forEvent:]
-7  UIKit                    -[UIControl _sendActionsForEvents:withEvent:]
-8  UIKit                    -[UIControl touchesEnded:withEvent:]
-9  UIKit                    _UIGestureRecognizerUpdate
-10 UIKit                    -[UIWindow _sendGesturesForEvent:]
-11 UIKit                    -[UIWindow sendEvent:]
-12 UIKit                    -[UIApplication sendEvent:]
-13 UIKit                    _UIApplicationHandleEventQueue
-14 CoreFoundation           __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-15 CoreFoundation           __CFRunLoopDoSources0
-16 CoreFoundation           __CFRunLoopRun
-17 CoreFoundation           CFRunLoopRunSpecific
-18 GraphicsServices         GSEventRunModal
-19 UIKit                    UIApplicationMain
-20 CrashProbe iOS           main (main.m:16)
-21 libdyld.dylib            start
+1  libsystem_pthread.dylib  pthread_getname_np
+2  CrashProbe               -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+3  CrashProbe iOS           -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4  UIKit                    -[UIApplication sendAction:to:from:forEvent:]
+5  UIKit                    -[UIControl sendAction:to:forEvent:]
+6  UIKit                    -[UIControl _sendActionsForEvents:withEvent:]
+7  UIKit                    -[UIControl touchesEnded:withEvent:]
+8  UIKit                    _UIGestureRecognizerUpdate
+9  UIKit                    -[UIWindow _sendGesturesForEvent:]
+10 UIKit                    -[UIWindow sendEvent:]
+11 UIKit                    -[UIApplication sendEvent:]
+12 UIKit                    _UIApplicationHandleEventQueue
+13 CoreFoundation           __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+14 CoreFoundation           __CFRunLoopDoSources0
+15 CoreFoundation           __CFRunLoopRun
+16 CoreFoundation           CFRunLoopRunSpecific
+17 GraphicsServices         GSEventRunModal
+18 UIKit                    UIApplicationMain
+19 CrashProbe iOS           main (main.m:16)
+20 libdyld.dylib            start
 
