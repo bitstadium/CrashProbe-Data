@@ -1,16 +1,17 @@
 <span class="cp-wrong">Missing exception details</span>
 
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_kernel.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_c.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libc++abi.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libc++abi.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libobjc.A.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libc++abi.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libc++abi.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /usr/lib/libobjc.A.dylib | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices | Missing class, and method</span> 
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span> 
-main (main.m:16)
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libdyld.dylib | Missing class, and method</span> 
+0   libsystem_kernel.dylib              0x00000001830b811c __pthread_kill + 8
+1   libsystem_pthread.dylib             0x0000000183184ef8 pthread_kill + 112
+2   libsystem_c.dylib                   0x0000000183029dc8 abort + 140
+3   libc++abi.dylib                     0x0000000182b5d3f4 abort_message + 132
+4   libc++abi.dylib                     0x0000000182b79e98 default_terminate_handler() + 304
+5   libobjc.A.dylib                     0x0000000182b84264 _objc_terminate() + 152
+6   libc++abi.dylib                     0x0000000182b76f44 std::__terminate(void (*)()) + 16
+7   libc++abi.dylib                     0x0000000182b76b10 __cxa_rethrow + 144
+8   libobjc.A.dylib                     0x0000000182b84120 objc_exception_rethrow + 44
+9   CoreFoundation                      0x00000001833fccf8 CFRunLoopRunSpecific + 552
+10  GraphicsServices                    0x0000000184ce4088 GSEventRunModal + 180
+11  UIKit                               0x00000001886ea088 UIApplicationMain + 204
+12  CrashProbeiOS                       0x00000001000b7984 main (main.m:16)
+13  libdyld.dylib                       0x0000000182f9a8b8 start + 4
