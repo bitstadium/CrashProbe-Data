@@ -23,7 +23,7 @@
       "arm64": "complete"
     },
     "Raygun": {
-      "armv7": "incomplete",
+      "armv7": "complete",
       "arm64": "incomplete"
     },
     "Bugsnag": {
