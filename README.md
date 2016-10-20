@@ -84,7 +84,7 @@ The test case data providers per service:
 - Crittercism: [Bit Stadium GmbH](http://hockeyapp.net/)
 - HockeyApp: [Bit Stadium GmbH](http://hockeyapp.net/)
 - New Relic: [Bit Stadium GmbH](http://hockeyapp.net/)
-- Raygun: [Bit Stadium GmbH](http://hockeyapp.net/)
+- Raygun: [Raygun Limited](https://raygun.com)
 - Splunk MINT Express: [Bit Stadium GmbH](http://hockeyapp.net/)
 
 # License

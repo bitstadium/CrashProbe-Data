@@ -1,2 +1,3 @@
-<span class="cp-wrong">No matching image found in crash report | Missing class, method, filename, and line number</span>
+0   ???                                 0xa5a5a5a5a5a5a5a5 0x0 + 0
+1   ???                                 0xa5a5a5a5a5a5a5a5 0x0 + 0
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>

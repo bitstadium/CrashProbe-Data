@@ -1,2 +1,2 @@
-<span class="cp-wrong">No matching image found in crash report | Missing class, method, filename, and line number</span>
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0   ???                                 0xa5a5a5a4 0x0 + 0
+<span class="cp-wrong">1   CrashLibiOS                         0x001b332f -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:55) | Wrong line number</span>

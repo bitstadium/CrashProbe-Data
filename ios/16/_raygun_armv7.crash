@@ -1,31 +1,40 @@
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_notify.dylib | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_notify.dylib | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_asl.dylib | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_asl.dylib | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libsystem_asl.dylib | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/Foundation.framework/Foundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/Foundation.framework/Foundation | Missing class, and method</span>
-<span class="cp-wrong">-[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:47) | Wrong line number</span>
--[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices | Missing class, and method</span>
-<span class="cp-wrong">No matching symbols found for /System/Library/Frameworks/UIKit.framework/UIKit | Missing class, and method</span>
-main (main.m:16)
-<span class="cp-wrong">No matching symbols found for /usr/lib/system/libdyld.dylib | Missing class, and method</span>
-    
+0   libsystem_kernel.dylib              0x24ea6c5c __pthread_kill + 8
+1   libsystem_pthread.dylib             0x24f50733 pthread_kill + 62
+2   libsystem_c.dylib                   0x24e3b0ad abort + 108
+3   libsystem_malloc.dylib              0x24ed80ad szone_error + 364
+4   libsystem_malloc.dylib              0x24ed80c9 free_list_checksum_botch + 28
+5   libsystem_malloc.dylib              0x24ecff8b tiny_malloc_from_free_list + 994
+6   libsystem_malloc.dylib              0x24ecea0f szone_malloc_should_clear + 222
+7   libsystem_malloc.dylib              0x24ece8fb malloc_zone_malloc + 90
+8   libsystem_malloc.dylib              0x24ed1feb malloc + 46
+9   libsystem_c.dylib                   0x24df2c8b _vasprintf + 222
+10  libsystem_c.dylib                   0x24df2ba5 vasprintf_l + 32
+11  libsystem_c.dylib                   0x24df2b79 asprintf + 68
+12  libsystem_asl.dylib                 0x24ddf7c5 _asl_time_string + 852
+13  libsystem_asl.dylib                 0x24ddeddf asl_msg_to_string_raw + 210
+14  libsystem_asl.dylib                 0x24dde9a7 _asl_send_message + 882
+15  libsystem_asl.dylib                 0x24dde5d5 asl_send + 8
+16  CoreFoundation                      0x25204e37 __CFLogCString + 590
+17  CoreFoundation                      0x25204bc5 _CFLogvEx2 + 212
+18  CoreFoundation                      0x25204fb1 _CFLogvEx3 + 120
+19  Foundation                          0x25a3262f _NSLogv + 122
+20  Foundation                          0x2597903d NSLog + 28
+21  CrashLibiOS                         0x001c80b9 -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+22  CrashProbeiOS                       0x00085b59 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+23  UIKit                               0x297ce755 -[UIApplication sendAction:to:from:forEvent:] + 80
+24  UIKit                               0x297ce6e1 -[UIControl sendAction:to:forEvent:] + 64
+25  UIKit                               0x297b66d3 -[UIControl _sendActionsForEvents:withEvent:] + 466
+26  UIKit                               0x297ce005 -[UIControl touchesEnded:withEvent:] + 604
+27  UIKit                               0x297cdc7f -[UIWindow _sendTouchesForEvent:] + 646
+28  UIKit                               0x297c668f -[UIWindow sendEvent:] + 642
+29  UIKit                               0x29797125 -[UIApplication sendEvent:] + 204
+30  UIKit                               0x297956d3 _UIApplicationHandleEventQueue + 5010
+31  CoreFoundation                      0x251dddff __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 14
+32  CoreFoundation                      0x251dd9ed __CFRunLoopDoSources0 + 452
+33  CoreFoundation                      0x251dbd5b __CFRunLoopRun + 794
+34  CoreFoundation                      0x2512b229 CFRunLoopRunSpecific + 520
+35  CoreFoundation                      0x2512b015 CFRunLoopRunInMode + 108
+36  GraphicsServices                    0x2671bac9 GSEventRunModal + 160
+37  UIKit                               0x297ff189 UIApplicationMain + 144
+38  CrashProbeiOS                       0x00084ee7 main (main.m:16)
+39  libdyld.dylib                       0x24dd3873 start + 2
