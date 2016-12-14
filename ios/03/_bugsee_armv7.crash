@@ -1,0 +1,29 @@
+Exception Type:  SIGABRT
+Exception Codes: #0 at 0x23536C5C
+
+Application Specific Information:
+*** Terminating app due to uncaught exception "NSGenericException", reason: "An uncaught exception! SCREAM."
+
+Last Exception Backtrace:
+0   CoreFoundation                      0x238AB91B __exceptionPreprocess + 127
+1   libobjc.A.dylib                     0x23046E17 objc_exception_throw + 36
+2   CrashLibiOS                         0x0031168F -[CRLCrashObjCException crash] (CRLCrashObjCException.m:41)
+3   CrashProbeiOS                       0x00095C53 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4   UIKit                               0x27E5E755 -[UIApplication sendAction:to:from:forEvent:] + 78
+5   UIKit                               0x27E5E6E1 -[UIControl sendAction:to:forEvent:] + 62
+6   UIKit                               0x27E466D3 -[UIControl _sendActionsForEvents:withEvent:] + 464
+7   UIKit                               0x27E5E005 -[UIControl touchesEnded:withEvent:] + 602
+8   UIKit                               0x27E17F25 _UIGestureRecognizerUpdate + 10850
+9   UIKit                               0x27E56EC9 -[UIWindow _sendGesturesForEvent:] + 902
+10  UIKit                               0x27E5667B -[UIWindow sendEvent:] + 620
+11  UIKit                               0x27E27125 -[UIApplication sendEvent:] + 202
+12  UIKit                               0x27E256D3 _UIApplicationHandleEventQueue + 5008
+13  CoreFoundation                      0x2386DDFF __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
+14  CoreFoundation                      0x2386D9ED __CFRunLoopDoSources0 + 450
+15  CoreFoundation                      0x2386BD5B __CFRunLoopRun + 792
+16  CoreFoundation                      0x237BB229 CFRunLoopRunSpecific + 518
+17  CoreFoundation                      0x237BB015 CFRunLoopRunInMode + 106
+18  GraphicsServices                    0x24DABAC9 GSEventRunModal + 158
+19  UIKit                               0x27E8F189 UIApplicationMain + 142
+20  CrashProbeiOS                       0x00094FDF main (main.m:16)
+21  libdyld.dylib                       0x23463873 start + 0

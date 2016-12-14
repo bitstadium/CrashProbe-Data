@@ -1,0 +1,6 @@
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRALN at 0xA5A5A5A5A5A5A800
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0   unknown                             0x-5A5A5A5A5A5A5C00 unknown
