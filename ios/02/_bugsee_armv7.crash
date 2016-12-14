@@ -5,6 +5,7 @@ Application Specific Information:
 *** Terminating app due to uncaught exception "kaboom_exception*", reason: "If this had been a real exception, you would be cursing now."
 
 Last Exception Backtrace:
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
 0   libc++abi.dylib                     0x23038E17 std::__terminate() (in libc++abi.dylib) + 79
 1   libc++abi.dylib                     0x230388F9 __cxa_rethrow (in libc++abi.dylib) + 98
 2   libobjc.A.dylib                     0x23046F5F objc_exception_rethrow + 40
