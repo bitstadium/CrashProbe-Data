@@ -1,0 +1,16 @@
+Exception Type:  SIGABRT
+Exception Codes: #0 at 0x23536C5C
+
+Application Specific Information:
+*** Terminating app due to uncaught exception "kaboom_exception*", reason: "If this had been a real exception, you would be cursing now."
+
+Last Exception Backtrace:
+0   libc++abi.dylib                     0x23038E17 std::__terminate() (in libc++abi.dylib) + 79
+1   libc++abi.dylib                     0x230388F9 __cxa_rethrow (in libc++abi.dylib) + 98
+2   libobjc.A.dylib                     0x23046F5F objc_exception_rethrow + 40
+3   CoreFoundation                      0x237BB2AF CFRunLoopRunSpecific + 652
+4   CoreFoundation                      0x237BB015 CFRunLoopRunInMode + 106
+5   GraphicsServices                    0x24DABAC9 GSEventRunModal + 158
+6   UIKit                               0x27E8F189 UIApplicationMain + 142
+7   CrashProbeiOS                       0x0004BFDF main (main.m:16)
+8   libdyld.dylib                       0x23463873 start + 0

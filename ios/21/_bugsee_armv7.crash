@@ -1,0 +1,7 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_ACCERR at 0xA5A5A5A4
+Crashed Thread:  0
+
+Thread 0 Crashed:
+0   unknown                             0x-5A5A5A5C unknown
+1   CrashLibiOS                         0x00376F1F -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)

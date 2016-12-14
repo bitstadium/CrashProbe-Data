@@ -1,0 +1,32 @@
+Exception Type:  SIGSEGV
+Exception Codes: SEGV_ACCERR at 0xA5A9A9C5
+Crashed Thread:  0
+
+Application Specific Information:
+Selector name found in current argument registers: description
+
+Thread 0 Crashed:
+0   libobjc.A.dylib                     0x23053A12 cache_getImp + 18
+1   libobjc.A.dylib                     0x2304D9D1 lookUpImpOrForward + 338
+2   libobjc.A.dylib                     0x2304D873 _class_lookupMethodAndLoadCache3 + 32
+3   libobjc.A.dylib                     0x23053CFB _objc_msgSend_uncached + 24
+4   CrashLibiOS                         0x00370D43 -[CRLCrashCorruptObjC crash] (CRLCrashCorruptObjC.m:70)
+5   CrashProbeiOS                       0x000F4C53 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+6   UIKit                               0x27E5E755 -[UIApplication sendAction:to:from:forEvent:] + 78
+7   UIKit                               0x27E5E6E1 -[UIControl sendAction:to:forEvent:] + 62
+8   UIKit                               0x27E466D3 -[UIControl _sendActionsForEvents:withEvent:] + 464
+9   UIKit                               0x27E5E005 -[UIControl touchesEnded:withEvent:] + 602
+10  UIKit                               0x27E17F25 _UIGestureRecognizerUpdate + 10850
+11  UIKit                               0x27E56EC9 -[UIWindow _sendGesturesForEvent:] + 902
+12  UIKit                               0x27E5667B -[UIWindow sendEvent:] + 620
+13  UIKit                               0x27E27125 -[UIApplication sendEvent:] + 202
+14  UIKit                               0x27E256D3 _UIApplicationHandleEventQueue + 5008
+15  CoreFoundation                      0x2386DDFF __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
+16  CoreFoundation                      0x2386D9ED __CFRunLoopDoSources0 + 450
+17  CoreFoundation                      0x2386BD5B __CFRunLoopRun + 792
+18  CoreFoundation                      0x237BB229 CFRunLoopRunSpecific + 518
+19  CoreFoundation                      0x237BB015 CFRunLoopRunInMode + 106
+20  GraphicsServices                    0x24DABAC9 GSEventRunModal + 158
+21  UIKit                               0x27E8F189 UIApplicationMain + 142
+22  CrashProbeiOS                       0x000F3FDF main (main.m:16)
+23  libdyld.dylib                       0x23463873 start + 0
