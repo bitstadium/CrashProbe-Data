@@ -1,6 +1,0 @@
-Exception Type:  SIGSEGV
-Crashed Thread:  0
-
-Thread 0 Crashed:
-0 0xa5a5a5a4 0 + 2779096484
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
