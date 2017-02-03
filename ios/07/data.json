@@ -32,18 +32,6 @@
     "Bugsnag": {
       "armv7": "complete",
       "arm64": "complete"
-    },
-    "Crittercism": {
-      "armv7": "wrong",
-      "arm64": "wrong"
-    },
-    "NewRelic": {
-      "armv7": "wrong",
-      "arm64": "wrong"
-    },
-    "Splunk": {
-      "armv7": "wrong",
-      "arm64": "wrong"
     }
   }
 }
