@@ -1,5 +1,5 @@
 Exception Type:  SIGABRT
-Exception Codes: #0 at 0x2588cc84
+Exception Codes: #0 at 0x2365ec5c
 Crashed Thread:  0
 
 Application Specific Information:
@@ -7,12 +7,12 @@ Application Specific Information:
 
 Last Exception Backtrace:
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>
-0 libc++abi.dylib  0x25390e17 std::__terminate(void (*)()) + 76
-1 libc++abi.dylib  0x253908f9 __cxa_rethrow + 98
-2 libobjc.A.dylib  0x2539ef5f objc_exception_rethrow + 40
-3 CoreFoundation   0x25b0cc7f CFRunLoopRunSpecific + 652
-4 CoreFoundation   0x25b0c9e5 CFRunLoopRunInMode + 106
-5 GraphicsServices 0x26d58ac9 GSEventRunModal + 158
-6 UIKit            0x29d9cba1 UIApplicationMain + 142
-7 CrashProbeiOS    0x001092e7 main (main.m:16)
-8 ???              0x257bb873 0x0 + 0
+0 libc++abi.dylib  0x23160e17 std::__terminate(void (*)()) + 79
+1 libc++abi.dylib  0x231608f9 __cxa_rethrow + 98
+2 libobjc.A.dylib  0x2316ef5f objc_exception_rethrow + 40
+3 CoreFoundation   0x238e32af CFRunLoopRunSpecific + 652
+4 CoreFoundation   0x238e3015 CFRunLoopRunInMode + 106
+5 GraphicsServices 0x24ed3ac9 GSEventRunModal + 158
+6 UIKit            0x27fb7189 UIApplicationMain + 142
+7 CrashProbeiOS    0x0006ff07 main (main.m:16)
+8 libdyld.dylib    0x2358b873 start + 0

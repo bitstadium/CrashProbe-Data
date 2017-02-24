@@ -3,5 +3,5 @@ Exception Codes: BUS_ADRERR at 0x0
 Crashed Thread:  0
 
 Thread 0 Crashed:
-0 libsystem_platform.dylib 0x00007fff9a742c92 _platform_bzero$VARIANT$Haswell + 114
+0 libsystem_platform.dylib 0x00007fffdf172c12 _platform_bzero$VARIANT$Haswell + 114
 <span class="cp-wrong">Missing frames that show where the crash occured</span>

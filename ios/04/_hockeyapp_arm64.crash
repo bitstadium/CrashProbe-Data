@@ -3,33 +3,39 @@ Exception Codes: SEGV_MAPERR at 0x10
 Crashed Thread:  0
 
 Application Specific Information:
-objc_msgSend() selector name: respondsToSelector:
+objc_msgSend() selector name: isProxy
 
 Thread 0 Crashed:
-0  libobjc.A.dylib  0x00000001831f1bc8 objc_msgSend + 8
-1  Foundation       0x0000000184531c14 _NSDescriptionWithStringProxyFunc + 60
-2  CoreFoundation   0x0000000183b3c11c __CFStringAppendFormatCore + 7708
-3  CoreFoundation   0x0000000183b3a2c4 _CFStringCreateWithFormatAndArgumentsAux2 + 240
-4  CoreFoundation   0x0000000183b57714 _CFLogvEx2 + 148
-5  CoreFoundation   0x0000000183b57c14 _CFLogvEx3 + 152
-6  Foundation       0x000000018451ddd8 _NSLogv + 128
-7  Foundation       0x0000000184452e04 NSLog + 28
-8  CrashLibiOS      0x00000001003b77cc -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
-9  CrashProbeiOS    0x00000001000a438c -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-10 UIKit            0x000000018889be50 -[UIApplication sendAction:to:from:forEvent:] + 96
-11 UIKit            0x000000018889bdcc -[UIControl sendAction:to:forEvent:] + 76
-12 UIKit            0x0000000188883a88 -[UIControl _sendActionsForEvents:withEvent:] + 412
-13 UIKit            0x000000018889b6e4 -[UIControl touchesEnded:withEvent:] + 568
-14 UIKit            0x0000000188854294 _UIGestureRecognizerUpdate + 8984
-15 UIKit            0x0000000188894820 -[UIWindow _sendGesturesForEvent:] + 1128
-16 UIKit            0x0000000188893e1c -[UIWindow sendEvent:] + 760
-17 UIKit            0x00000001888644cc -[UIApplication sendEvent:] + 244
-18 UIKit            0x0000000188862794 _UIApplicationHandleEventQueue + 5524
-19 CoreFoundation   0x0000000183b28efc __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
-20 CoreFoundation   0x0000000183b28990 __CFRunLoopDoSources0 + 536
-21 CoreFoundation   0x0000000183b26690 __CFRunLoopRun + 720
-22 CoreFoundation   0x0000000183a55680 CFRunLoopRunSpecific + 380
-23 GraphicsServices 0x0000000184f64088 GSEventRunModal + 176
-24 UIKit            0x00000001888ccd90 UIApplicationMain + 200
-25 CrashProbeiOS    0x00000001000a339c main (main.m:16)
-26 ???              0x00000001835f68b8 0x0 + 0
+0  libobjc.A.dylib       0x0000000191752f68 objc_msgSend + 8
+1  Foundation            0x00000001937fcba4 _NS_os_log_callback + 64
+2  libsystem_trace.dylib 0x0000000191dc3954 _NSCF2data + 108
+3  libsystem_trace.dylib 0x0000000191dc3564 _os_log_encode_arg + 732
+4  libsystem_trace.dylib 0x0000000191dc3fb8 _os_log_encode + 1032
+5  libsystem_trace.dylib 0x0000000191dc7200 os_log_with_args + 888
+6  libsystem_trace.dylib 0x0000000191dc749c os_log_shim_with_CFString + 168
+7  CoreFoundation        0x0000000192cecde4 _CFLogvEx3 + 148
+8  Foundation            0x00000001937fdcb0 _NSLogv + 128
+9  Foundation            0x0000000193724b3c NSLog + 28
+10 CrashLibiOS           0x000000010017b6b4 -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
+11 CrashProbeiOS         0x00000001000be754 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+12 UIKit                 0x0000000198bf3d30 -[UIApplication sendAction:to:from:forEvent:] + 92
+13 UIKit                 0x0000000198bf3cb0 -[UIControl sendAction:to:forEvent:] + 76
+14 UIKit                 0x0000000198bde128 -[UIControl _sendActionsForEvents:withEvent:] + 448
+15 UIKit                 0x0000000198bf359c -[UIControl touchesEnded:withEvent:] + 580
+16 UIKit                 0x000000019917e628 _UIGestureEnvironmentSortAndSendDelayedTouches + 4480
+17 UIKit                 0x000000019917a6c0 _UIGestureEnvironmentUpdate + 1160
+18 UIKit                 0x000000019917a1e0 -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:] + 404
+19 UIKit                 0x000000019917949c -[UIGestureEnvironment _updateGesturesForEvent:window:] + 264
+20 UIKit                 0x0000000198bee30c -[UIWindow sendEvent:] + 2956
+21 UIKit                 0x0000000198bbeda0 -[UIApplication sendEvent:] + 336
+22 UIKit                 0x00000001993a875c __dispatchPreprocessedEventFromEventQueue + 2732
+23 UIKit                 0x00000001993a2130 __handleEventQueue + 780
+24 CoreFoundation        0x0000000192cb6b5c __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
+25 CoreFoundation        0x0000000192cb64a4 __CFRunLoopDoSources0 + 520
+26 CoreFoundation        0x0000000192cb40a4 __CFRunLoopRun + 800
+27 CoreFoundation        0x0000000192be22b8 CFRunLoopRunSpecific + 440
+28 GraphicsServices      0x0000000194696198 GSEventRunModal + 176
+29 UIKit                 0x0000000198c297fc -[UIApplication _run] + 680
+30 UIKit                 0x0000000198c24534 UIApplicationMain + 204
+31 CrashProbeiOS         0x00000001000bd74c main (main.m:16)
+32 libdyld.dylib         0x0000000191bc55b8 start + 0
