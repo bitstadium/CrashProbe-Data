@@ -6,24 +6,25 @@ Application Specific Information:
 Selector name found in current argument registers: crash
 
 Thread 0 Crashed:
-0  CrashLib              0x000000010ad76488 -[CRLCrashPrivInst crash] (CRLCrashPrivInst.m:40)
-1  CrashProbe            0x000000010ad67b4e -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-2  libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-3  AppKit                0x00007fff8df9551d -[NSApplication sendAction:to:from:] + 459
-4  AppKit                0x00007fff8dfaa486 -[NSControl sendAction:to:] + 85
-5  AppKit                0x00007fff8dfaa3b0 __26-[NSCell _sendActionFrom:]_block_invoke + 130
-6  libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-7  AppKit                0x00007fff8dfaa30d -[NSCell _sendActionFrom:] + 143
-8  libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-9  AppKit                0x00007fff8dfa8932 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2692
-10 AppKit                0x00007fff8dffdd58 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 743
-11 AppKit                0x00007fff8dfa705c -[NSControl mouseDown:] + 668
-12 AppKit                0x00007fff8e554d1d -[NSWindow _handleMouseDownEvent:isDelayedEvent:] + 6321
-13 AppKit                0x00007fff8e555fad -[NSWindow _reallySendEvent:isDelayedEvent:] + 211
-14 AppKit                0x00007fff8deae735 -[NSWindow sendEvent:] + 516
-15 AppKit                0x00007fff8deaae49 -[NSApplication sendEvent:] + 2539
-16 HockeySDK             0x000000010ad91e1a -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
-17 AppKit                0x00007fff8ddde03a -[NSApplication run] + 795
-18 AppKit                0x00007fff8dd60520 NSApplicationMain + 1175
-19 CrashProbe            0x000000010ad67eb3 main (main.m:13)
-20 libdyld.dylib         0x00007fff850755ad start + 0
+0  CrashLib              0x00000001073d73e7 -[CRLCrashPrivInst crash] (CRLCrashPrivInst.m:40)
+1  CrashProbe            0x00000001073c9b3d -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+2  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+3  AppKit                0x00007fffc7cb7c9c -[NSApplication(NSResponder) sendAction:to:from:] + 456
+4  AppKit                0x00007fffc779d460 -[NSControl sendAction:to:] + 86
+5  AppKit                0x00007fffc779d388 __26-[NSCell _sendActionFrom:]_block_invoke + 136
+6  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+7  AppKit                0x00007fffc779d2e0 -[NSCell _sendActionFrom:] + 128
+8  AppKit                0x00007fffc77dfcd9 -[NSButtonCell _sendActionFrom:] + 98
+9  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+10 AppKit                0x00007fffc779bbc6 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
+11 AppKit                0x00007fffc77dfa12 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
+12 AppKit                0x00007fffc779a57b -[NSControl mouseDown:] + 832
+13 AppKit                0x00007fffc7e2f603 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
+14 AppKit                0x00007fffc7e2be20 -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
+15 AppKit                0x00007fffc7e2b2be -[NSWindow(NSEventRouting) sendEvent:] + 541
+16 AppKit                0x00007fffc7cb3bf5 -[NSApplication(NSEvent) sendEvent:] + 1145
+17 HockeySDK             0x00000001073f5914 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:48)
+18 AppKit                0x00007fffc752ff81 -[NSApplication run] + 1002
+19 AppKit                0x00007fffc74fa850 NSApplicationMain + 1237
+20 CrashProbe            0x00000001073c9ea4 main (main.m:13)
+21 libdyld.dylib         0x00007fffdef61255 start + 1

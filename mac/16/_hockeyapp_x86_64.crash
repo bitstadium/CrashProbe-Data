@@ -1,40 +1,34 @@
-Exception Type:  SIGABRT
-Exception Codes: #0 at 0x7fff894df002
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRERR at 0x0
 Crashed Thread:  0
 
 Thread 0 Crashed:
-0  libsystem_kernel.dylib 0x00007fff894df002 __pthread_kill + 10
-1  libsystem_c.dylib      0x00007fff86dbe6e7 abort + 128
-2  libsystem_malloc.dylib 0x00007fff8a74ae66 szone_error + 625
-3  libsystem_malloc.dylib 0x00007fff8a73e827 tiny_malloc_from_free_list + 346
-4  libsystem_malloc.dylib 0x00007fff8a73d715 szone_malloc_should_clear + 291
-5  libsystem_malloc.dylib 0x00007fff8a7409b7 malloc_zone_calloc + 77
-6  libsystem_malloc.dylib 0x00007fff8a741359 calloc + 48
-7  libsystem_asl.dylib    0x00007fff863001b3 asl_client_open + 34
-8  libsystem_asl.dylib    0x00007fff86300d98 asl_open + 13
-9  CoreFoundation         0x00007fff876dcf51 __CFLogCString + 640
-10 CoreFoundation         0x00007fff8778da32 _CFLogvEx2 + 289
-11 CoreFoundation         0x00007fff8778db0b _CFLogvEx3 + 170
-12 Foundation             0x00007fff9282bce1 _NSLogv + 116
-13 Foundation             0x00007fff9273f735 NSLog + 151
-14 CrashLib               0x000000010d78ba8f -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
-15 CrashProbe             0x000000010d77cb4e -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-16 libsystem_trace.dylib  0x00007fff84dea07a _os_activity_initiate + 74
-17 AppKit                 0x00007fff8df9551d -[NSApplication sendAction:to:from:] + 459
-18 AppKit                 0x00007fff8dfaa486 -[NSControl sendAction:to:] + 85
-19 AppKit                 0x00007fff8dfaa3b0 __26-[NSCell _sendActionFrom:]_block_invoke + 130
-20 libsystem_trace.dylib  0x00007fff84dea07a _os_activity_initiate + 74
-21 AppKit                 0x00007fff8dfaa30d -[NSCell _sendActionFrom:] + 143
-22 libsystem_trace.dylib  0x00007fff84dea07a _os_activity_initiate + 74
-23 AppKit                 0x00007fff8dfa8932 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2692
-24 AppKit                 0x00007fff8dffdd58 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 743
-25 AppKit                 0x00007fff8dfa705c -[NSControl mouseDown:] + 668
-26 AppKit                 0x00007fff8e554d1d -[NSWindow _handleMouseDownEvent:isDelayedEvent:] + 6321
-27 AppKit                 0x00007fff8e555fad -[NSWindow _reallySendEvent:isDelayedEvent:] + 211
-28 AppKit                 0x00007fff8deae735 -[NSWindow sendEvent:] + 516
-29 AppKit                 0x00007fff8deaae49 -[NSApplication sendEvent:] + 2539
-30 HockeySDK              0x000000010d7a4e1a -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
-31 AppKit                 0x00007fff8ddde03a -[NSApplication run] + 795
-32 AppKit                 0x00007fff8dd60520 NSApplicationMain + 1175
-33 CrashProbe             0x000000010d77ceb3 main (main.m:13)
-34 libdyld.dylib          0x00007fff850755ad start + 0
+0  libobjc.A.dylib       0x00007fffde67363c object_setClass + 61
+1  CoreFoundation        0x00007fffc9985a9e _CFRuntimeCreateInstance + 558
+2  CoreFoundation        0x00007fffc99b70e4 _CFStringCreateWithFormatAndArgumentsAux2 + 84
+3  CoreFoundation        0x00007fffc9af5a98 _CFLogvEx2Predicate + 136
+4  CoreFoundation        0x00007fffc9a65956 _CFLogvEx3 + 486
+5  Foundation            0x00007fffcb49e735 _NSLogv + 117
+6  Foundation            0x00007fffcb4898be NSLog + 152
+7  CrashLib              0x0000000102562a00 -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+8  CrashProbe            0x0000000102555b3d -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+9  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+10 AppKit                0x00007fffc7cb7c9c -[NSApplication(NSResponder) sendAction:to:from:] + 456
+11 AppKit                0x00007fffc779d460 -[NSControl sendAction:to:] + 86
+12 AppKit                0x00007fffc779d388 __26-[NSCell _sendActionFrom:]_block_invoke + 136
+13 libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+14 AppKit                0x00007fffc779d2e0 -[NSCell _sendActionFrom:] + 128
+15 AppKit                0x00007fffc77dfcd9 -[NSButtonCell _sendActionFrom:] + 98
+16 libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+17 AppKit                0x00007fffc779bbc6 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
+18 AppKit                0x00007fffc77dfa12 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
+19 AppKit                0x00007fffc779a57b -[NSControl mouseDown:] + 832
+20 AppKit                0x00007fffc7e2f603 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
+21 AppKit                0x00007fffc7e2be20 -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
+22 AppKit                0x00007fffc7e2b2be -[NSWindow(NSEventRouting) sendEvent:] + 541
+23 AppKit                0x00007fffc7cb3bf5 -[NSApplication(NSEvent) sendEvent:] + 1145
+24 HockeySDK             0x0000000102580914 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:48)
+25 AppKit                0x00007fffc752ff81 -[NSApplication run] + 1002
+26 AppKit                0x00007fffc74fa850 NSApplicationMain + 1237
+27 CrashProbe            0x0000000102555ea4 main (main.m:13)
+28 libdyld.dylib         0x00007fffdef61255 start + 1

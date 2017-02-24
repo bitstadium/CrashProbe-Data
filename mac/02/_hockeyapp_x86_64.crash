@@ -1,32 +1,32 @@
 Exception Type:  SIGABRT
-Exception Codes: #0 at 0x7fff894df002
+Exception Codes: #0 at 0x7fffdf08fdd6
 Crashed Thread:  0
 
 Application Specific Information:
 *** Terminating app due to uncaught exception 'kaboom_exception*', reason: 'If this had been a real exception, you would be cursing now.'
 
 Last Exception Backtrace:
-0  libc++abi.dylib       0x00007fff9259419e std::__terminate(void (*)()) + 8
-1  libc++abi.dylib       0x00007fff92593c12 __cxa_throw + 120
-2  CrashLib              0x000000010c5516e6 -[CRLCrashCXXException crash] (CRLCrashCXXException.mm:52)
-3  CrashProbe            0x000000010c53fb4e -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-4  libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-5  AppKit                0x00007fff8df9551d -[NSApplication sendAction:to:from:] + 459
-6  AppKit                0x00007fff8dfaa486 -[NSControl sendAction:to:] + 85
-7  AppKit                0x00007fff8dfaa3b0 __26-[NSCell _sendActionFrom:]_block_invoke + 130
-8  libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-9  AppKit                0x00007fff8dfaa30d -[NSCell _sendActionFrom:] + 143
-10 libsystem_trace.dylib 0x00007fff84dea07a _os_activity_initiate + 74
-11 AppKit                0x00007fff8dfa8932 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2692
-12 AppKit                0x00007fff8dffdd58 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 743
-13 AppKit                0x00007fff8dfa705c -[NSControl mouseDown:] + 668
-14 AppKit                0x00007fff8e554d1d -[NSWindow _handleMouseDownEvent:isDelayedEvent:] + 6321
-15 AppKit                0x00007fff8e555fad -[NSWindow _reallySendEvent:isDelayedEvent:] + 211
-16 AppKit                0x00007fff8deae735 -[NSWindow sendEvent:] + 516
-17 AppKit                0x00007fff8deaae49 -[NSApplication sendEvent:] + 2539
-18 HockeySDK             0x000000010c56ae1a -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:76)
-19 AppKit                0x00007fff8ddde03a -[NSApplication run] + 795
-20 AppKit                0x00007fff8dd60520 NSApplicationMain + 1175
-21 CrashProbe            0x000000010c53feb3 main (main.m:13)
-22 libdyld.dylib         0x00007fff850755ad start + 0
-23 ???                   0x0000000000000001 0x0 + 0
+0  libc++abi.dylib       0x00007fffddb72d69 std::__terminate(void (*)()) + 8
+1  libc++abi.dylib       0x00007fffddb727de __cxa_throw + 120
+2  CrashLib              0x000000010cbd065c -[CRLCrashCXXException crash] (CRLCrashCXXException.mm:52)
+3  CrashProbe            0x000000010cbc2b3d -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+5  AppKit                0x00007fffc7cb7c9c -[NSApplication(NSResponder) sendAction:to:from:] + 456
+6  AppKit                0x00007fffc779d460 -[NSControl sendAction:to:] + 86
+7  AppKit                0x00007fffc779d388 __26-[NSCell _sendActionFrom:]_block_invoke + 136
+8  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+9  AppKit                0x00007fffc779d2e0 -[NSCell _sendActionFrom:] + 128
+10 AppKit                0x00007fffc77dfcd9 -[NSButtonCell _sendActionFrom:] + 98
+11 libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
+12 AppKit                0x00007fffc779bbc6 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
+13 AppKit                0x00007fffc77dfa12 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
+14 AppKit                0x00007fffc779a57b -[NSControl mouseDown:] + 832
+15 AppKit                0x00007fffc7e2f603 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
+16 AppKit                0x00007fffc7e2be20 -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
+17 AppKit                0x00007fffc7e2b2be -[NSWindow(NSEventRouting) sendEvent:] + 541
+18 AppKit                0x00007fffc7cb3bf5 -[NSApplication(NSEvent) sendEvent:] + 1145
+19 HockeySDK             0x000000010cbf5914 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:48)
+20 AppKit                0x00007fffc752ff81 -[NSApplication run] + 1002
+21 AppKit                0x00007fffc74fa850 NSApplicationMain + 1237
+22 CrashProbe            0x000000010cbc2ea4 main (main.m:13)
+23 libdyld.dylib         0x00007fffdef61255 start + 1
