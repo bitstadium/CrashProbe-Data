@@ -56,6 +56,7 @@ Repository URL:
 
 Date of testing:
 SDK-Version:
+Swift-Version:
 
 Test environment per architecture: (Device name, OS Version)
 ```
