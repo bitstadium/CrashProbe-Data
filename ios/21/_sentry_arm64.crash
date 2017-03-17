@@ -1,0 +1,24 @@
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0xa5a5a5a5a5a5a5a5
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0xa5a5a5a5a5a5a5a5.
+
+<span class="cp-wrong">Missing frame/thread that shows where the crash occured</span>
+Thread 1 name:
+0   libsystem_kernel.dylib          0x30f2ffa88         __workq_kernreturn
+1   libsystem_pthread.dylib         0x30f4a5160         _pthread_wqthread
+
+Thread 2 name: com.apple.uikit.eventfetch-thread
+0   libsystem_kernel.dylib          0x30f2e1188         mach_msg_trap
+1   libsystem_kernel.dylib          0x30f2e0ff8         mach_msg
+2   CoreFoundation                  0x3111ff5d0         __CFRunLoopServiceMachPort
+3   CoreFoundation                  0x3111fd1ec         __CFRunLoopRun
+4   CoreFoundation                  0x31112b2b8         CFRunLoopRunSpecific
+5   Foundation                      0x3127a226c         -[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+6   Foundation                      0x3127c2dd0         -[NSRunLoop(NSRunLoop) runUntilDate:]
+7   UIKit                           0x31daaec38         -[UIEventFetcher threadMain]
+8   Foundation                      0x31289fe68         __NSThread__start__
+9   libsystem_pthread.dylib         0x30f4a7850         _pthread_body
+10  libsystem_pthread.dylib         0x30f4a7760         _pthread_start

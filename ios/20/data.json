@@ -31,6 +31,10 @@
     "Bugsnag": {
       "armv7": "wrong",
       "arm64": "wrong"
+    },
+    "Sentry": {
+      "armv7": "wrong",
+      "arm64": "wrong"
     }
   }
 }

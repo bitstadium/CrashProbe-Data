@@ -33,6 +33,10 @@
     "Bugsnag": {
       "armv7": "complete",
       "arm64": "complete"
+    },
+    "Sentry": {
+      "armv7": "complete",
+      "arm64": "complete"
     }
   }
 }

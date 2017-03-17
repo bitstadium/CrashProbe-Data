@@ -1,0 +1,35 @@
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x1
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x1.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_platform.dylib        0x359b7752          _platform_memmove
+1   libsystem_pthread.dylib         0x359c6a31          pthread_getname_np
+2   libsystem_pthread.dylib         0x359c6a31          pthread_getname_np
+3   CrashLibiOS                     0xc247b             -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4   CrashProbeiOS                   0xabe19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5   UIKit                           0x409e46bd          -[UIApplication sendAction:to:from:forEvent:]
+6   UIKit                           0x409e464b          -[UIControl sendAction:to:forEvent:]
+7   UIKit                           0x409ce7e7          -[UIControl _sendActionsForEvents:withEvent:]
+8   UIKit                           0x409e3f73          -[UIControl touchesEnded:withEvent:]
+9   UIKit                           0x40f4620b          _UIGestureEnvironmentSortAndSendDelayedTouches
+10  UIKit                           0x40f42851          _UIGestureEnvironmentUpdate
+11  UIKit                           0x40f42403          -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+12  UIKit                           0x40f41847          -[UIGestureEnvironment _updateGesturesForEvent:window:]
+13  UIKit                           0x409de68d          -[UIWindow sendEvent:]
+14  UIKit                           0x409af53d          -[UIApplication sendEvent:]
+15  UIKit                           0x4114f9e9          __dispatchPreprocessedEventFromEventQueue
+16  UIKit                           0x4114968b          __handleEventQueue
+17  CoreFoundation                  0x367c7c8b          __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+18  CoreFoundation                  0x367c7795          __CFRunLoopDoSources0
+19  CoreFoundation                  0x367c5a6b          __CFRunLoopRun
+20  CoreFoundation                  0x36715073          CFRunLoopRunSpecific
+21  CoreFoundation                  0x36714e81          CFRunLoopRunInMode
+22  GraphicsServices                0x3966fbfd          GSEventRunModal
+23  UIKit                           0x40a1a82f          -[UIApplication _run]
+24  UIKit                           0x40a14f61          UIApplicationMain
+25  CrashProbeiOS                   0xab14f             main (main.m:16)

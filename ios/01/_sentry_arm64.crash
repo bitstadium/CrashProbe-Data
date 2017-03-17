@@ -1,0 +1,35 @@
+Exception Type: EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: SEGV_NOOP at 0x1
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x1.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_platform.dylib        0x30f497f44         _platform_memmove
+1   libsystem_pthread.dylib         0x30f4a8be0         pthread_getname_np
+2   libsystem_pthread.dylib         0x30f4a8be0         pthread_getname_np
+3   CrashLibiOS                     0x100033458         -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4   CrashProbeiOS                   0x200010220         -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5   UIKit                           0x31d104d30         -[UIApplication sendAction:to:from:forEvent:]
+6   UIKit                           0x31d104cb0         -[UIControl sendAction:to:forEvent:]
+7   UIKit                           0x31d0ef128         -[UIControl _sendActionsForEvents:withEvent:]
+8   UIKit                           0x31d10459c         -[UIControl touchesEnded:withEvent:]
+9   UIKit                           0x31d68f628         _UIGestureEnvironmentSortAndSendDelayedTouches
+10  UIKit                           0x31d68b6c0         _UIGestureEnvironmentUpdate
+11  UIKit                           0x31d68b1e0         -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+12  UIKit                           0x31d68a49c         -[UIGestureEnvironment _updateGesturesForEvent:window:]
+13  UIKit                           0x31d0ff30c         -[UIWindow sendEvent:]
+14  UIKit                           0x31d0cfda0         -[UIApplication sendEvent:]
+15  UIKit                           0x31d8b975c         __dispatchPreprocessedEventFromEventQueue
+16  UIKit                           0x31d8b3130         __handleEventQueue
+17  CoreFoundation                  0x3111ffb5c         __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+18  CoreFoundation                  0x3111ff4a4         __CFRunLoopDoSources0
+19  CoreFoundation                  0x3111fd0a4         __CFRunLoopRun
+20  CoreFoundation                  0x31112b2b8         CFRunLoopRunSpecific
+21  GraphicsServices                0x314690198         GSEventRunModal
+22  UIKit                           0x31d13a7fc         -[UIApplication _run]
+23  UIKit                           0x31d135534         UIApplicationMain
+24  CrashProbeiOS                   0x20000f2a4         main (main.m:16)
+25  libdyld.dylib                   0x30f0f65b8         start

@@ -1,0 +1,32 @@
+Exception Type: EXC_BREAKPOINT
+Crashed Thread: 0
+
+Application Specific Information:
+Exception 6, Code 1, Subcode 0
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x23fe8             @objc CRLCrashSwift.crash() -> ()
+1   CrashLibiOS                     0x23fe8             CRLCrashSwift.crash() -> () (CRLCrashSwift.swift:36)
+2   CrashProbeiOS                   0xfe19              -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+3   UIKit                           0x409e46bd          -[UIApplication sendAction:to:from:forEvent:]
+4   UIKit                           0x409e464b          -[UIControl sendAction:to:forEvent:]
+5   UIKit                           0x409ce7e7          -[UIControl _sendActionsForEvents:withEvent:]
+6   UIKit                           0x409e3f73          -[UIControl touchesEnded:withEvent:]
+7   UIKit                           0x40f4620b          _UIGestureEnvironmentSortAndSendDelayedTouches
+8   UIKit                           0x40f42851          _UIGestureEnvironmentUpdate
+9   UIKit                           0x40f42403          -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+10  UIKit                           0x40f41847          -[UIGestureEnvironment _updateGesturesForEvent:window:]
+11  UIKit                           0x409de68d          -[UIWindow sendEvent:]
+12  UIKit                           0x409af53d          -[UIApplication sendEvent:]
+13  UIKit                           0x4114f9e9          __dispatchPreprocessedEventFromEventQueue
+14  UIKit                           0x4114968b          __handleEventQueue
+15  CoreFoundation                  0x367c7c8b          __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+16  CoreFoundation                  0x367c7795          __CFRunLoopDoSources0
+17  CoreFoundation                  0x367c5a6b          __CFRunLoopRun
+18  CoreFoundation                  0x36715073          CFRunLoopRunSpecific
+19  CoreFoundation                  0x36714e81          CFRunLoopRunInMode
+20  GraphicsServices                0x3966fbfd          GSEventRunModal
+21  UIKit                           0x40a1a82f          -[UIApplication _run]
+22  UIKit                           0x40a14f61          UIApplicationMain
+23  CrashProbeiOS                   0xf14f              main (main.m:16)
