@@ -1,3 +1,6 @@
+OS Version: iOS 10.2.1 (14D27)
+Report Version: 104
+
 Exception Type: EXC_BAD_ACCESS (SIGBUS)
 Exception Codes: BUS_NOOP at 0x16fc8fff0
 Crashed Thread: 0

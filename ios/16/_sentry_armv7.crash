@@ -1,40 +1,40 @@
+OS Version: iOS 9.3.5 (13G36)
+Report Version: 104
+
 Exception Type: EXC_BAD_ACCESS (SIGBUS)
-Exception Codes: BUS_NOOP at 0x5b1a7c08
+Exception Codes: BUS_NOOP at 0xabababab
 Crashed Thread: 0
 
 Application Specific Information:
-Attempted to dereference garbage pointer 0x5b1a7c08.
+Attempted to dereference garbage pointer 0xabababab.
 
 Thread 0 name:
 Thread 0 Crashed:
-0   libsystem_malloc.dylib          0x358cf842          szone_size
-1   libsystem_malloc.dylib          0x358cf47d          free
-2   CoreFoundation                  0x367d8e21          __CFStringAppendFormatCore
-3   CoreFoundation                  0x367d5c13          _CFStringCreateWithFormatAndArgumentsAux2
-4   CoreFoundation                  0x367f2fa1          _CFLogvEx2Predicate
-5   CoreFoundation                  0x367f323d          _CFLogvEx3
-6   Foundation                      0x37a47073          _NSLogv
-7   Foundation                      0x3797dd75          NSLog
-8   CrashLibiOS                     0x101cab            -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
-9   CrashProbeiOS                   0xece19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-10  UIKit                           0x409e46bd          -[UIApplication sendAction:to:from:forEvent:]
-11  UIKit                           0x409e464b          -[UIControl sendAction:to:forEvent:]
-12  UIKit                           0x409ce7e7          -[UIControl _sendActionsForEvents:withEvent:]
-13  UIKit                           0x409e3f73          -[UIControl touchesEnded:withEvent:]
-14  UIKit                           0x40f4620b          _UIGestureEnvironmentSortAndSendDelayedTouches
-15  UIKit                           0x40f42851          _UIGestureEnvironmentUpdate
-16  UIKit                           0x40f42403          -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
-17  UIKit                           0x40f41847          -[UIGestureEnvironment _updateGesturesForEvent:window:]
-18  UIKit                           0x409de68d          -[UIWindow sendEvent:]
-19  UIKit                           0x409af53d          -[UIApplication sendEvent:]
-20  UIKit                           0x4114f9e9          __dispatchPreprocessedEventFromEventQueue
-21  UIKit                           0x4114968b          __handleEventQueue
-22  CoreFoundation                  0x367c7c8b          __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-23  CoreFoundation                  0x367c7795          __CFRunLoopDoSources0
-24  CoreFoundation                  0x367c5a6b          __CFRunLoopRun
-25  CoreFoundation                  0x36715073          CFRunLoopRunSpecific
-26  CoreFoundation                  0x36714e81          CFRunLoopRunInMode
-27  GraphicsServices                0x3966fbfd          GSEventRunModal
-28  UIKit                           0x40a1a82f          -[UIApplication _run]
-29  UIKit                           0x40a14f61          UIApplicationMain
-30  CrashProbeiOS                   0xec14f             main (main.m:16)
+0   libobjc.A.dylib                 0x427fdbac          _object_setClass
+1   CoreFoundation                  0x436df2fd          __CFRuntimeCreateInstance
+2   CoreFoundation                  0x436df2fd          __CFRuntimeCreateInstance
+3   CoreFoundation                  0x436f3aa5          _CFStringCreateMutable
+4   CoreFoundation                  0x437a5c29          __CFStringCreateWithFormatAndArgumentsAux2
+5   CoreFoundation                  0x437beb51          __CFLogvEx2
+6   CoreFoundation                  0x437befb1          __CFLogvEx3
+7   Foundation                      0x4483362f          __NSLogv
+8   Foundation                      0x4477a03d          _NSLog
+9   CrashLibiOS                     0x186cab            -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+10  CrashProbeiOS                   0x72e19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+11  UIKit                           0x4c3e9755          -[UIApplication sendAction:to:from:forEvent:]
+12  UIKit                           0x4c3e96e1          -[UIControl sendAction:to:forEvent:]
+13  UIKit                           0x4c3d16d3          -[UIControl _sendActionsForEvents:withEvent:]
+14  UIKit                           0x4c3e9005          -[UIControl touchesEnded:withEvent:]
+15  UIKit                           0x4c3a2f25          __UIGestureRecognizerUpdate
+16  UIKit                           0x4c3e1ec9          -[UIWindow _sendGesturesForEvent:]
+17  UIKit                           0x4c3e167b          -[UIWindow sendEvent:]
+18  UIKit                           0x4c3b2125          -[UIApplication sendEvent:]
+19  UIKit                           0x4c3b06d3          __UIApplicationHandleEventQueue
+20  CoreFoundation                  0x43797dff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+21  CoreFoundation                  0x437979ed          ___CFRunLoopDoSources0
+22  CoreFoundation                  0x43795d5b          ___CFRunLoopRun
+23  CoreFoundation                  0x436e5229          _CFRunLoopRunSpecific
+24  CoreFoundation                  0x436e5015          _CFRunLoopRunInMode
+25  GraphicsServices                0x462c5ac9          _GSEventRunModal
+26  UIKit                           0x4c41a189          _UIApplicationMain
+27  CrashProbeiOS                   0x7214f             main (main.m:16)

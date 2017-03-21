@@ -1,3 +1,6 @@
+OS Version: iOS 9.3.5 (13G36)
+Report Version: 104
+
 Exception Type: EXC_BAD_ACCESS (SIGBUS)
 Exception Codes: BUS_NOOP at 0xa5a5a5a4
 Crashed Thread: 0
@@ -5,17 +8,11 @@ Crashed Thread: 0
 Application Specific Information:
 Attempted to dereference garbage pointer 0xa5a5a5a4.
 
-<span class="cp-wrong">Missing frame/thread that shows where the crash occured</span>
-Thread 1 name: com.apple.uikit.eventfetch-thread
-0   libsystem_kernel.dylib          0x3583383c          mach_msg_trap
-1   libsystem_kernel.dylib          0x3583362f          mach_msg
-2   CoreFoundation                  0x367c7869          __CFRunLoopServiceMachPort
-3   CoreFoundation                  0x367c5b67          __CFRunLoopRun
-4   CoreFoundation                  0x36715073          CFRunLoopRunSpecific
-5   CoreFoundation                  0x36714e81          CFRunLoopRunInMode
-6   Foundation                      0x379790db          -[NSRunLoop(NSRunLoop) runMode:beforeDate:]
-7   Foundation                      0x37997df1          -[NSRunLoop(NSRunLoop) runUntilDate:]
-8   UIKit                           0x41322cb3          -[UIEventFetcher threadMain]
-9   Foundation                      0x37a620d1          __NSThread__start__
-10  libsystem_pthread.dylib         0x359c5a17          _pthread_body
-11  libsystem_pthread.dylib         0x359c593d          _pthread_start
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x1a3f1f            -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)
+
+Thread 1 name:
+0   libsystem_kernel.dylib          0x431d22f8          _kevent_qos
+1   libdispatch.dylib               0x42fbcd61          __dispatch_mgr_invoke
+2   libdispatch.dylib               0x42fbcabf          __dispatch_mgr_thread$VARIANT$mp

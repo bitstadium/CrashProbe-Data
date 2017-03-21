@@ -33,7 +33,7 @@
       "arm64": "wrong"
     },
     "Sentry": {
-      "armv7": "wrong",
+      "armv7": "complete",
       "arm64": "wrong"
     }
   }
