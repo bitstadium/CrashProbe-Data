@@ -9,23 +9,22 @@ Attempted to dereference null pointer.
 
 Thread 0 name:
 Thread 0 Crashed:
-0   CrashLibiOS                     0x219e52            -[CRLCrashOverwriteLinkRegister crash] (CRLCrashOverwriteLinkRegister.m:53)
-1   CrashLibiOS                     0x219e4f            -[CRLCrashOverwriteLinkRegister crash] (CRLCrashOverwriteLinkRegister.m:49)
-2   CrashProbeiOS                   0x105e19            -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-3   UIKit                           0x4c3e9755          -[UIApplication sendAction:to:from:forEvent:]
-4   UIKit                           0x4c3e96e1          -[UIControl sendAction:to:forEvent:]
-5   UIKit                           0x4c3d16d3          -[UIControl _sendActionsForEvents:withEvent:]
-6   UIKit                           0x4c3e9005          -[UIControl touchesEnded:withEvent:]
-7   UIKit                           0x4c3a2f25          __UIGestureRecognizerUpdate
-8   UIKit                           0x4c3e1ec9          -[UIWindow _sendGesturesForEvent:]
-9   UIKit                           0x4c3e167b          -[UIWindow sendEvent:]
-10  UIKit                           0x4c3b2125          -[UIApplication sendEvent:]
-11  UIKit                           0x4c3b06d3          __UIApplicationHandleEventQueue
-12  CoreFoundation                  0x43797dff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-13  CoreFoundation                  0x437979ed          ___CFRunLoopDoSources0
-14  CoreFoundation                  0x43795d5b          ___CFRunLoopRun
-15  CoreFoundation                  0x436e5229          _CFRunLoopRunSpecific
-16  CoreFoundation                  0x436e5015          _CFRunLoopRunInMode
-17  GraphicsServices                0x462c5ac9          _GSEventRunModal
-18  UIKit                           0x4c41a189          _UIApplicationMain
-19  CrashProbeiOS                   0x10514f            main (main.m:16)
+0   CrashLibiOS                     0x1bfe52            -[CRLCrashOverwriteLinkRegister crash] (CRLCrashOverwriteLinkRegister.m:53)
+1   CrashProbeiOS                   0xabe19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2   UIKit                           0x4e5a1755          -[UIApplication sendAction:to:from:forEvent:]
+3   UIKit                           0x4e5a16e1          -[UIControl sendAction:to:forEvent:]
+4   UIKit                           0x4e5896d3          -[UIControl _sendActionsForEvents:withEvent:]
+5   UIKit                           0x4e5a1005          -[UIControl touchesEnded:withEvent:]
+6   UIKit                           0x4e55af25          __UIGestureRecognizerUpdate
+7   UIKit                           0x4e599ec9          -[UIWindow _sendGesturesForEvent:]
+8   UIKit                           0x4e59967b          -[UIWindow sendEvent:]
+9   UIKit                           0x4e56a125          -[UIApplication sendEvent:]
+10  UIKit                           0x4e5686d3          __UIApplicationHandleEventQueue
+11  CoreFoundation                  0x4594fdff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+12  CoreFoundation                  0x4594f9ed          ___CFRunLoopDoSources0
+13  CoreFoundation                  0x4594dd5b          ___CFRunLoopRun
+14  CoreFoundation                  0x4589d229          _CFRunLoopRunSpecific
+15  CoreFoundation                  0x4589d015          _CFRunLoopRunInMode
+16  GraphicsServices                0x4847dac9          _GSEventRunModal
+17  UIKit                           0x4e5d2189          _UIApplicationMain
+18  CrashProbeiOS                   0xab14f             main (main.m:16)

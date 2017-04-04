@@ -9,8 +9,8 @@ Exception 6, Code 214272, Subcode 8
 
 Thread 0 name:
 Thread 0 Crashed:
-0   CrashLibiOS                     0x100034500         [inlined] CRLCrashSwift.crash() -> () (CRLCrashSwift.swift:36)
-1   CrashLibiOS                     0x100034500         @objc CRLCrashSwift.crash() -> ()
+<span class="cp-wrong">0   CrashLibiOS                     0x100034500         [inlined] CRLCrashSwift.crash() -> () (CRLCrashSwift.swift:36)</span>
+<span class="cp-wrong">1   CrashLibiOS                     0x100034500         @objc CRLCrashSwift.crash() -> ()</span>
 2   CrashProbeiOS                   0x200010220         -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
 3   UIKit                           0x31bca8d30         -[UIApplication sendAction:to:from:forEvent:]
 4   UIKit                           0x31bca8cb0         -[UIControl sendAction:to:forEvent:]

@@ -9,23 +9,23 @@ Exception 6, Code 1, Subcode 0
 
 Thread 0 name:
 Thread 0 Crashed:
-0   CrashLibiOS                     0x189fe8            @objc CRLCrashSwift.crash() -> ()
-1   CrashLibiOS                     0x189fe8            CRLCrashSwift.crash() -> () (CRLCrashSwift.swift:36)
-2   CrashProbeiOS                   0x75e19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-3   UIKit                           0x4c3e9755          -[UIApplication sendAction:to:from:forEvent:]
-4   UIKit                           0x4c3e96e1          -[UIControl sendAction:to:forEvent:]
-5   UIKit                           0x4c3d16d3          -[UIControl _sendActionsForEvents:withEvent:]
-6   UIKit                           0x4c3e9005          -[UIControl touchesEnded:withEvent:]
-7   UIKit                           0x4c3a2f25          __UIGestureRecognizerUpdate
-8   UIKit                           0x4c3e1ec9          -[UIWindow _sendGesturesForEvent:]
-9   UIKit                           0x4c3e167b          -[UIWindow sendEvent:]
-10  UIKit                           0x4c3b2125          -[UIApplication sendEvent:]
-11  UIKit                           0x4c3b06d3          __UIApplicationHandleEventQueue
-12  CoreFoundation                  0x43797dff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
-13  CoreFoundation                  0x437979ed          ___CFRunLoopDoSources0
-14  CoreFoundation                  0x43795d5b          ___CFRunLoopRun
-15  CoreFoundation                  0x436e5229          _CFRunLoopRunSpecific
-16  CoreFoundation                  0x436e5015          _CFRunLoopRunInMode
-17  GraphicsServices                0x462c5ac9          _GSEventRunModal
-18  UIKit                           0x4c41a189          _UIApplicationMain
-19  CrashProbeiOS                   0x7514f             main (main.m:16)
+<span class="cp-wrong">0   CrashLibiOS                     0x1a0fe8            [inlined] CRLCrashSwift.crash() -> () (CRLCrashSwift.swift:36)</span>
+<span class="cp-wrong">1   CrashLibiOS                     0x1a0fe8            @objc CRLCrashSwift.crash() -> ()</span>
+2   CrashProbeiOS                   0x8ce19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+3   UIKit                           0x4e5a1755          -[UIApplication sendAction:to:from:forEvent:]
+4   UIKit                           0x4e5a16e1          -[UIControl sendAction:to:forEvent:]
+5   UIKit                           0x4e5896d3          -[UIControl _sendActionsForEvents:withEvent:]
+6   UIKit                           0x4e5a1005          -[UIControl touchesEnded:withEvent:]
+7   UIKit                           0x4e55af25          __UIGestureRecognizerUpdate
+8   UIKit                           0x4e599ec9          -[UIWindow _sendGesturesForEvent:]
+9   UIKit                           0x4e59967b          -[UIWindow sendEvent:]
+10  UIKit                           0x4e56a125          -[UIApplication sendEvent:]
+11  UIKit                           0x4e5686d3          __UIApplicationHandleEventQueue
+12  CoreFoundation                  0x4594fdff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+13  CoreFoundation                  0x4594f9ed          ___CFRunLoopDoSources0
+14  CoreFoundation                  0x4594dd5b          ___CFRunLoopRun
+15  CoreFoundation                  0x4589d229          _CFRunLoopRunSpecific
+16  CoreFoundation                  0x4589d015          _CFRunLoopRunInMode
+17  GraphicsServices                0x4847dac9          _GSEventRunModal
+18  UIKit                           0x4e5d2189          _UIApplicationMain
+19  CrashProbeiOS                   0x8c14f             main (main.m:16)
