@@ -1,0 +1,38 @@
+OS Version: iOS 10.2.1 (14D27)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: SEGV_NOOP at 0x1
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x1.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_platform.dylib        0x30e03bf44         __platform_memmove
+1   libsystem_pthread.dylib         0x30e04cbe0         [inlined] _pthread_getname_np
+2   libsystem_pthread.dylib         0x30e04cbe0         _pthread_getname_np
+3   CrashLibiOS                     0x1000a747c         -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+4   CrashProbeiOS                   0x20008c2f8         -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+5   UIKit                           0x31bca8d30         -[UIApplication sendAction:to:from:forEvent:]
+6   UIKit                           0x31bca8cb0         -[UIControl sendAction:to:forEvent:]
+7   UIKit                           0x31bc93128         -[UIControl _sendActionsForEvents:withEvent:]
+8   UIKit                           0x31bca859c         -[UIControl touchesEnded:withEvent:]
+9   UIKit                           0x31c233628         __UIGestureEnvironmentSortAndSendDelayedTouches
+10  UIKit                           0x31c22f6c0         __UIGestureEnvironmentUpdate
+11  UIKit                           0x31c22f1e0         -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:]
+12  UIKit                           0x31c22e49c         -[UIGestureEnvironment _updateGesturesForEvent:window:]
+13  UIKit                           0x31bca330c         -[UIWindow sendEvent:]
+14  UIKit                           0x31bc73da0         -[UIApplication sendEvent:]
+15  UIKit                           0x31c45d75c         ___dispatchPreprocessedEventFromEventQueue
+16  UIKit                           0x31c457130         ___handleEventQueue
+17  CoreFoundation                  0x30fda3b5c         ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+18  CoreFoundation                  0x30fda34a4         ___CFRunLoopDoSources0
+19  CoreFoundation                  0x30fda10a4         ___CFRunLoopRun
+20  CoreFoundation                  0x30fccf2b8         _CFRunLoopRunSpecific
+21  GraphicsServices                0x313234198         _GSEventRunModal
+22  UIKit                           0x31bcde7fc         -[UIApplication _run]
+23  UIKit                           0x31bcd9534         _UIApplicationMain
+24  CrashProbeiOS                   0x20008b3cc         main (main.m:16)
+25  libdyld.dylib                   0x30dc9a5b8         _start

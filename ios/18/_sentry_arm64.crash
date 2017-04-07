@@ -1,0 +1,14 @@
+OS Version: iOS 10.2.1 (14D27)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference null pointer.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x10008c158         CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:35)
+1   CrashLibiOS                     0x10008c210         CRLFramelessDWARF_test
+<span class="cp-wrong">Missing frames</span>

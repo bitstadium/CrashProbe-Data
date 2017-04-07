@@ -1,0 +1,31 @@
+OS Version: iOS 9.3.5 (13G36)
+Report Version: 104
+
+Exception Type: EXC_BAD_INSTRUCTION (SIGILL)
+Exception Codes: ILL_NOOP at 0x212a0a
+Crashed Thread: 0
+
+Application Specific Information:
+Exception 2, Code 1, Subcode 0
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x212a0a            -[CRLCrashUndefInst crash] (CRLCrashUndefInst.m:42)
+1   CrashProbeiOS                   0xfee19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+2   UIKit                           0x4e5a1755          -[UIApplication sendAction:to:from:forEvent:]
+3   UIKit                           0x4e5a16e1          -[UIControl sendAction:to:forEvent:]
+4   UIKit                           0x4e5896d3          -[UIControl _sendActionsForEvents:withEvent:]
+5   UIKit                           0x4e5a1005          -[UIControl touchesEnded:withEvent:]
+6   UIKit                           0x4e55af25          __UIGestureRecognizerUpdate
+7   UIKit                           0x4e599ec9          -[UIWindow _sendGesturesForEvent:]
+8   UIKit                           0x4e59967b          -[UIWindow sendEvent:]
+9   UIKit                           0x4e56a125          -[UIApplication sendEvent:]
+10  UIKit                           0x4e5686d3          __UIApplicationHandleEventQueue
+11  CoreFoundation                  0x4594fdff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+12  CoreFoundation                  0x4594f9ed          ___CFRunLoopDoSources0
+13  CoreFoundation                  0x4594dd5b          ___CFRunLoopRun
+14  CoreFoundation                  0x4589d229          _CFRunLoopRunSpecific
+15  CoreFoundation                  0x4589d015          _CFRunLoopRunInMode
+16  GraphicsServices                0x4847dac9          _GSEventRunModal
+17  UIKit                           0x4e5d2189          _UIApplicationMain
+18  CrashProbeiOS                   0xfe14f             main (main.m:16)

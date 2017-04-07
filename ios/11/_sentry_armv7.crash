@@ -1,0 +1,32 @@
+OS Version: iOS 9.3.5 (13G36)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x3425000
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x3425000.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x1e8ade            -[CRLCrashGarbage crash] (CRLCrashGarbage.m:48)
+1   libsystem_kernel.dylib          0x4537541f          _munmap
+2   CrashProbeiOS                   0xd4e19             -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+3   UIKit                           0x4e5a1755          -[UIApplication sendAction:to:from:forEvent:]
+4   UIKit                           0x4e5a16e1          -[UIControl sendAction:to:forEvent:]
+5   UIKit                           0x4e5896d3          -[UIControl _sendActionsForEvents:withEvent:]
+6   UIKit                           0x4e5a1005          -[UIControl touchesEnded:withEvent:]
+7   UIKit                           0x4e55af25          __UIGestureRecognizerUpdate
+8   UIKit                           0x4e599ec9          -[UIWindow _sendGesturesForEvent:]
+9   UIKit                           0x4e59967b          -[UIWindow sendEvent:]
+10  UIKit                           0x4e56a125          -[UIApplication sendEvent:]
+11  UIKit                           0x4e5686d3          __UIApplicationHandleEventQueue
+12  CoreFoundation                  0x4594fdff          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+13  CoreFoundation                  0x4594f9ed          ___CFRunLoopDoSources0
+14  CoreFoundation                  0x4594dd5b          ___CFRunLoopRun
+15  CoreFoundation                  0x4589d229          _CFRunLoopRunSpecific
+16  CoreFoundation                  0x4589d015          _CFRunLoopRunInMode
+17  GraphicsServices                0x4847dac9          _GSEventRunModal
+18  UIKit                           0x4e5d2189          _UIApplicationMain
+19  CrashProbeiOS                   0xd414f             main (main.m:16)

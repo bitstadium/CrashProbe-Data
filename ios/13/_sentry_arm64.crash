@@ -1,0 +1,17 @@
+OS Version: iOS 10.2.1 (14D27)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x16fc57ff0
+Crashed Thread: 0
+
+Application Specific Information:
+Stack overflow in (null)
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLibiOS                     0x1000cbe6c         -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
+1   CrashLibiOS                     0x1000cbe80         [inlined] -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+2   CrashLibiOS                     0x1000cbe80         [inlined] -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+...
+99  CrashLibiOS                     0x1000cbe80         -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
