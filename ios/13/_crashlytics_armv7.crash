@@ -1,8 +1,0 @@
-Crashed: com.apple.main-thread
-EXC_BAD_ACCESS KERN_PROTECTION_FAILURE at 0x0000000000290ff8
-
-Thread : Crashed: com.apple.main-thread
-0   CrashLibiOS 0x394f30 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
-1   CrashLibiOS 0x394f45 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
-...
-510 CrashLibiOS 0x394f45 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)

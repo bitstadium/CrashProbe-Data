@@ -1,6 +1,0 @@
-Crashed: com.apple.main-thread
-EXC_BAD_ACCESS KERN_INVALID_ADDRESS at 0xa5a5a5a4
-
-Thread : Crashed: com.apple.main-thread
-0 ???         0xa5a5a5a4 
-1 CrashLibiOS 0x003552e1 -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)

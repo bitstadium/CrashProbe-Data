@@ -15,9 +15,6 @@
     "Apple": {
       "x86_64": "wrong"
     },
-    "Crashlytics": {
-      "x86_64": "incomplete"
-    },
     "Bugsnag": {
       "x86_64": "incomplete"
     }

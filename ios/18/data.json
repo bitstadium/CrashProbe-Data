@@ -22,10 +22,6 @@
       "armv7": "wrong",
       "arm64": "wrong"
     },
-    "Crashlytics": {
-      "armv7": "incomplete",
-      "arm64": "incomplete"
-    },
     "Raygun": {
       "armv7": "incomplete",
       "arm64": "incomplete"
