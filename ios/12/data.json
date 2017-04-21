@@ -14,8 +14,8 @@
       "arm64": "incomplete"
     },
     "Bugsee": {
-      "armv7": "incomplete",
-      "arm64": "incomplete"
+      "armv7": "complete",
+      "arm64": "complete"
     },
     "Apple": {
       "armv7": "incomplete",
