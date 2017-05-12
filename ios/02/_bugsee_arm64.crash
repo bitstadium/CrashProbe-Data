@@ -1,18 +1,16 @@
 Exception Type:  SIGABRT
-Exception Codes: #0 at 0x184773014
-Crashed Thread:  0
+Exception Codes: #0 at 0x18B121014
 
 Application Specific Information:
 *** Terminating app due to uncaught exception "kaboom_exception*", reason: "If this had been a real exception, you would be cursing now."
 
 Last Exception Backtrace:
 <span class="cp-wrong">Missing frame that shows where the crash occured</span>
-0   libc++abi.dylib                     0x00000001841CB66C std::__terminate() (in libc++abi.dylib) + 16
-1   libc++abi.dylib                     0x00000001841CB234 __cxa_rethrow (in libc++abi.dylib) + 140
-2   libobjc.A.dylib                     0x00000001841DC71C objc_exception_rethrow + 40
-3   CoreFoundation                      0x000000018567E32C CFRunLoopRunSpecific + 556
-4   GraphicsServices                    0x0000000187132198 GSEventRunModal + 176
-5   UIKit                               0x000000018B6C57FC -[UIApplication _run] + 680
-6   UIKit                               0x000000018B6C0534 UIApplicationMain + 204
-7   CrashProbeiOS                       0x00000001000A9FF8 main (main.m:16)
-8   libdyld.dylib                       0x00000001846615B8 start + 0
+0   libc++abi.dylib                     0x000000018AB775D4 std::__terminate() (in libc++abi.dylib) + 16
+1   libc++abi.dylib                     0x000000018AB771A8 __cxa_rethrow (in libc++abi.dylib) + 140
+2   libobjc.A.dylib                     0x000000018AB886F8 objc_exception_rethrow + 40
+3   CoreFoundation                      0x000000018C002E00 CFRunLoopRunSpecific + 528
+4   GraphicsServices                    0x000000018DA6C074 GSEventRunModal + 96
+5   UIKit                               0x00000001922BB130 UIApplicationMain + 204
+6   CrashProbeiOS                       0x000000010001AB3C main (main.m:16)
+7   libdyld.dylib                       0x000000018B01159C start + 0
