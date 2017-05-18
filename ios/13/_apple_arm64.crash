@@ -1,9 +1,9 @@
 Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
-Exception Subtype: KERN_PROTECTION_FAILURE at 0x000000016fc67ff0
-Triggered by Thread:  0
+Exception Subtype: KERN_PROTECTION_FAILURE at 0x000000016fcbfff0
 
+Thread 0 name:  Dispatch queue: com.apple.main-thread
 Thread 0 Crashed:
-0   CrashLibiOS 0x00000001000c5c00 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
-1   CrashLibiOS 0x00000001000c5c14 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+0   CrashLibiOS 0x000000010008fe6c -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:38)
+<span class="cp-wrong">1   CrashLibiOS 0x000000010008fe80 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:43) | Wrong line number</span>
 ...
-511 CrashLibiOS 0x00000001000c5c14 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+<span class="cp-wrong">510 CrashLibiOS 0x000000010008fe80 -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:43) | Wrong line number</span>

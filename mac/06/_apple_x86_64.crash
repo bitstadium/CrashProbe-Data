@@ -1,28 +1,31 @@
 Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
-Exception Codes:       KERN_INVALID_ADDRESS at 0x000068cc4166bec0
+Exception Codes:       KERN_INVALID_ADDRESS at 0x000031e96a84bec0
 
 Application Specific Information:
 objc_msgSend() selector name: self
-Performing @selector(causeCrash:) from sender NSButton 0x610000152010
+Performing @selector(causeCrash:) from sender NSButton 0x600000340790
 
 Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
-0  libobjc.A.dylib          0x00007fff900710dd objc_msgSend + 29
-1  net.hockeyapp.CrashLib   0x000000010b333153 -[CRLCrashReleasedObject crash] + 115 (CRLCrashReleasedObject.m:49)
-2  net.hockeyapp.CrashProbe 0x000000010b329473 -[CRLMainWindowController causeCrash:] + 75 (CRLMainWindowController.m:72)
-3  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
-4  com.apple.AppKit         0x00007fff8bc45fb1 -[NSApplication sendAction:to:from:] + 452
-5  com.apple.AppKit         0x00007fff8bc5ba46 -[NSControl sendAction:to:] + 86
-6  com.apple.AppKit         0x00007fff8bc5b962 __26-[NSCell _sendActionFrom:]_block_invoke + 131
-7  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
-8  com.apple.AppKit         0x00007fff8bc5b8bf -[NSCell _sendActionFrom:] + 144
-9  libsystem_trace.dylib    0x00007fff91233cd7 _os_activity_initiate + 75
-10 com.apple.AppKit         0x00007fff8bc59db3 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2821
-11 com.apple.AppKit         0x00007fff8bcb245f -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 770
-12 com.apple.AppKit         0x00007fff8bc58466 -[NSControl mouseDown:] + 714
-13 com.apple.AppKit         0x00007fff8c1c22fc -[NSWindow _reallySendEvent:isDelayedEvent:] + 14125
-14 com.apple.AppKit         0x00007fff8bb51d76 -[NSWindow sendEvent:] + 470
-15 com.apple.AppKit         0x00007fff8bb4e312 -[NSApplication sendEvent:] + 2504
-16 com.apple.AppKit         0x00007fff8ba77c68 -[NSApplication run] + 711
-17 com.apple.AppKit         0x00007fff8b9f4354 NSApplicationMain + 1832
-18 net.hockeyapp.CrashProbe 0x000000010b3297d9 main + 9 (main.m:13
-19 libdyld.dylib            0x00007fff8aaa75c9 start + 1
+0  libobjc.A.dylib                0x00007fff9463705d objc_msgSend + 29
+1  net.hockeyapp.CrashLib         0x0000000106bf17a9 __31-[CRLCrashReleasedObject crash]_block_invoke + 67 (CRLCrashReleasedObject.m:51)
+2  net.hockeyapp.CrashLib         0x0000000106bf1766 -[CRLCrashReleasedObject crash] + 114 (CRLCrashReleasedObject.m:49)
+3  net.hockeyapp.CrashProbe.apple 0x0000000106bdfc35 -[CRLMainWindowController causeCrash:] + 75 (CRLMainWindowController.m:72)
+4  libsystem_trace.dylib          0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+5  com.apple.AppKit               0x00007fff7da41791 -[NSApplication(NSResponder) sendAction:to:from:] + 456
+6  com.apple.AppKit               0x00007fff7d526000 -[NSControl sendAction:to:] + 86
+7  com.apple.AppKit               0x00007fff7d525f28 __26-[NSCell _sendActionFrom:]_block_invoke + 136
+8  libsystem_trace.dylib          0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+9  com.apple.AppKit               0x00007fff7d525e80 -[NSCell _sendActionFrom:] + 128
+10 com.apple.AppKit               0x00007fff7d568875 -[NSButtonCell _sendActionFrom:] + 98
+11 libsystem_trace.dylib          0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+12 com.apple.AppKit               0x00007fff7d524762 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
+13 com.apple.AppKit               0x00007fff7d5685ae -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
+14 com.apple.AppKit               0x00007fff7d523117 -[NSControl mouseDown:] + 832
+15 com.apple.AppKit               0x00007fff7dbbd2bf -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
+16 com.apple.AppKit               0x00007fff7dbb9adc -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
+17 com.apple.AppKit               0x00007fff7dbb8f7a -[NSWindow(NSEventRouting) sendEvent:] + 541
+18 com.apple.AppKit               0x00007fff7da3d6f1 -[NSApplication(NSEvent) sendEvent:] + 1145
+19 com.apple.AppKit               0x00007fff7d2b87f7 -[NSApplication run] + 1002
+20 com.apple.AppKit               0x00007fff7d2831de NSApplicationMain + 1237
+21 net.hockeyapp.CrashProbe.apple 0x0000000106bdfef4 main + 9 (main.m:13)
+22 libdyld.dylib                  0x00007fff94f2a235 start + 1

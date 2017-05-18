@@ -1,11 +1,8 @@
 Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
 Exception Subtype: KERN_INVALID_ADDRESS at 0x0000000000000000
-Highlighted Thread:  0
 
-Thread 0 name:  Dispatch queue: com.apple.libdispatch-manager
-Thread 0:
-0 libsystem_kernel.dylib 0x0000000198088c24 kevent64 + 8
-1 libdispatch.dylib      0x0000000197f6de6c _dispatch_mgr_invoke + 272
-2 libdispatch.dylib      0x0000000197f5f998 _dispatch_mgr_thread + 48
-<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+<span class="cp-wrong">0 CrashLibiOS 0x00000001000e4184 CRLFramelessDWARF_test_crash (CRLFramelessDWARF.m:34) | Wrong line number</span>
+1 CrashLibiOS 0x00000001000e423c CRLFramelessDWARF_test + 24
 <span class="cp-wrong">Missing frames</span>
