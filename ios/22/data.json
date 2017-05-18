@@ -6,6 +6,10 @@
   "description": "Trigger a crash from inside a Swift method.",
   "expected": [
     "@objc CrashLibiOS.CRLCrashSwift.crash (CrashLibiOS.CRLCrashSwift)() -> () (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSwift.swift#L36\">CRLCrashSwift.swift:36</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)",
+    "OR",
+    "[inlined] CrashLibiOS.CRLCrashSwift.crash (CrashLibiOS.CRLCrashSwift)() -> () (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashSwift.swift#L36\">CRLCrashSwift.swift:36</a>)",
+    "@objc CrashLibiOS.CRLCrashSwift.crash (CrashLibiOS.CRLCrashSwift)() -> ()",
     "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"
   ],
   "probes": {
@@ -30,8 +34,8 @@
       "arm64": "incomplete"
     },
     "Sentry": {
-      "armv7": "incomplete",
-      "arm64": "incomplete"
+      "armv7": "complete",
+      "arm64": "complete"
     }
   }
 }
