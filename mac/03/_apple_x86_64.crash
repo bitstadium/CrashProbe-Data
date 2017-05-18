@@ -1,1 +1,32 @@
 <span class="cp-wrong">No report</span>
+
+Exception Type:        EXC_BAD_INSTRUCTION (SIGILL)
+Exception Codes:       0x0000000000000001, 0x0000000000000000
+
+Application Specific Information:
+Crashing on exception: An uncaught exception! SCREAM.
+
+Application Specific Backtrace 1:
+0  CoreFoundation        0x00007fff7f85137b __exceptionPreprocess + 171
+1  libobjc.A.dylib       0x00007fff9464548d objc_exception_throw + 48
+<span class="cp-wrong">2  CrashLib              0x000000010cbcd5b3 -[CRLCrashObjCException crash] + 164 | Missing filename and line number</span>
+3  CrashProbe            0x000000010cbbfc35 CrashProbe + 11317
+4  libsystem_trace.dylib 0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+5  AppKit                0x00007fff7da41791 -[NSApplication(NSResponder) sendAction:to:from:] + 456
+6  AppKit                0x00007fff7d526000 -[NSControl sendAction:to:] + 86
+7  AppKit                0x00007fff7d525f28 __26-[NSCell _sendActionFrom:]_block_invoke + 136
+8  libsystem_trace.dylib 0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+9  AppKit                0x00007fff7d525e80 -[NSCell _sendActionFrom:] + 128
+10 AppKit                0x00007fff7d568875 -[NSButtonCell _sendActionFrom:] + 98
+11 libsystem_trace.dylib 0x00007fff9515c3a7 _os_activity_initiate_impl + 53
+12 AppKit                0x00007fff7d524762 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
+13 AppKit                0x00007fff7d5685ae -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
+14 AppKit                0x00007fff7d523117 -[NSControl mouseDown:] + 832
+15 AppKit                0x00007fff7dbbd2bf -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
+16 AppKit                0x00007fff7dbb9adc -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
+17 AppKit                0x00007fff7dbb8f7a -[NSWindow(NSEventRouting) sendEvent:] + 541
+18 AppKit                0x00007fff7da3d6f1 -[NSApplication(NSEvent) sendEvent:] + 1145
+19 AppKit                0x00007fff7d2b87f7 -[NSApplication run] + 1002
+20 AppKit                0x00007fff7d2831de NSApplicationMain + 1237
+21 CrashProbe            0x000000010cbbfef4 CrashProbe + 12020
+22 libdyld.dylib         0x00007fff94f2a235 start + 1

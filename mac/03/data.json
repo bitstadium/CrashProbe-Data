@@ -14,7 +14,7 @@
       "x86_64": "complete"
     },
     "Apple": {
-      "x86_64": "wrong"
+      "x86_64": "incomplete"
     },
     "Bugsnag": {
       "x86_64": "wrong"

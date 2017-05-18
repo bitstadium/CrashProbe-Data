@@ -1,37 +1,48 @@
 Exception Type:  EXC_CRASH (SIGABRT)
 Exception Codes: 0x0000000000000000, 0x0000000000000000
-Triggered by Thread:  0
 
 Thread 0 name:  Dispatch queue: com.apple.main-thread
 Thread 0 Crashed:
-0  libsystem_kernel.dylib  0x00000001980a3270 __pthread_kill + 8
-1  libsystem_pthread.dylib 0x000000019814116c pthread_kill + 108
-2  libsystem_c.dylib       0x000000019801ab14 abort + 108
-3  libsystem_malloc.dylib  0x00000001980de3e0 nanozone_error + 316
-4  libsystem_malloc.dylib  0x00000001980de54c _nano_malloc_check_clear + 360
-5  libsystem_malloc.dylib  0x00000001980dd060 nano_malloc + 40
-6  libsystem_malloc.dylib  0x00000001980cd3e0 malloc_zone_malloc + 112
-7  CoreFoundation          0x0000000185fc2e04 _CFRuntimeCreateInstance + 372
-8  CoreFoundation          0x00000001860b0210 _CFStringCreateWithFormatAndArgumentsAux2 + 100
-9  CoreFoundation          0x00000001860cda84 _CFLogvEx2 + 148
-10 Foundation              0x0000000186f0765c NSLogv + 104
-11 Foundation              0x0000000186f075e4 NSLog + 20
-12 CrashLibiOS             0x0000000100119e08 -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
-13 CrashProbeiOS           0x00000001000fe630 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-14 UIKit                   0x000000018ab5d400 -[UIApplication sendAction:to:from:forEvent:] + 92
-15 UIKit                   0x000000018ab464dc -[UIControl _sendActionsForEvents:withEvent:] + 608
-16 UIKit                   0x000000018ab5cd9c -[UIControl touchesEnded:withEvent:] + 588
-17 UIKit                   0x000000018ab1bfbc _UIGestureRecognizerUpdate + 8532
-18 UIKit                   0x000000018ab56894 -[UIWindow _sendGesturesForEvent:] + 1040
-19 UIKit                   0x000000018ab55f4c -[UIWindow sendEvent:] + 656
-20 UIKit                   0x000000018ab29188 -[UIApplication sendEvent:] + 260
-21 UIKit                   0x000000018adca320 _UIApplicationHandleEventFromQueueEvent + 15420
-22 UIKit                   0x000000018ab2769c _UIApplicationHandleEventQueue + 1712
-23 CoreFoundation          0x00000001860a023c __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 20
-24 CoreFoundation          0x000000018609f4e0 __CFRunLoopDoSources0 + 260
-25 CoreFoundation          0x000000018609d590 __CFRunLoopRun + 708
-26 CoreFoundation          0x0000000185fc92d0 CFRunLoopRunSpecific + 392
-27 GraphicsServices        0x000000018f7df6f8 GSEventRunModal + 164
-28 UIKit                   0x000000018ab8efa8 UIApplicationMain + 1484
-29 CrashProbeiOS           0x00000001000fd640 main (main.m:16)
-30 libdyld.dylib           0x0000000197f8aa04 start + 0
+0   libsystem_kernel.dylib  0x000000018f2f9014 __pthread_kill + 8
+1   libsystem_pthread.dylib 0x000000018f3c3334 pthread_kill + 112
+2   libsystem_c.dylib       0x000000018f26d9c4 abort + 140
+3   libsystem_malloc.dylib  0x000000018f33e9e8 nanozone_default_reader + 0
+4   libsystem_malloc.dylib  0x000000018f33fc54 _nano_malloc_check_clear + 412
+5   libsystem_malloc.dylib  0x000000018f33ecb0 nano_calloc + 80
+6   libsystem_malloc.dylib  0x000000018f3304e8 malloc_zone_calloc + 168
+7   libsystem_malloc.dylib  0x000000018f33041c calloc + 40
+8   libobjc.A.dylib         0x000000018ed6c160 class_createInstance + 76
+9   libdispatch.dylib       0x000000018f1b6a18 _os_object_alloc_realized + 40
+10  libxpc.dylib            0x000000018f3f46f0 xpc_uint64_create + 36
+11  libxpc.dylib            0x000000018f3f46a4 xpc_dictionary_set_uint64 + 32
+12  libsystem_trace.dylib   0x000000018f3d6848 _os_activity_stream_entry_encode + 52
+13  libsystem_trace.dylib   0x000000018f3d66f0 _os_activity_stream_reflect + 300
+14  libsystem_trace.dylib   0x000000018f3e2194 _os_log_impl_stream + 420
+15  libsystem_trace.dylib   0x000000018f3e1698 _os_log_impl_flatten_and_send + 3124
+16  libsystem_trace.dylib   0x000000018f3e2934 _os_log_with_args_impl + 388
+17  CoreFoundation          0x00000001902e2958 _CFLogvEx3 + 192
+18  Foundation              0x0000000190dd3440 _NSLogv + 128
+19  Foundation              0x0000000190cfa5b8 NSLog + 32
+<span class="cp-wrong">20  CrashLibiOS             0x000000010011c074 -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:47) | Wrong line number</span>
+21  CrashProbeiOS           0x00000001000343a8 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+22  UIKit                   0x00000001964630ec -[UIApplication sendAction:to:from:forEvent:] + 96
+23  UIKit                   0x000000019646306c -[UIControl sendAction:to:forEvent:] + 80
+24  UIKit                   0x000000019644d5e0 -[UIControl _sendActionsForEvents:withEvent:] + 440
+25  UIKit                   0x0000000196462950 -[UIControl touchesEnded:withEvent:] + 576
+26  UIKit                   0x00000001969f746c _UIGestureEnvironmentSortAndSendDelayedTouches + 4280
+27  UIKit                   0x00000001969f37b8 _UIGestureEnvironmentUpdate + 1128
+28  UIKit                   0x00000001969f32fc -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:] + 404
+29  UIKit                   0x00000001969f25a8 -[UIGestureEnvironment _updateGesturesForEvent:window:] + 268
+30  UIKit                   0x000000019645d7e8 -[UIWindow sendEvent:] + 3164
+31  UIKit                   0x000000019642e418 -[UIApplication sendEvent:] + 340
+32  UIKit                   0x0000000196c27f64 __dispatchPreprocessedEventFromEventQueue + 2400
+33  UIKit                   0x0000000196c226c0 __handleEventQueue + 4268
+34  UIKit                   0x0000000196c22aec __handleHIDEventFetcherDrain + 148
+35  CoreFoundation          0x00000001902ad424 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 24
+36  CoreFoundation          0x00000001902acd94 __CFRunLoopDoSources0 + 540
+37  CoreFoundation          0x00000001902aa9a0 __CFRunLoopRun + 744
+38  CoreFoundation          0x00000001901dad94 CFRunLoopRunSpecific + 424
+39  GraphicsServices        0x0000000191c44074 GSEventRunModal + 100
+40  UIKit                   0x0000000196493130 UIApplicationMain + 208
+41  CrashProbeiOS           0x0000000100033514 main (main.m:16)
+42  libdyld.dylib           0x000000018f1e959c start + 4

@@ -20,7 +20,7 @@
     },
     "Apple": {
       "armv7": "incomplete",
-      "arm64": "complete"
+      "arm64": "incomplete"
     },
     "Raygun": {
       "armv7": "complete",
