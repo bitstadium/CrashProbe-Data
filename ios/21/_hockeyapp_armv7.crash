@@ -4,4 +4,4 @@ Crashed Thread:  0
 
 Thread 0 Crashed:
 0 ???         0xa5a5a5a4 0x0 + 0
-1 CrashLibiOS 0x001abf1f -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)
+1 CrashLibiOS 0x0023df43 -[CRLCrashSmashStackTop crash] (CRLCrashSmashStackTop.m:54)
