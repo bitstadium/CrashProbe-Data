@@ -5,12 +5,16 @@
   "title": "Jump into an NX page",
   "description": "Call a function pointer to memory in a non-executable page.",
   "expected": [
+    "real_NXcrash (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashNXPage.m#L49\">CRLCrashNXPage.m:41</a>)",
+    "-[CRLCrashNXPage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashNXPage.m#L49\">CRLCrashNXPage.m:49</a>)",
+    "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)",
+    "Note: Some services might show data prior to the updated test case because of changes in Xcode 8.3 from below!",
     "-[CRLCrashNXPage crash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLCrashNXPage.m#L37\">CRLCrashNXPage.m:37</a>)",
     "-[CRLMainWindowController causeCrash:] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe/CRLMainWindowController.m#L72\">CRLMainWindowController.m:72</a>)"
   ],
   "probes": {
     "HockeyApp": {
-      "x86_64": "incomplete"
+      "x86_64": "wrong"
     },
     "Apple": {
       "x86_64": "wrong"

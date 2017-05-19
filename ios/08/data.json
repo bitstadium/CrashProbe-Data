@@ -12,7 +12,7 @@
   "probes": {
     "HockeyApp": {
       "armv7": "complete",
-      "arm64": "incomplete"
+      "arm64": "complete"
     },
     "Bugsee": {
       "armv7": "complete",

@@ -3,34 +3,38 @@ Exception Codes: SEGV_MAPERR at 0x10
 Crashed Thread:  0
 
 Application Specific Information:
-objc_msgSend() selector name: respondsToSelector:
+objc_msgSend() selector name: isProxy
 
 Thread 0 Crashed:
-0  libobjc.A.dylib  0x2317ba62 objc_msgSend + 2
-1  Foundation       0x241fb6e9 _NSDescriptionWithStringProxyFunc + 46
-2  CoreFoundation   0x239a56b7 __CFStringAppendFormatCore + 6724
-3  CoreFoundation   0x239a3c51 _CFStringCreateWithFormatAndArgumentsAux2 + 78
-4  CoreFoundation   0x239bcb51 _CFLogvEx2 + 94
-5  CoreFoundation   0x239bcfb1 _CFLogvEx3 + 118
-6  Foundation       0x241ea62f _NSLogv + 120
-7  Foundation       0x2413103d NSLog + 26
-8  CrashLibiOS      0x0020a6eb -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
-9  CrashProbeiOS    0x00074c5d -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-10 UIKit            0x27f86755 -[UIApplication sendAction:to:from:forEvent:] + 78
-11 UIKit            0x27f866e1 -[UIControl sendAction:to:forEvent:] + 62
-12 UIKit            0x27f6e6d3 -[UIControl _sendActionsForEvents:withEvent:] + 464
-13 UIKit            0x27f86005 -[UIControl touchesEnded:withEvent:] + 602
-14 UIKit            0x27f3ff25 _UIGestureRecognizerUpdate + 10850
-15 UIKit            0x27f7eec9 -[UIWindow _sendGesturesForEvent:] + 902
-16 UIKit            0x27f7e67b -[UIWindow sendEvent:] + 620
-17 UIKit            0x27f4f125 -[UIApplication sendEvent:] + 202
-18 UIKit            0x27f4d6d3 _UIApplicationHandleEventQueue + 5008
-19 CoreFoundation   0x23995dff __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 12
-20 CoreFoundation   0x239959ed __CFRunLoopDoSources0 + 450
-21 CoreFoundation   0x23993d5b __CFRunLoopRun + 792
-22 CoreFoundation   0x238e3229 CFRunLoopRunSpecific + 518
-23 CoreFoundation   0x238e3015 CFRunLoopRunInMode + 106
-24 GraphicsServices 0x24ed3ac9 GSEventRunModal + 158
-25 UIKit            0x27fb7189 UIApplicationMain + 142
-26 CrashProbeiOS    0x00073f07 main (main.m:16)
-27 libdyld.dylib    0x2358b873 start + 0
+0   libobjc.A.dylib       0x1b79cdc2 objc_msgSend + 2
+1   libsystem_trace.dylib 0x1bda3081 _os_log_fmt_flatten_data + 102
+2   libsystem_trace.dylib 0x1bda7829 _os_log_impl_flatten_and_send + 1106
+3   libsystem_trace.dylib 0x1bda8c79 _os_log_with_args_impl + 230
+4   libsystem_trace.dylib 0x1bda8def os_log_shim_with_CFString + 78
+5   CoreFoundation        0x1c4ef017 _CFLogvEx3 + 142
+6   Foundation            0x1ce32c3d _NSLogv + 124
+7   Foundation            0x1cd6e5b7 NSLog + 24
+8   CrashLibiOS           0x001956cb -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
+9   CrashProbeiOS         0x000fff69 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+10  UIKit                 0x21767785 -[UIApplication sendAction:to:from:forEvent:] + 74
+11  UIKit                 0x21767719 -[UIControl sendAction:to:forEvent:] + 60
+12  UIKit                 0x21751d49 -[UIControl _sendActionsForEvents:withEvent:] + 476
+13  UIKit                 0x21767055 -[UIControl touchesEnded:withEvent:] + 602
+14  UIKit                 0x21cb933b _UIGestureEnvironmentSortAndSendDelayedTouches + 3964
+15  UIKit                 0x21cb5c53 _UIGestureEnvironmentUpdate + 984
+16  UIKit                 0x21cb5843 -[UIGestureEnvironment _deliverEvent:toGestureRecognizers:usingBlock:] + 334
+17  UIKit                 0x21cb4c69 -[UIGestureEnvironment _updateGesturesForEvent:window:] + 310
+18  UIKit                 0x21761ac5 -[UIWindow sendEvent:] + 2770
+19  UIKit                 0x21733683 -[UIApplication sendEvent:] + 306
+20  UIKit                 0x21ec6de7 __dispatchPreprocessedEventFromEventQueue + 2252
+21  UIKit                 0x21ec178b __handleEventQueue + 4184
+22  UIKit                 0x21ec1b6d __handleHIDEventFetcherDrain + 142
+23  CoreFoundation        0x1c4c3fdd __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 10
+24  CoreFoundation        0x1c4c3b05 __CFRunLoopDoSources0 + 422
+25  CoreFoundation        0x1c4c1f51 __CFRunLoopRun + 1158
+26  CoreFoundation        0x1c4151af CFRunLoopRunSpecific + 468
+27  CoreFoundation        0x1c414fd1 CFRunLoopRunInMode + 102
+28  GraphicsServices      0x1dbbfb41 GSEventRunModal + 78
+29  UIKit                 0x21796e13 UIApplicationMain + 148
+30  CrashProbeiOS         0x000ff227 main (main.m:16)
+31  libdyld.dylib         0x1bc024eb start + 0

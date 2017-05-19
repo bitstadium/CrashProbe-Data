@@ -13,8 +13,8 @@
     "-[CRLDetailViewController doCrash] (<a href=\"https://github.com/bitstadium/CrashProbe/blob/master/CrashProbe%20iOS/CRLDetailViewController.m#L53\">CRLDetailViewController.m:53</a>)"  ],
   "probes": {
     "HockeyApp": {
-      "armv7": "incomplete",
-      "arm64": "incomplete"
+      "armv7": "complete",
+      "arm64": "complete"
     },
     "Bugsee": {
       "armv7": "complete",

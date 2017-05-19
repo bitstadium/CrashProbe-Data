@@ -1,24 +1,28 @@
-Exception Type:  SIGTRAP
-Exception Codes: TRAP_BRKPT at 0xdefe
+Exception Type:  SIGBUS
+Exception Codes: BUS_ADRERR at 0x2c77000
 Crashed Thread:  0
 
-Application Specific Information:
-Selector name found in current argument registers: crash
-
 Thread 0 Crashed:
-<span class="cp-wrong">0  CrashLibiOS      0x0025eb2c -[CRLCrashNXPage crash] + 0 | Missing line number</span>
-1  CrashProbeiOS    0x000c8c5d -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
-2  UIKit            0x27f86755 -[UIApplication sendAction:to:from:forEvent:] + 78
-3  UIKit            0x27f866e1 -[UIControl sendAction:to:forEvent:] + 62
-4  UIKit            0x27f6e6d3 -[UIControl _sendActionsForEvents:withEvent:] + 464
-5  UIKit            0x27f86005 -[UIControl touchesEnded:withEvent:] + 602
-6  UIKit            0x27f3ff25 _UIGestureRecognizerUpdate + 10850
-7  CoreFoundation   0x239956c9 __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 18
-8  CoreFoundation   0x239939cd __CFRunLoopDoObservers + 278
-9  CoreFoundation   0x23993dff __CFRunLoopRun + 956
-10 CoreFoundation   0x238e3229 CFRunLoopRunSpecific + 518
-11 CoreFoundation   0x238e3015 CFRunLoopRunInMode + 106
-12 GraphicsServices 0x24ed3ac9 GSEventRunModal + 158
-13 UIKit            0x27fb7189 UIApplicationMain + 142
-14 CrashProbeiOS    0x000c7f07 main (main.m:16)
-15 libdyld.dylib    0x2358b873 start + 0
+0   ???              0x02c77000 0x0 + 0
+1   CrashLibiOS      0x0013cb47 real_NXcrash (CRLCrashNXPage.m:41)
+2   CrashLibiOS      0x0013cb15 -[CRLCrashNXPage crash] (CRLCrashNXPage.m:49)
+3   CrashProbeiOS    0x000a8f69 -[CRLDetailViewController doCrash] (CRLDetailViewController.m:53)
+4   UIKit            0x21767785 -[UIApplication sendAction:to:from:forEvent:] + 74
+5   UIKit            0x21767719 -[UIControl sendAction:to:forEvent:] + 60
+6   UIKit            0x21751d49 -[UIControl _sendActionsForEvents:withEvent:] + 476
+7   UIKit            0x21767055 -[UIControl touchesEnded:withEvent:] + 602
+8   UIKit            0x21766b9f -[UIWindow _sendTouchesForEvent:] + 2092
+9   UIKit            0x21761adf -[UIWindow sendEvent:] + 2796
+10  UIKit            0x21733683 -[UIApplication sendEvent:] + 306
+11  UIKit            0x21ec6de7 __dispatchPreprocessedEventFromEventQueue + 2252
+12  UIKit            0x21ec178b __handleEventQueue + 4184
+13  UIKit            0x21ec1b6d __handleHIDEventFetcherDrain + 142
+14  CoreFoundation   0x1c4c3fdd __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 10
+15  CoreFoundation   0x1c4c3b05 __CFRunLoopDoSources0 + 422
+16  CoreFoundation   0x1c4c1f51 __CFRunLoopRun + 1158
+17  CoreFoundation   0x1c4151af CFRunLoopRunSpecific + 468
+18  CoreFoundation   0x1c414fd1 CFRunLoopRunInMode + 102
+19  GraphicsServices 0x1dbbfb41 GSEventRunModal + 78
+20  UIKit            0x21796e13 UIApplicationMain + 148
+21  CrashProbeiOS    0x000a8227 main (main.m:16)
+22  libdyld.dylib    0x1bc024eb start + 0

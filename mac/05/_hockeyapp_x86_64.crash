@@ -6,26 +6,26 @@ Application Specific Information:
 Selector name found in current argument registers: stringWithFormat:
 
 Thread 0 Crashed:
-0  libobjc.A.dylib       0x00007fffde66fb5d objc_msgSend + 29
-1  CrashLib              0x000000010b9a494b -[CRLCrashObjCMsgSend crash] (CRLCrashObjCMsgSend.m:47)
-2  CrashProbe            0x000000010b997b3d -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
-3  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
-4  AppKit                0x00007fffc7cb7c9c -[NSApplication(NSResponder) sendAction:to:from:] + 456
-5  AppKit                0x00007fffc779d460 -[NSControl sendAction:to:] + 86
-6  AppKit                0x00007fffc779d388 __26-[NSCell _sendActionFrom:]_block_invoke + 136
-7  libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
-8  AppKit                0x00007fffc779d2e0 -[NSCell _sendActionFrom:] + 128
-9  AppKit                0x00007fffc77dfcd9 -[NSButtonCell _sendActionFrom:] + 98
-10 libsystem_trace.dylib 0x00007fffdf193c3d _os_activity_initiate + 61
-11 AppKit                0x00007fffc779bbc6 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2481
-12 AppKit                0x00007fffc77dfa12 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 798
-13 AppKit                0x00007fffc779a57b -[NSControl mouseDown:] + 832
-14 AppKit                0x00007fffc7e2f603 -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6341
-15 AppKit                0x00007fffc7e2be20 -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1942
-16 AppKit                0x00007fffc7e2b2be -[NSWindow(NSEventRouting) sendEvent:] + 541
-17 AppKit                0x00007fffc7cb3bf5 -[NSApplication(NSEvent) sendEvent:] + 1145
-18 HockeySDK             0x000000010b9c7914 -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:48)
-19 AppKit                0x00007fffc752ff81 -[NSApplication run] + 1002
-20 AppKit                0x00007fffc74fa850 NSApplicationMain + 1237
-21 CrashProbe            0x000000010b997ea4 main (main.m:13)
-22 libdyld.dylib         0x00007fffdef61255 start + 1
+0   libobjc.A.dylib       0x00007fff9636305d objc_msgSend + 29
+1   CrashLib              0x00000001056d994c -[CRLCrashObjCMsgSend crash] (CRLCrashObjCMsgSend.m:47)
+2   CrashProbe            0x00000001056cac31 -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+3   libsystem_trace.dylib 0x00007fff96e883a7 _os_activity_initiate_impl + 52
+4   AppKit                0x00007fff7f754721 -[NSApplication(NSResponder) sendAction:to:from:] + 455
+5   AppKit                0x00007fff7f238cc4 -[NSControl sendAction:to:] + 85
+6   AppKit                0x00007fff7f238bec __26-[NSCell _sendActionFrom:]_block_invoke + 135
+7   libsystem_trace.dylib 0x00007fff96e883a7 _os_activity_initiate_impl + 52
+8   AppKit                0x00007fff7f238b44 -[NSCell _sendActionFrom:] + 127
+9   AppKit                0x00007fff7f27b539 -[NSButtonCell _sendActionFrom:] + 97
+10  libsystem_trace.dylib 0x00007fff96e883a7 _os_activity_initiate_impl + 52
+11  AppKit                0x00007fff7f237426 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 2480
+12  AppKit                0x00007fff7f27b272 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 797
+13  AppKit                0x00007fff7f235ddb -[NSControl mouseDown:] + 831
+14  AppKit                0x00007fff7f8d024f -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:] + 6340
+15  AppKit                0x00007fff7f8cca6c -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:] + 1941
+16  AppKit                0x00007fff7f8cbf0a -[NSWindow(NSEventRouting) sendEvent:] + 540
+17  AppKit                0x00007fff7f750681 -[NSApplication(NSEvent) sendEvent:] + 1144
+18  HockeySDK             0x00000001056fb54e -[BITCrashExceptionApplication sendEvent:] (BITCrashExceptionApplication.m:48)
+19  AppKit                0x00007fff7efcb427 -[NSApplication run] + 1001
+20  AppKit                0x00007fff7ef95e0e NSApplicationMain + 1236
+21  CrashProbe            0x00000001056caef0 main (main.m:13)
+22  libdyld.dylib         0x00007fff96c56235 start + 0
