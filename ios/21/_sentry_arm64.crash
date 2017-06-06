@@ -1,27 +1,22 @@
-OS Version: iOS 10.2.1 (14D27)
+OS Version: iOS 10.3.2 (14F89)
 Report Version: 104
 
 Exception Type: EXC_BAD_ACCESS (SIGBUS)
-Exception Codes: BUS_NOOP at 0xa5a5a5a5a5a5a5a5
+Exception Codes: BUS_NOOP
 Crashed Thread: 0
 
 Application Specific Information:
 Attempted to dereference garbage pointer 0xa5a5a5a5a5a5a5a5.
 
-<span class="cp-wrong">Missing frame/thread that shows where the crash occured</span>
-Thread 1 name:
-0   libsystem_kernel.dylib          0x30dea3a88         ___workq_kernreturn
-1   libsystem_pthread.dylib         0x30e049160         __pthread_wqthread
+Thread 0 name:
+Thread 0 Crashed:
+0   <unknown>                       0xa5a5a5a5a5a5a5a5L <redacted>
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
 
-Thread 2 name: com.apple.uikit.eventfetch-thread
-0   libsystem_kernel.dylib          0x30de85188         _mach_msg_trap
-1   libsystem_kernel.dylib          0x30de84ff8         _mach_msg
-2   CoreFoundation                  0x30fda35d0         ___CFRunLoopServiceMachPort
-3   CoreFoundation                  0x30fda11ec         ___CFRunLoopRun
-4   CoreFoundation                  0x30fccf2b8         _CFRunLoopRunSpecific
-5   Foundation                      0x31134626c         -[NSRunLoop(NSRunLoop) runMode:beforeDate:]
-6   Foundation                      0x311366dd0         -[NSRunLoop(NSRunLoop) runUntilDate:]
-7   UIKit                           0x31c652c38         -[UIEventFetcher threadMain]
-8   Foundation                      0x311443e68         ___NSThread__start__
-9   libsystem_pthread.dylib         0x30e04b850         __pthread_body
-10  libsystem_pthread.dylib         0x30e04b760         __pthread_start
+Thread 1 name:
+0   libsystem_kernel.dylib          0x30a1e7a88         __workq_kernreturn
+1   libsystem_pthread.dylib         0x30a390fd0         _pthread_wqthread
+
+Thread 2 name:
+0   libsystem_kernel.dylib          0x30a1e7a88         __workq_kernreturn
+1   libsystem_pthread.dylib         0x30a390fd0         _pthread_wqthread

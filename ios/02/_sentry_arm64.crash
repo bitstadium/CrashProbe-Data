@@ -1,1 +1,22 @@
-<span class="cp-wrong">No report</span>
+OS Version: iOS 10.3.2 (14F89)
+Report Version: 104
+
+Exception Type: EXC_CRASH (SIGABRT)
+Crashed Thread: 0
+
+Application Specific Information:
+kaboom_exception*
+
+Thread 1 name: com.apple.uikit.eventfetch-thread
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0   libsystem_kernel.dylib          0x30a1c9224         mach_msg_trap
+1   libsystem_kernel.dylib          0x30a1c909c         mach_msg
+2   CoreFoundation                  0x30c092e90         __CFRunLoopServiceMachPort
+3   CoreFoundation                  0x30c090ae4         __CFRunLoopRun
+4   CoreFoundation                  0x30bfc0da4         CFRunLoopRunSpecific
+5   Foundation                      0x30d5f0d74         -[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+6   Foundation                      0x30d611b44         -[NSRunLoop(NSRunLoop) runUntilDate:]
+7   UIKit                           0x318e536a8         -[UIEventFetcher threadMain]
+8   Foundation                      0x30d6ee2d8         __NSThread__start__
+9   libsystem_pthread.dylib         0x30a39368c         _pthread_body
+10  libsystem_pthread.dylib         0x30a39359c         _pthread_start

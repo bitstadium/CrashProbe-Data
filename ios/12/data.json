@@ -34,7 +34,7 @@
     },
     "Sentry": {
       "armv7": "incomplete",
-      "arm64": "incomplete"
+      "arm64": "complete"
     }
   }
 }
