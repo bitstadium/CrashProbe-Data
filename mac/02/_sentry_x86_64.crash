@@ -1,0 +1,16 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_CRASH (SIGABRT)
+Crashed Thread: 0
+
+Application Specific Information:
+kaboom_exception*
+
+Thread 1 name: OGL Profiler
+<span class="cp-wrong">Missing frame that shows where the crash occured</span>
+0   libsystem_kernel.dylib          0xffff289d134a      mach_msg_trap
+1   OpenGL                          0xffff077bc971      glcDebugListener
+2   libsystem_pthread.dylib         0xffff28bc493b      _pthread_body
+3   libsystem_pthread.dylib         0xffff28bc4887      _pthread_start
+4   libsystem_pthread.dylib         0xffff28bc408d      thread_start

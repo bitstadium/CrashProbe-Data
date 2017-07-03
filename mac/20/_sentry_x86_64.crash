@@ -1,0 +1,15 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x00007fff861936ff
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x7fff861936ff.
+
+Thread 0 name:
+Thread 0 Crashed:
+<span class="cp-wrong">0   CrashLib                        0x107dfec75         -[CRLCrashSmashStackBottom crash] (CRLCrashSmashStackBottom.m:55) | Wrong line number</span>
+<span class="cp-wrong">Missing frames</span>
+

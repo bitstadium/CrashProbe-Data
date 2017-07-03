@@ -1,0 +1,14 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x000000c42047b000
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0xc42047b000.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_platform.dylib        0xffff28bb5c12      _platform_bzero$VARIANT$Haswell
+<span class="cp-wrong">Missing frames that show where the crash occured</span>

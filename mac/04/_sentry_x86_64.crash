@@ -1,0 +1,39 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x0000000000000010
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x10.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libobjc.A.dylib                 0xffff275a8057      objc_msgSend
+1   libsystem_trace.dylib           0xffff28c00a86      _os_log_impl_flatten_and_send
+2   libsystem_trace.dylib           0xffff28c0270d      _os_log_with_args_impl
+3   CoreFoundation                  0xfffefd819e57      _CFLogvEx3
+4   Foundation                      0xffff00cc9665      _NSLogv
+5   Foundation                      0xffff00cb47ee      NSLog
+6   CrashLib                        0x1034fada2         -[CRLCrashNSLog crash] (CRLCrashNSLog.m:41)
+7   CrashProbe                      0x2033cbbba         -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+8   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+9   AppKit                          0xfffef9571721      -[NSApplication(NSResponder) sendAction:to:from:]
+10  AppKit                          0xfffef9055cc4      -[NSControl sendAction:to:]
+11  AppKit                          0xfffef9055bec      __26-[NSCell _sendActionFrom:]_block_invoke
+12  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+13  AppKit                          0xfffef9055b44      -[NSCell _sendActionFrom:]
+14  AppKit                          0xfffef9098539      -[NSButtonCell _sendActionFrom:]
+15  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+16  AppKit                          0xfffef9054426      -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+17  AppKit                          0xfffef9098272      -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+18  AppKit                          0xfffef9052ddb      -[NSControl mouseDown:]
+19  AppKit                          0xfffef96ed24f      -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:]
+20  AppKit                          0xfffef96e9a6c      -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:]
+21  AppKit                          0xfffef96e8f0a      -[NSWindow(NSEventRouting) sendEvent:]
+22  AppKit                          0xfffef956d681      -[NSApplication(NSEvent) sendEvent:]
+23  AppKit                          0xfffef8de8427      -[NSApplication run]
+24  AppKit                          0xfffef8db2e0e      NSApplicationMain
+25  CrashProbe                      0x2033cbe79         main (main.m:13)
+26  libdyld.dylib                   0xffff28790235      start

@@ -1,0 +1,17 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x00007fff55905ff8
+Crashed Thread: 0
+
+Application Specific Information:
+Stack overflow in (null)
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLib                        0x109c22b47         -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+1   CrashLib                        0x109c22b4d         [inlined] -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
+2   CrashLib                        0x109c22b4d         [inlined] -[CRLCrashStackGuard crash] (
+...
+99  CrashLib                        0x109c22b4d         [inlined] -[CRLCrashStackGuard crash] (CRLCrashStackGuard.m:39)
