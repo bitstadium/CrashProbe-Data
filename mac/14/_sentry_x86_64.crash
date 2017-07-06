@@ -1,0 +1,33 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_INSTRUCTION (SIGILL)
+Exception Codes: ILL_NOOP at 0x0000000106a2f570
+Crashed Thread: 0
+
+Application Specific Information:
+Exception 2, Code 0, Subcode 8
+
+Thread 0 name:
+Thread 0 Crashed:
+0   CrashLib                        0x106a2f570         -[CRLCrashTrap crash] (CRLCrashTrap.m:37)
+1   CrashProbe                      0x2068ffbba         -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+2   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+3   AppKit                          0xfffef9571721      -[NSApplication(NSResponder) sendAction:to:from:]
+4   AppKit                          0xfffef9055cc4      -[NSControl sendAction:to:]
+5   AppKit                          0xfffef9055bec      __26-[NSCell _sendActionFrom:]_block_invoke
+6   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+7   AppKit                          0xfffef9055b44      -[NSCell _sendActionFrom:]
+8   AppKit                          0xfffef9098539      -[NSButtonCell _sendActionFrom:]
+9   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+10  AppKit                          0xfffef9054426      -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+11  AppKit                          0xfffef9098272      -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+12  AppKit                          0xfffef9052ddb      -[NSControl mouseDown:]
+13  AppKit                          0xfffef96ed24f      -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:]
+14  AppKit                          0xfffef96e9a6c      -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:]
+15  AppKit                          0xfffef96e8f0a      -[NSWindow(NSEventRouting) sendEvent:]
+16  AppKit                          0xfffef956d681      -[NSApplication(NSEvent) sendEvent:]
+17  AppKit                          0xfffef8de8427      -[NSApplication run]
+18  AppKit                          0xfffef8db2e0e      NSApplicationMain
+19  CrashProbe                      0x2068ffe79         main (main.m:13)
+20  libdyld.dylib                   0xffff28790235      start

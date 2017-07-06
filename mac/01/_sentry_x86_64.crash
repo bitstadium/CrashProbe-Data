@@ -1,0 +1,35 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: SEGV_NOOP at 0x0000000000000001
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x1.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_platform.dylib        0xffff28bb4f5a      _platform_memmove$VARIANT$Haswell
+1   libsystem_pthread.dylib         0xffff28bc5af0      pthread_getname_np
+2   CrashLib                        0x10c34b31e         -[CRLCrashAsyncSafeThread crash] (CRLCrashAsyncSafeThread.m:41)
+3   CrashProbe                      0x20c227bba         -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+4   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+5   AppKit                          0xfffef9571721      -[NSApplication(NSResponder) sendAction:to:from:]
+6   AppKit                          0xfffef9055cc4      -[NSControl sendAction:to:]
+7   AppKit                          0xfffef9055bec      __26-[NSCell _sendActionFrom:]_block_invoke
+8   libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+9   AppKit                          0xfffef9055b44      -[NSCell _sendActionFrom:]
+10  AppKit                          0xfffef9098539      -[NSButtonCell _sendActionFrom:]
+11  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+12  AppKit                          0xfffef9054426      -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+13  AppKit                          0xfffef9098272      -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+14  AppKit                          0xfffef9052ddb      -[NSControl mouseDown:]
+15  AppKit                          0xfffef96ed24f      -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:]
+16  AppKit                          0xfffef96e9a6c      -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:]
+17  AppKit                          0xfffef96e8f0a      -[NSWindow(NSEventRouting) sendEvent:]
+18  AppKit                          0xfffef956d681      -[NSApplication(NSEvent) sendEvent:]
+19  AppKit                          0xfffef8de8427      -[NSApplication run]
+20  AppKit                          0xfffef8db2e0e      NSApplicationMain
+21  CrashProbe                      0x20c227e79         main (main.m:13)
+22  libdyld.dylib                   0xffff28790235      start

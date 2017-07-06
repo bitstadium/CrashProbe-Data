@@ -21,6 +21,9 @@
     },
     "Bugsnag": {
       "x86_64": "incomplete"
+    },
+    "Sentry": {
+      "x86_64": "wrong"
     }
   }
 }

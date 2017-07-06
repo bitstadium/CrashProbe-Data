@@ -1,0 +1,44 @@
+OS Version: macOS 10.12.5 (16F73)
+Report Version: 104
+
+Exception Type: EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: BUS_NOOP at 0x000060800003b000
+Crashed Thread: 0
+
+Application Specific Information:
+Attempted to dereference garbage pointer 0x60800003b000.
+
+Thread 0 name:
+Thread 0 Crashed:
+0   libsystem_notify.dylib          0xffff28ba422d      _nc_table_find_64
+1   libsystem_notify.dylib          0xffff28ba121e      registration_node_find
+2   libsystem_notify.dylib          0xffff28ba278d      notify_check
+3   libsystem_c.dylib               0xffff28855164      notify_check_tz
+4   libsystem_c.dylib               0xffff28854d97      tzsetwall_basic
+5   libsystem_c.dylib               0xffff28856844      localtime_r
+6   CoreFoundation                  0xfffefd8ab42d      _populateBanner
+7   CoreFoundation                  0xfffefd8a9e24      _CFLogvEx2Predicate
+8   CoreFoundation                  0xfffefd819f4d      _CFLogvEx3
+9   Foundation                      0xffff00cc9665      _NSLogv
+10  Foundation                      0xffff00cb47ee      NSLog
+11  CrashLib                        0x10d870ac1         -[CRLCrashCorruptMalloc crash] (CRLCrashCorruptMalloc.m:46)
+12  CrashProbe                      0x20d74bbba         -[CRLMainWindowController causeCrash:] (CRLMainWindowController.m:72)
+13  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+14  AppKit                          0xfffef9571721      -[NSApplication(NSResponder) sendAction:to:from:]
+15  AppKit                          0xfffef9055cc4      -[NSControl sendAction:to:]
+16  AppKit                          0xfffef9055bec      __26-[NSCell _sendActionFrom:]_block_invoke
+17  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+18  AppKit                          0xfffef9055b44      -[NSCell _sendActionFrom:]
+19  AppKit                          0xfffef9098539      -[NSButtonCell _sendActionFrom:]
+20  libsystem_trace.dylib           0xffff28bf63a7      _os_activity_initiate_impl
+21  AppKit                          0xfffef9054426      -[NSCell trackMouse:inRect:ofView:untilMouseUp:]
+22  AppKit                          0xfffef9098272      -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:]
+23  AppKit                          0xfffef9052ddb      -[NSControl mouseDown:]
+24  AppKit                          0xfffef96ed24f      -[NSWindow(NSEventRouting) _handleMouseDownEvent:isDelayedEvent:]
+25  AppKit                          0xfffef96e9a6c      -[NSWindow(NSEventRouting) _reallySendEvent:isDelayedEvent:]
+26  AppKit                          0xfffef96e8f0a      -[NSWindow(NSEventRouting) sendEvent:]
+27  AppKit                          0xfffef956d681      -[NSApplication(NSEvent) sendEvent:]
+28  AppKit                          0xfffef8de8427      -[NSApplication run]
+29  AppKit                          0xfffef8db2e0e      NSApplicationMain
+30  CrashProbe                      0x20d74be79         main (main.m:13)
+31  libdyld.dylib                   0xffff28790235      start
